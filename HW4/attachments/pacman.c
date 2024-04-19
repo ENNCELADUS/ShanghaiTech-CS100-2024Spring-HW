@@ -231,7 +231,7 @@ void printFoodUpdate(const Game *pGame) {
 void moveOneGhost(Game *pGame, int ghostIndex);
 
 void moveGhosts(Game *pGame) {
-  // TODO: Implement this function.
+  // Done: Implement this function.
   // Move all the ghosts by one step. You are encouraged to move ghosts in a
   // smarter way.
   // Note that ghosts may overlap, and they may also overlap with foods. Hints
