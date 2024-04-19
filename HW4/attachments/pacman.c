@@ -82,7 +82,7 @@ void trimNewline(char *str) {
  * @return Game The created Game object.
  */
 Game createGame(int level, const char *mapFileName) {
-  // TODO: Implement this function.
+  // Done: Implement this function.
   // Create a Game object. The information needed should be obtained from the
   // file 'mapFileName'. Every member of the Game object should be correctly
   // set, some of which you need to pay special attention to:
@@ -158,8 +158,6 @@ Game createGame(int level, const char *mapFileName) {
 
       read_line(file, directionStr);
 
-      // printf("Read direction for ghost %d: %s\n", i, directionStr); // 调试打印
-
       Direction dir;
       if (strcmp(directionStr, "up") == 0) {
         dir = Up;
@@ -190,8 +188,7 @@ void destroyGame(Game *pGame) {
 
 void printInitialGame(const Game *pGame) {
   // Called at the beginning of 'runGame'.
-  // Your 'createGame' should set the contents of 'grid' correctly to make this
-  // function work.
+  // Your 'createGame' should set the contents of 'grid' correctly to make this function work.
   clear_screen();
   for (int i = 0; i != pGame->numRows; ++i) {
     for (int j = 0; j != pGame->numCols; ++j) {
@@ -231,6 +228,8 @@ void printFoodUpdate(const Game *pGame) {
  *
  * @param pGame Pointer to the current Game object.
  */
+void moveOneGhost(Game *pGame, int ghostIndex);
+
 void moveGhosts(Game *pGame) {
   // TODO: Implement this function.
   // Move all the ghosts by one step. You are encouraged to move ghosts in a
@@ -241,6 +240,44 @@ void moveGhosts(Game *pGame) {
   //  - A possible way to handle overlapping objects correctly is to first
   //  remove all the ghosts in reverse order, and then put the ghosts on their
   //  new positions in order.
+
+  // use loop to move all the ghosts
+  for (int i = 0; i < pGame->ghostCnt; i++) {
+    moveOneGhost(pGame, i);
+  }
+}
+
+void moveOneGhost(Game *pGame, int ghostIndex) {
+  // Get the current position of the ghost
+  int currentRow = pGame->ghosts[ghostIndex].pos.row;
+  int currentCol = pGame->ghosts[ghostIndex].pos.col;
+  Direction dir = pGame->ghosts[ghostIndex].direction;
+
+  // Next position by the direction
+  int nextRow = currentRow, nextCol = currentCol;
+  switch (dir) {
+    case Up: nextRow--; break;
+    case Down: nextRow++; break;
+    case Left: nextCol--; break;
+    case Right: nextCol++; break;
+    case Idle: break;
+  }
+
+  // Judge whether the next direction is ok?
+  if (nextRow < 0 || nextRow >= pGame->numRows || nextCol < 0 || nextCol >= pGame->numCols ||
+    pGame->grid[nextRow][nextCol] == 'B') {
+    // If not, not move, only change the direction to the opposite direction.
+    pGame->ghosts[ghostIndex].direction = oppositeDirection(dir);
+  } else {
+    // If ok, move, update the associated variables
+    pGame->grid[currentRow][currentCol] = pGame->ghosts[ghostIndex].itemBelow;
+    pGame->ghosts[ghostIndex].itemBelow = pGame->grid[nextRow][nextCol];
+
+    pGame->grid[nextRow][nextCol] = '0' + ghostIndex;
+
+    pGame->ghosts[ghostIndex].pos.row = nextRow;
+    pGame->ghosts[ghostIndex].pos.col = nextCol;
+  }
 }
 
 Direction getPacmanMovement(void) {
