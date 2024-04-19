@@ -94,6 +94,11 @@ Game createGame(int level, const char *mapFileName) {
   //   'printInitialGame' below serves as a hint on the contents of 'grid'.
   // Do not forget to close the file you opened.
   FILE *file = fopen(mapFileName, "r");
+  if (file == NULL) {
+    perror("Error opening file");
+    exit(EXIT_FAILURE);
+  }
+
 
   Game game = {
     .level = level,
@@ -104,14 +109,20 @@ Game createGame(int level, const char *mapFileName) {
   // get the num of rows, columns, and ghostCnt from file line 1
   fscanf(file, "%d %d %d\n", &game.numRows, &game.numCols, &game.ghostCnt);
 
+  //DONE:
+  //Deal with the potential '\n', but since the last fscanf has read the last '\n', this is unncessary.
+  // char ch = fgetc(file);
+  // if (ch != '\n') ungetc(ch, file);
+
+
   // Allocate memory for game.grid
   // Since we have got the info from line 1, so the following fgetc() starts from the second line to the last line of the map
   game.grid = (char **)malloc(game.numRows * sizeof(char *));
     for (int i = 0; i < game.numRows; i++) {
-      game.grid[i] = malloc(game.numCols * sizeof(char));
+      game.grid[i] = malloc((game.numCols + 1) * sizeof(char));
       for (int j = 0; j < game.numCols; j++) {
         char c = fgetc(file);
-        if (c == '\n') c = fgetc(file); // deal with the '\n' of the previous line, replace it with the first char of the line
+        if (c == '\n') c = fgetc(file); // Deal with the '\n' of the previous line, replace it with the first char of the line
         game.grid[i][j] = c;
 
         // Initialize the game by the char c we just got.
@@ -133,12 +144,21 @@ Game createGame(int level, const char *mapFileName) {
         }
       }
     }
-    
+
+
+    // DONE:
+    // deal with the '\n' of the last line
+    char c = fgetc(file);
+    if (c != '\n') ungetc(c, file);
+
+
     // Set the direction of the ghost, according to the last several lines.
     for (int i = 0; i < game.ghostCnt; i++){
       char directionStr[10];
-      fgets(directionStr, 10, stdin);
-      trimNewline(directionStr);
+
+      read_line(file, directionStr);
+
+      // printf("Read direction for ghost %d: %s\n", i, directionStr); // 调试打印
 
       Direction dir;
       if (strcmp(directionStr, "up") == 0) {
