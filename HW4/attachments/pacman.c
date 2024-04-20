@@ -280,8 +280,8 @@ void moveOneGhost(Game *pGame, int ghostIndex) {
     // If not ok, not move. Won't change grid. 
     pGame->ghosts[ghostIndex].direction = oppositeDirection(dir);
     move_cursor(currentRow, currentCol);
-    putchar(pGame->grid[currentRow][currentCol]);
-  } 
+    putchar('@');
+  }
   else {
     // If ok, move, update the grid.
     pGame->grid[currentRow][currentCol] = pGame->ghosts[ghostIndex].itemBelow;
@@ -380,7 +380,7 @@ void movePacman(Game *pGame) {
   move_cursor(currentRow, currentCol);
   putchar(pGame->grid[currentRow][currentCol]); 
   move_cursor(nextRow, nextCol);
-  putchar('C');
+  printf(BRIGHT_YELLOW_TEXT("C"));
 }
 
 
@@ -460,6 +460,7 @@ void runLevel(int level) {
 int main(void) {
   prepare_game();
   // TODO: Run more levels?
+  
   runLevel(0);
   return 0;
 }
