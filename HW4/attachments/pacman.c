@@ -324,7 +324,61 @@ void movePacman(Game *pGame) {
   // TODO: Implement this function.
   // Note that Pacman may be moved to a position containing a food or a ghost.
   // These cases should be handled carefully.
+
+  // Get the current position of Pacman
+  Direction dir = getPacmanMovement();
+  int currentRow = pGame->pacmanPos.row;
+  int currentCol = pGame->pacmanPos.col;
+  // Next position by the direction
+  int nextRow = currentRow, nextCol = currentCol;
+  switch (dir) {
+    case Up: nextRow--; break;
+    case Down: nextRow++; break;
+    case Left: nextCol--; break;
+    case Right: nextCol++; break;
+    case Idle: return;
+  }
+
+  // Determine whether the next position is invalid (a wall or beyond the boundary)
+  if (nextRow < 0 || nextRow >= pGame->numRows || nextCol < 0 || nextCol >= pGame->numCols || isWall(pGame->grid[nextRow][nextCol])) {
+      return;
+  }
+
+  // Check for ghost encounters before actually moving Pacman 
+  // If true, then the only clear original location(remove Pacman)
+  pGame->pacmanPos.row = nextRow;
+  pGame->pacmanPos.col = nextCol;
+  if (pacmanDies(pGame)) {
+    // Clear original location
+    pGame->grid[currentRow][currentCol] = ' '; 
+    move_cursor(currentRow, currentCol);
+    putchar(pGame->grid[currentRow][currentCol]);
+    return; 
+  }
+
+  // If next position is food '.'
+  if (pGame->grid[nextRow][nextCol] == '.') {
+      pGame->score += 10;  // Add score
+      printScoreUpdate(pGame);
+
+      pGame->foodsCnt--;
+      printFoodUpdate(pGame);
+  }
+  // Move Pacman to the new position
+  pGame->grid[currentRow][currentCol] = ' '; 
+  pGame->grid[nextRow][nextCol] = 'C';
+
+  // Update Pacman's location
+  pGame->pacmanPos.row = nextRow;
+  pGame->pacmanPos.col = nextCol;
+
+  // Display Pacman's new location
+  move_cursor(currentRow, currentCol);
+  putchar(pGame->grid[currentRow][currentCol]); 
+  move_cursor(nextRow, nextCol);
+  putchar('C');
 }
+
 
 /**
  * @brief Test if Pacman has died.
