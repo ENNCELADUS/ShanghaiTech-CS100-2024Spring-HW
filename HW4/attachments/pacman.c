@@ -459,8 +459,35 @@ void runLevel(int level) {
 
 int main(void) {
   prepare_game();
-  // TODO: Run more levels?
-  
-  runLevel(3);
+  // DONE: Run more levels?
+  int currentLevel = 0;
+  char choice = '\0';
+
+  do {
+    runLevel(currentLevel);
+    printf("Press r to retry this level.\n");
+    printf("Press n to play next level.\n");
+    printf("Feeling tired? Press q anytime to take a break.\n");
+
+    do {
+      if (kbhit()){
+        choice = getch();
+      }
+    } while (choice != 'r' && choice != 'n' && choice != 'q');  
+
+    switch (choice) {
+      case 'r': // Just loop again without changing currentLevel
+        choice = '\0';
+        break;
+      case 'n': // Proceed to the next level
+        currentLevel++;
+        choice = '\0';
+        break;
+      case 'q': // Quit the game
+        printf("Thanks for playing!\n");
+        sleep_ms(2000);
+        break;
+    }
+  } while (choice != 'q');
   return 0;
 }
