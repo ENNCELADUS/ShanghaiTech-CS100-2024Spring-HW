@@ -136,6 +136,7 @@ Game createGame(int level, const char *mapFileName) {
         }
 
         if (isdigit(c)) { // judge if c represents ghost
+          game.grid[i][j] = '@';
           int ghostIndex = c - '0';
           if (ghostIndex >= 0 && ghostIndex < game.ghostCnt) {
             game.ghosts[ghostIndex].pos = (Coord){.row = i, .col = j};
@@ -293,7 +294,7 @@ void moveOneGhost(Game *pGame, int ghostIndex) {
     pGame->grid[nextRow][nextCol] = '0' + ghostIndex;
     // Print the item of the place where the ghost moves to.
     move_cursor(nextRow, nextCol);
-    putchar(pGame->grid[nextRow][nextCol]);
+    putchar('@');
 
   }
 }
@@ -311,6 +312,8 @@ Direction getPacmanMovement(void) {
   return Idle;
 }
 
+bool pacmanDies(const Game *pGame);
+
 /**
  * @brief Move the Pacman by one step, following the user's control obtained by
  * @c getPacmanMovement(). Pacman's position should be updated, and the contents
@@ -320,6 +323,7 @@ Direction getPacmanMovement(void) {
  *
  * @param pGame Pointer to the current Game object.
  */
+
 void movePacman(Game *pGame) {
   // DONE: Implement this function.
   // Note that Pacman may be moved to a position containing a food or a ghost.
@@ -456,6 +460,6 @@ void runLevel(int level) {
 int main(void) {
   prepare_game();
   // TODO: Run more levels?
-  runLevel(3);
+  runLevel(0);
   return 0;
 }
