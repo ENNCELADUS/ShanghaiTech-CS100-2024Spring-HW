@@ -119,7 +119,7 @@ Game createGame(int level, const char *mapFileName) {
   // Since we have got the info from line 1, so the following fgetc() starts from the second line to the last line of the map
   game.grid = (char **)malloc(game.numRows * sizeof(char *));
     for (int i = 0; i < game.numRows; i++) {
-      game.grid[i] = malloc((game.numCols + 1) * sizeof(char));
+      game.grid[i] = malloc(game.numCols * sizeof(char));
       for (int j = 0; j < game.numCols; j++) {
         char c = fgetc(file);
         if (c == '\n') c = fgetc(file); // Deal with the '\n' of the previous line, replace it with the first char of the line
@@ -291,7 +291,7 @@ void moveOneGhost(Game *pGame, int ghostIndex) {
     pGame->ghosts[ghostIndex].itemBelow = pGame->grid[nextRow][nextCol];
     pGame->ghosts[ghostIndex].pos.row = nextRow;
     pGame->ghosts[ghostIndex].pos.col = nextCol;
-    pGame->grid[nextRow][nextCol] = '0' + ghostIndex;
+    pGame->grid[nextRow][nextCol] = '@';
     // Print the item of the place where the ghost moves to.
     move_cursor(nextRow, nextCol);
     putchar('@');
@@ -461,6 +461,6 @@ int main(void) {
   prepare_game();
   // TODO: Run more levels?
   
-  runLevel(0);
+  runLevel(3);
   return 0;
 }
