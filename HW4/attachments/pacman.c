@@ -274,8 +274,8 @@ void moveOneGhost(Game *pGame, int ghostIndex) {
     case Idle: break;
   }
   // Judge whether the next direction is ok?
-  if (nextRow < 0 || nextRow >= pGame->numRows || nextCol < 0 || nextCol >= pGame->numCols ||
-    pGame->grid[nextRow][nextCol] == 'B') {
+  if (nextRow < 0 || nextRow >= pGame->numRows || nextCol < 0 || nextCol >= pGame->numCols || 
+    isWall(pGame->grid[nextRow][nextCol])) {
     // If not ok, not move. Won't change grid. 
     pGame->ghosts[ghostIndex].direction = oppositeDirection(dir);
     move_cursor(currentRow, currentCol);
