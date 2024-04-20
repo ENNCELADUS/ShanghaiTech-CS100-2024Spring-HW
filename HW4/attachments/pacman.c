@@ -242,6 +242,17 @@ void moveGhosts(Game *pGame) {
   //  new positions in order.
 
   // use loop to move all the ghosts
+
+  // Step 1: Display the items below the ghosts (Remove all the ghosts in reverse order (big number first))
+  for (int i = pGame->ghostCnt - 1; i >= 0; i--) {
+    int row = pGame->ghosts[i].pos.row;
+    int col = pGame->ghosts[i].pos.col;
+    pGame->grid[row][col] = pGame->ghosts[i].itemBelow;
+    move_cursor(row, col);
+    putchar(pGame->grid[row][col]);
+  }
+
+  // Step 2: Place all ghosts in new positions in positive sequence (small number first)
   for (int i = 0; i < pGame->ghostCnt; i++) {
     moveOneGhost(pGame, i);
   }
@@ -262,21 +273,28 @@ void moveOneGhost(Game *pGame, int ghostIndex) {
     case Right: nextCol++; break;
     case Idle: break;
   }
-
   // Judge whether the next direction is ok?
   if (nextRow < 0 || nextRow >= pGame->numRows || nextCol < 0 || nextCol >= pGame->numCols ||
     pGame->grid[nextRow][nextCol] == 'B') {
-    // If not, not move, only change the direction to the opposite direction.
+    // If not ok, not move. Won't change grid. 
     pGame->ghosts[ghostIndex].direction = oppositeDirection(dir);
-  } else {
-    // If ok, move, update the associated variables
+    move_cursor(currentRow, currentCol);
+    putchar(pGame->grid[currentRow][currentCol]);
+  } 
+  else {
+    // If ok, move, update the grid.
     pGame->grid[currentRow][currentCol] = pGame->ghosts[ghostIndex].itemBelow;
+
+
+    // Change the item of the place where the ghost moves to.
     pGame->ghosts[ghostIndex].itemBelow = pGame->grid[nextRow][nextCol];
-
-    pGame->grid[nextRow][nextCol] = '0' + ghostIndex;
-
     pGame->ghosts[ghostIndex].pos.row = nextRow;
     pGame->ghosts[ghostIndex].pos.col = nextCol;
+    pGame->grid[nextRow][nextCol] = '0' + ghostIndex;
+    // Print the item of the place where the ghost moves to.
+    move_cursor(nextRow, nextCol);
+    putchar(pGame->grid[nextRow][nextCol]);
+
   }
 }
 
