@@ -321,7 +321,7 @@ Direction getPacmanMovement(void) {
  * @param pGame Pointer to the current Game object.
  */
 void movePacman(Game *pGame) {
-  // TODO: Implement this function.
+  // DONE: Implement this function.
   // Note that Pacman may be moved to a position containing a food or a ghost.
   // These cases should be handled carefully.
 
@@ -358,11 +358,11 @@ void movePacman(Game *pGame) {
 
   // If next position is food '.'
   if (pGame->grid[nextRow][nextCol] == '.') {
-      pGame->score += 10;  // Add score
-      printScoreUpdate(pGame);
+    pGame->score += 10;  // Add score
+    printScoreUpdate(pGame);
 
-      pGame->foodsCnt--;
-      printFoodUpdate(pGame);
+    pGame->foodsCnt--;
+    printFoodUpdate(pGame);
   }
   // Move Pacman to the new position
   pGame->grid[currentRow][currentCol] = ' '; 
@@ -384,7 +384,19 @@ void movePacman(Game *pGame) {
  * @brief Test if Pacman has died.
  */
 bool pacmanDies(const Game *pGame) {
-  // TODO: Implement this function.
+  // Done: Implement this function.
+
+  int pacmanRow = pGame->pacmanPos.row;
+  int pacmanCol = pGame->pacmanPos.col;
+
+  // Search for all ghosts
+  for (int i = 0; i < pGame->ghostCnt; i++) {
+    // If Pacman is in the same position as any ghost
+    if (pGame->ghosts[i].pos.row == pacmanRow && pGame->ghosts[i].pos.col == pacmanCol) {
+        return true;
+    }
+  }
+  return false;
 }
 
 /**
