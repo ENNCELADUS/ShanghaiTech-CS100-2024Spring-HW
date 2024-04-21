@@ -7,7 +7,7 @@
 
 #include "utils.h"
 
-#define MAX_LEVEL 3
+#define MAX_LEVEL 4
 
 // To enable more ghosts, we will need to update our map file format.
 #define MAX_GHOSTS 10
@@ -76,17 +76,7 @@ bool isGhost(char c) { return c == '@'; }
  * @return Game The created Game object.
  */
 Game createGame(int level, const char *mapFileName) {
-  // Done: Implement this function.
-  // Create a Game object. The information needed should be obtained from the
-  // file 'mapFileName'. Every member of the Game object should be correctly
-  // set, some of which you need to pay special attention to:
-  //   - 'status' should be set to GS_Preparing.
-  //   - 'score' should be set to zero.
-  //   - 'itemBelow' of each ghost should also be correctly set. This influences
-  //   the way you move ghosts. Think about it carefully.
-  //   - 'grid' should be a dynamically allocated "2d-array". The function
-  //   'printInitialGame' below serves as a hint on the contents of 'grid'.
-  // Do not forget to close the file you opened.
+  // Create a Game object. 
   FILE *file = fopen(mapFileName, "r");
   if (file == NULL) {
     perror("Error opening file");
@@ -211,19 +201,8 @@ void printFoodUpdate(const Game *pGame) {
  */
 void moveOneGhost(Game *pGame, int ghostIndex);
 
+// use loop to move all the ghosts
 void moveGhosts(Game *pGame) {
-  // Done: Implement this function.
-  // Move all the ghosts by one step. You are encouraged to move ghosts in a
-  // smarter way.
-  // Note that ghosts may overlap, and they may also overlap with foods. Hints
-  // on this:
-  //  - The 'itemBelow' member of Ghost may be of great help.
-  //  - A possible way to handle overlapping objects correctly is to first
-  //  remove all the ghosts in reverse order, and then put the ghosts on their
-  //  new positions in order.
-
-  // use loop to move all the ghosts
-
   // Step 1: Display the items below the ghosts (Remove all the ghosts in reverse order (big number first))
   for (int i = pGame->ghostCnt - 1; i >= 0; i--) {
     int row = pGame->ghosts[i].pos.row;
@@ -240,41 +219,37 @@ void moveGhosts(Game *pGame) {
 }
 
 void moveOneGhost(Game *pGame, int ghostIndex) {
-  // Get the current position of the ghost
-  int currentRow = pGame->ghosts[ghostIndex].pos.row;
-  int currentCol = pGame->ghosts[ghostIndex].pos.col;
-  Direction dir = pGame->ghosts[ghostIndex].direction;
+  Ghost *ghost = &pGame->ghosts[ghostIndex];
 
-  // Next position by the direction
-  int nextRow = currentRow, nextCol = currentCol;
-  switch (dir) {
-    case Up: nextRow--; break;
-    case Down: nextRow++; break;
-    case Left: nextCol--; break;
-    case Right: nextCol++; break;
-    case Idle: break;
-  }
+  // Current position
+  int currentRow = ghost->pos.row;
+  int currentCol = ghost->pos.col;
+
+  // Next position
+  Coord nextPos = moveOneStep(ghost->pos, ghost->direction);
+  int nextRow = nextPos.row;
+  int nextCol = nextPos.col;
+
   // Judge whether the next direction is ok?
   if (nextRow < 0 || nextRow >= pGame->numRows || nextCol < 0 || nextCol >= pGame->numCols || 
     isWall(pGame->grid[nextRow][nextCol])) {
     // If not ok, not move. Won't change grid. 
-    pGame->ghosts[ghostIndex].direction = oppositeDirection(dir);
+    ghost->direction = oppositeDirection(ghost->direction);
     move_cursor(currentRow, currentCol);
     putchar('@');
   }
   else {
     // If ok, move, update the grid.
-    pGame->grid[currentRow][currentCol] = pGame->ghosts[ghostIndex].itemBelow;
+    pGame->grid[currentRow][currentCol] = ghost->itemBelow;
 
     // Change the item of the place where the ghost moves to.
-    pGame->ghosts[ghostIndex].itemBelow = pGame->grid[nextRow][nextCol];
-    pGame->ghosts[ghostIndex].pos.row = nextRow;
-    pGame->ghosts[ghostIndex].pos.col = nextCol;
+    ghost->itemBelow = pGame->grid[nextRow][nextCol];
+    ghost->pos.row = nextRow;
+    ghost->pos.col = nextCol;
     pGame->grid[nextRow][nextCol] = '@';
     // Print the item of the place where the ghost moves to.
     move_cursor(nextRow, nextCol);
     putchar('@');
-
   }
 }
 
@@ -312,19 +287,17 @@ void movePacman(Game *pGame) {
   Direction dir = getPacmanMovement();
   int currentRow = pGame->pacmanPos.row;
   int currentCol = pGame->pacmanPos.col;
-  // Next position by the direction
-  int nextRow = currentRow, nextCol = currentCol;
-  switch (dir) {
-    case Up: nextRow--; break;
-    case Down: nextRow++; break;
-    case Left: nextCol--; break;
-    case Right: nextCol++; break;
-    case Idle: return;
-  }
+
+  // Next position
+  Coord nextPos = moveOneStep(pGame->pacmanPos, dir);
+  int nextRow = nextPos.row;
+  int nextCol = nextPos.col;
 
   // Determine whether the next position is invalid (a wall or beyond the boundary)
-  if (nextRow < 0 || nextRow >= pGame->numRows || nextCol < 0 || nextCol >= pGame->numCols || isWall(pGame->grid[nextRow][nextCol])) {
-      return;
+  if (nextRow < 0 || nextRow >= pGame->numRows || nextCol < 0 || nextCol >= pGame->numCols || 
+    isWall(pGame->grid[nextRow][nextCol])) {
+    // If invalid, do nothing.
+    return;
   }
 
   // Check for ghost encounters before actually moving Pacman 
@@ -341,23 +314,20 @@ void movePacman(Game *pGame) {
 
   // If next position is food '.'
   if (pGame->grid[nextRow][nextCol] == '.') {
-    pGame->score += 10;  // Add score
+    pGame->score += 10;
     printScoreUpdate(pGame);
-
     pGame->foodsCnt--;
     printFoodUpdate(pGame);
   }
+
   // Move Pacman to the new position
-  pGame->grid[currentRow][currentCol] = ' '; 
-  pGame->grid[nextRow][nextCol] = 'C';
+  pGame->pacmanPos = nextPos;
 
-  // Update Pacman's location
-  pGame->pacmanPos.row = nextRow;
-  pGame->pacmanPos.col = nextCol;
-
-  // Display Pacman's new location
+  pGame->grid[currentRow][currentCol] = ' ';
   move_cursor(currentRow, currentCol);
-  putchar(pGame->grid[currentRow][currentCol]); 
+  putchar(' '); 
+
+  pGame->grid[nextRow][nextCol] = 'C';
   move_cursor(nextRow, nextCol);
   printf(BRIGHT_YELLOW_TEXT("C"));
 }
@@ -434,6 +404,7 @@ int main(void) {
   do {
     runLevel(currentLevel);
     printf("Press r to retry this level.\n");
+    printf("Press p to play previous level.\n");
     printf("Press n to play next level.\n");
     printf("Feeling tired? Press q anytime to take a break.\n");
 
@@ -441,19 +412,39 @@ int main(void) {
       if (kbhit()){
         choice = getch();
       }
-    } while (choice != 'r' && choice != 'n' && choice != 'q');  
+    } while (choice != 'r' && choice != 'p' && choice != 'n' && choice != 'q');  
 
     switch (choice) {
+
       case 'r': // Just loop again without changing currentLevel
         choice = '\0';
         break;
-      case 'n': // Proceed to the next level
-        currentLevel++;
+
+      case 'p': // Proceed to the previous level
+        if (currentLevel > 0) {
+          currentLevel--;
+        }
+        else if (currentLevel == 0){
+          printf("You are already at the first level. There's no previous level to go back to!\n");
+          sleep_ms(2000);
+        }
         choice = '\0';
         break;
+
+      case 'n': // Proceed to the next level
+        currentLevel++;
+        if (currentLevel > MAX_LEVEL){
+          printf("Congratulations! You have completed all levels.\n");
+          sleep_ms(2000);
+          exit(0);
+        }
+        choice = '\0';
+        break;
+
       case 'q': // Quit the game
         printf("Thanks for playing!\n");
         sleep_ms(2000);
+        exit(0);
         break;
     }
   } while (choice != 'q');
