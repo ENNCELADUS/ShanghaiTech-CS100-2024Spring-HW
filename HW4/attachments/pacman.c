@@ -113,7 +113,7 @@ Game createGame(int level, const char *mapFileName) {
   // Allocate memory for game.grid
   game.grid = (char **)malloc(game.numRows * sizeof(char *));
     for (int i = 0; i < game.numRows; i++) {
-      game.grid[i] = malloc((game.numCols + 1) * sizeof(char));
+      game.grid[i] = malloc(game.numCols * sizeof(char));
       read_line(file, game.grid[i]);
       for (int j = 0; j < game.numCols; j++) {
         char c = game.grid[i][j];
@@ -375,18 +375,7 @@ void movePacman(Game *pGame) {
  */
 bool pacmanDies(const Game *pGame) {
   // Done: Implement this function.
-
-  int pacmanRow = pGame->pacmanPos.row;
-  int pacmanCol = pGame->pacmanPos.col;
-
-  // Search for all ghosts
-  for (int i = 0; i < pGame->ghostCnt; i++) {
-    // If Pacman is in the same position as any ghost
-    if (pGame->ghosts[i].pos.row == pacmanRow && pGame->ghosts[i].pos.col == pacmanCol) {
-        return true;
-    }
-  }
-  return false;
+  return isGhost(pGame->grid[pGame->pacmanPos.row][pGame->pacmanPos.col]);
 }
 
 /**
