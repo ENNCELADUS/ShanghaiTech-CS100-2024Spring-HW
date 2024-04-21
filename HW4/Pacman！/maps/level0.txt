@@ -1,10 +1,10 @@
-7 25 2
-BBBBBBBBBBBBBBBBBBBBBBBBB
-B...................0...B
-B..BBBBBBBBB.BBBBBBBBB..B
-B.......................B
-B..BBBBBBBBB.BBBBBBBBB..B
-BC.....................1B
-BBBBBBBBBBBBBBBBBBBBBBBBB
-right
-down
+7 18 2
+  RRRRRRRRRRRRRR  
+  R............R  
+RRR 0  BBBB    RRR
+R......B1 B......R
+RRR    BBBB  C RRR
+  R............R  
+  RRRRRRRRRRRRRR  
+up
+left

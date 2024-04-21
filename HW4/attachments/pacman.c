@@ -106,24 +106,17 @@ Game createGame(int level, const char *mapFileName) {
     .score = 0,
   };
 
-  // get the num of rows, columns, and ghostCnt from file line 1
-  fscanf(file, "%d %d %d\n", &game.numRows, &game.numCols, &game.ghostCnt);
-
-  //DONE:
-  //Deal with the potential '\n', but since the last fscanf has read the last '\n', this is unncessary.
-  // char ch = fgetc(file);
-  // if (ch != '\n') ungetc(ch, file);
-
+  // Get the num of rows, columns, and ghostCnt from file line 1
+  fscanf(file, " %d %d %d", &game.numRows, &game.numCols, &game.ghostCnt);
+  to_next_line(file);
 
   // Allocate memory for game.grid
-  // Since we have got the info from line 1, so the following fgetc() starts from the second line to the last line of the map
   game.grid = (char **)malloc(game.numRows * sizeof(char *));
     for (int i = 0; i < game.numRows; i++) {
-      game.grid[i] = malloc(game.numCols * sizeof(char));
+      game.grid[i] = malloc((game.numCols + 1) * sizeof(char));
+      read_line(file, game.grid[i]);
       for (int j = 0; j < game.numCols; j++) {
-        char c = fgetc(file);
-        if (c == '\n') c = fgetc(file); // Deal with the '\n' of the previous line, replace it with the first char of the line
-        game.grid[i][j] = c;
+        char c = game.grid[i][j];
 
         // Initialize the game by the char c we just got.
         switch (c) {
@@ -145,13 +138,6 @@ Game createGame(int level, const char *mapFileName) {
         }
       }
     }
-
-
-    // DONE:
-    // deal with the '\n' of the last line
-    char c = fgetc(file);
-    if (c != '\n') ungetc(c, file);
-
 
     // Set the direction of the ghost, according to the last several lines.
     for (int i = 0; i < game.ghostCnt; i++){
