@@ -66,13 +66,7 @@ bool isPacman(char c) { return c == 'C'; }
 
 bool isGhost(char c) { return c == '@'; }
 
-// create a function to remove the '\n' in order to strcmp
-void trimNewline(char *str) {
-    int len = strlen(str);
-    if (len > 0 && str[len - 1] == '\n') {
-        str[len - 1] = '\0';
-    }
-}
+
 /**
  * @brief Create a Game object. Level information including the map is read from
  * the file @c mapFileName. Return the Game object created.
@@ -271,7 +265,6 @@ void moveOneGhost(Game *pGame, int ghostIndex) {
   else {
     // If ok, move, update the grid.
     pGame->grid[currentRow][currentCol] = pGame->ghosts[ghostIndex].itemBelow;
-
 
     // Change the item of the place where the ghost moves to.
     pGame->ghosts[ghostIndex].itemBelow = pGame->grid[nextRow][nextCol];
