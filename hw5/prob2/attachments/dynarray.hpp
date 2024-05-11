@@ -19,7 +19,7 @@ public:
     // Initialize with length n and value x
     Dynarray(size_t n, int x)
         : m_size(n), m_storage(new int[n]{}){
-        for (auto i = 0; i < n; i ++){
+        for (std::size_t i = 0; i < n; i ++){
             m_storage[i] = x;
         }
     }
@@ -28,16 +28,16 @@ public:
     Dynarray(const int *begin, const int *end)
         : m_size(end - begin), m_storage(new int[m_size]{}){
         const int *ptr = begin;
-        for (auto i = 0; i < m_size; i++){
+        for (std::size_t i = 0; i < m_size; i++){
             m_storage[i] = *ptr;
             ptr++;
         }
     }
 
-    // Copy-initialization
+    // Copy cosntructor
     Dynarray(const Dynarray &other)
         : m_size(other.size()), m_storage(new int[m_size]{}){
-        for (auto i = 0; i < m_size; i++){
+        for (std::size_t i = 0; i < m_size; i++){
             m_storage[i] = other.at(i);
         }
     };
@@ -45,7 +45,7 @@ public:
     // Copy operator(version 1)
     Dynarray &operator=(const Dynarray &other){
         int *new_storage = new int[other.size()];
-        for (auto i = 0; i < other.size(); i++){
+        for (std::size_t i = 0; i < other.size(); i++){
             new_storage[i] = other.at(i);
         }
         delete[] m_storage;
@@ -68,9 +68,24 @@ public:
     //     }
     //     return *this;
     // }
+    // Move constructor
+    Dynarray(Dynarray &&other) noexcept
+        : m_size(other.m_size), m_storage(other.m_storage){
+        other.m_size = 0;
+        other.m_storage = nullptr;
+    }
 
-    // Initialization through a move
-
+    // Move operator
+    Dynarray &operator=(Dynarray &&other) noexcept {
+        if (this != &other){
+            delete[] m_storage;
+            m_size = other.m_size;
+            m_storage = other.m_storage;
+            other.m_size = 0;
+            other.m_storage = nullptr;
+        }
+        return *this;
+    }
 
     // Destructor
     ~Dynarray() {
