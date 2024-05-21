@@ -1,0 +1,10 @@
+7 25 2
+BBBBBBBBBBBBBBBBBBBBBBBBB
+B...................0...B
+B..BBBBBBBBB.BBBBBBBBB..B
+B.......................B
+B..BBBBBBBBB.BBBBBBBBB.1B
+BC......................B
+BBBBBBBBBBBBBBBBBBBBBBBBB
+right
+down
