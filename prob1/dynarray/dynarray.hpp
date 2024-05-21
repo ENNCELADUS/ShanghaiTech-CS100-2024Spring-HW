@@ -3,81 +3,65 @@
 
 #include <cstddef>
 #include <stdexcept>
+#include <algorithm>
+#include <iostream>
 
 class Dynarray {
-    std::size_t m_size = 0;
-    int *m_storage = nullptr;
+
+// Type alias
 public:
-    // Initialization 
-    // Default constructor
+    using size_type = std::size_t;
+    using value_type = int;
+    using pointer = int *;
+    using reference = int &;
+    using const_pointer = const int *;
+    using const_reference = const int &;
+
+private:    
+    size_type m_size = 0;
+    pointer m_storage = nullptr;
+
+public:
+    // Initialization
     Dynarray() = default;
 
-    // Initialize with a length (avoid implicitly conversion)
-    explicit Dynarray(std::size_t n)
-        : m_size(n), m_storage(new int[n]{}){}
+    explicit Dynarray(size_type n)
+        : m_size(n), m_storage(new value_type[n]{}){}
 
-    // Initialize with length n and value x
-    Dynarray(size_t n, int x)
-        : m_size(n), m_storage(new int[n]{}){
-        for (std::size_t i = 0; i < n; i ++){
-            m_storage[i] = x;
-        }
+    Dynarray(size_type n, value_type x)
+        : m_size(n), m_storage(new value_type[n]{}) {
+        std::fill(m_storage, m_storage + n, x);
     }
 
-    // Initializes the object a to be an "array" of length end - begin
-    Dynarray(const int *begin, const int *end)
-        : m_size(end - begin), m_storage(new int[m_size]{}){
-        const int *ptr = begin;
-        for (std::size_t i = 0; i < m_size; i++){
-            m_storage[i] = *ptr;
-            ptr++;
-        }
+    Dynarray(const_pointer begin, const_pointer end)
+        : m_size(end - begin), m_storage(new value_type[m_size]{}) {
+        std::copy(begin, end, m_storage);
     }
 
-    // Copy cosntructor
     Dynarray(const Dynarray &other)
-        : m_size(other.size()), m_storage(new int[m_size]{}){
-        for (std::size_t i = 0; i < m_size; i++){
-            m_storage[i] = other.at(i);
-        }
-    };
+        : m_size(other.size()), m_storage(new value_type[m_size]{}) {
+        std::copy(other.m_storage, other.m_storage + m_size, m_storage);
+    }
 
-    // Copy operator(version 1)
-    Dynarray &operator=(const Dynarray &other){
-        int *new_storage = new int[other.size()];
-        for (std::size_t i = 0; i < other.size(); i++){
-            new_storage[i] = other.at(i);
+    Dynarray &operator=(const Dynarray &other) {
+        if (this != &other) {
+            pointer new_storage = new value_type[other.size()];
+            std::copy(other.m_storage, other.m_storage + other.size(), new_storage);
+            delete[] m_storage;
+            m_size = other.size();
+            m_storage = new_storage;
         }
-        delete[] m_storage;
-        m_size = other.size();
-        m_storage = new_storage;
         return *this;
     }
 
-    // Another possible version of copy operator, but not handle self-assignment.
-
-    // Dynarray &operator=(const Dynarray &other){
-    //     if (this != &other){
-    //         delete[] m_storage;
-    //         m_size = other.size();
-    //         m_storage = new int[m_size];
-    //         for (auto i = 0; i < other.size(); i++)
-    //         {
-    //             m_storage[i] = other.at(i);
-    //         }
-    //     }
-    //     return *this;
-    // }
-    // Move constructor
     Dynarray(Dynarray &&other) noexcept
-        : m_size(other.m_size), m_storage(other.m_storage){
+        : m_size(other.m_size), m_storage(other.m_storage) {
         other.m_size = 0;
         other.m_storage = nullptr;
     }
 
-    // Move operator
     Dynarray &operator=(Dynarray &&other) noexcept {
-        if (this != &other){
+        if (this != &other) {
             delete[] m_storage;
             m_size = other.m_size;
             m_storage = other.m_storage;
@@ -87,29 +71,87 @@ public:
         return *this;
     }
 
-    // Destructor
     ~Dynarray() {
         delete[] m_storage;
     }
 
+
     // Basic info
-    std::size_t size() const { return m_size; }
+    size_type size() const { return m_size; }
     bool empty() const { return m_size == 0u; }
 
-    // Element access
-    int &at(size_t n){
-        if (n >= m_size){
+    reference at(size_type n) {
+        if (n >= m_size) {
             throw std::out_of_range{"Dynarray index out of range!"};
         }
         return m_storage[n];
     }
 
-    const int &at(size_t n) const {
-        if (n >= m_size){
+    const_reference at(size_type n) const {
+        if (n >= m_size) {
             throw std::out_of_range{"Dynarray index out of range!"};
         }
         return m_storage[n];
     }
+
+    reference operator[](size_type i) {
+        return m_storage[i];
+    }
+
+    const_reference operator[](size_type i) const {
+        return m_storage[i];
+    }
+
+    // Relational operators
+    friend bool operator<(const Dynarray &, const Dynarray &);
+    friend bool operator==(const Dynarray &, const Dynarray &);
+    friend bool operator<=(const Dynarray &, const Dynarray &);
+    friend bool operator>(const Dynarray &, const Dynarray &);
+    friend bool operator>=(const Dynarray &, const Dynarray &);
+    friend bool operator!=(const Dynarray &, const Dynarray &);
+
+    // Output operator
+    friend std::ostream &operator<<(std::ostream &, const Dynarray &);
 };
+
+bool operator<(const Dynarray &lhs, const Dynarray &rhs){
+    return std::lexicographical_compare(lhs.m_storage, lhs.m_storage + lhs.m_size, rhs.m_storage, rhs.m_storage + rhs.m_size);
+}
+
+bool operator>(const Dynarray &lhs, const Dynarray &rhs){
+    return rhs < lhs;
+}
+
+bool operator<=(const Dynarray &lhs, const Dynarray &rhs){
+    return !(lhs > rhs);
+}
+
+bool operator>=(const Dynarray &lhs, const Dynarray &rhs){
+    return !(lhs < rhs);
+}
+
+bool operator==(const Dynarray &lhs, const Dynarray &rhs){
+    return std::equal(lhs.m_storage, lhs.m_storage + lhs.m_size, rhs.m_storage, rhs.m_storage + rhs.m_size);
+}
+
+bool operator!=(const Dynarray &lhs, const Dynarray &rhs){
+    return !(lhs == rhs);
+}
+
+// Output operator
+std::ostream& operator<<(std::ostream &os, const Dynarray &arr){
+    os << '[';
+    if (!arr.empty()){
+        for (Dynarray::size_type i = 0; i < arr.m_size; i++){
+            os << arr[i];
+            if(i != arr.m_size - 1){
+                os << ',' << ' ';
+            }
+        }
+    }
+    os << ']';
+    return os;
+}
+
 
 #endif // DYNARRAY_HPP 
