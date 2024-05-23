@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
+#include <numeric>
 
 /**
  * @brief Given a vector of strings @c strings, reduce this vector so that each
@@ -10,9 +12,11 @@
  *
  * @param strings The given vector of strings.
  */
-void dropDuplicates(std::vector<std::string> strings) {
-  // FIXME: The type of the parameter `strings` may be incorrect.
-  // TODO: Implement this function.
+void dropDuplicates(std::vector<std::string> &strings) {
+  // DONE: Implement this function.
+  std::sort(strings.begin(), strings.end());
+  auto uniqueEnd = std::unique(strings.begin(), strings.end());
+  strings.erase(uniqueEnd, strings.end());
 }
 
 /**
@@ -27,9 +31,10 @@ void dropDuplicates(std::vector<std::string> strings) {
  * particular, if the second part is not empty, the returned iterator will refer
  * to the first element of the second part.
  */
-auto partitionByLength(std::vector<std::string> strings, std::size_t k) {
-  // FIXME: The type of the parameter `strings` may be incorrect.
-  // TODO: Implement this function.
+auto partitionByLength(std::vector<std::string> &strings, std::size_t k) {
+  return std::partition(strings.begin(), strings.end(),
+                 [k](const std::string &str)
+                 { return str.length() <= k; });
 }
 
 /**
@@ -37,16 +42,18 @@ auto partitionByLength(std::vector<std::string> strings, std::size_t k) {
  * order, and print them to @c os.
  *
  */
-void generatePermutations(int n, const std::ostream &os) {
-  // FIXME: The type of the parameter `os` may be incorrect.
+void generatePermutations(int n, std::ostream &os) {
 
   std::vector<int> numbers(n);
 
-  // TODO: Fill `numbers` with {1, 2, ..., n}.
+  // DONE: Fill `numbers` with {1, 2, ..., n}.
+  std::iota(numbers.begin(), numbers.end(), 1);
 
   do {
-    // TODO: Print the numbers, separated by a space.
-
+    // DONE: Print the numbers, separated by a space.
+    std::for_each(numbers.begin(), numbers.end(),
+                  [&os](int num)
+                  { os << num << ' '; });
     os << '\n';
-  } while (/* TODO: Generate the next permutation */);
+  } while (std::next_permutation(numbers.begin(), numbers.end()));
 }
