@@ -16,7 +16,7 @@
 #include <unistd.h>
 #endif // _WIN32
 
-struct PrinterGuard {
+struct PrinterGuard {            //在构造函数中隐藏光标和输⼊，在析构函数中恢复它们
   PrinterGuard() {
     if (numOfInstances++ == 0) {
       hide_cursor();
@@ -80,7 +80,7 @@ void clear_screen() {
 #endif // _WIN32
 }
 
-void clear_to_eol() { std::cout << "\033[0K" << std::flush; }
+void clear_to_eol() { std::cout << "\033[0K" << std::flush; } //将当前光标所在的位置到该⾏末尾的内容清空
 
 void sleep_ms(long long t) {
 #ifdef _WIN32

@@ -1,4 +1,4 @@
-#include "ScoreBoard.hpp"
+#include "ScoreBoard_hint1.hpp"
 #include "CommandController.hpp"
 
 int main() {

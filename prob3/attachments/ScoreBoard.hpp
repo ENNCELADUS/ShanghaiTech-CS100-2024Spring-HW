@@ -19,7 +19,7 @@ class ScoreBoard {
 
   enum class ScrollDirection { Up, Down };
 
-  template <std::size_t Height, std::size_t Width>
+  template <std::size_t Height, std::size_t Width>   // printBlock(object, baseRow, baseCol) 会以第 baseRow⾏、第 baseCol 列为左上⾓画出 object ，其中 object 是⼀个任意⼤⼩的⼆维 char 数组。
   static void printBlock(const char (&object)[Height][Width], int baseRow,
                          int baseCol) {
     for (int row = 0; row != Height; ++row) {
@@ -79,7 +79,7 @@ public:
       : mNames{{std::move(leftName)}, {std::move(rightName)}}, mScores{} {
     clear_screen();
 
-    PrinterGuard printerGuard;
+    PrinterGuard printerGuard; //隐藏光标和输⼊
 
     std::cout << TextColor::Red;
     printBlock(Frame, 0, 0);
