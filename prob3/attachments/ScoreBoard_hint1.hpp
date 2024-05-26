@@ -28,10 +28,11 @@ class DigitPad {
   const int mBaseRow;
   const int mBaseCol;
   int mCurrentDigit;
+  bool mShowFrame;
 
 public:
-  DigitPad(TextColor color, int baseRow, int baseCol)
-    : mColor{color}, mBaseRow{baseRow}, mBaseCol{baseCol}, mCurrentDigit{0} {}
+  DigitPad(TextColor color, int baseRow, int baseCol, bool showFrame = true)   // 默认打印边框
+    : mColor{color}, mBaseRow{baseRow}, mBaseCol{baseCol}, mCurrentDigit{0}, mShowFrame{showFrame} {}
 
   int getBaseRow() const { return mBaseRow; }
 
@@ -45,8 +46,10 @@ public:
     // 根据 mColor 设置颜色
     std::cout << mColor;
 
-    // 打印边框
-    detail::printBlock(Frame, mBaseRow, mBaseCol);
+    // 打印边框（如果需要）
+    if (mShowFrame) {
+      detail::printBlock(Frame, mBaseRow, mBaseCol);
+    }
 
     // 打印数字到边框中间
     int digitRow = mBaseRow + (FrameHeight - DigitHeight) / 2;
@@ -96,7 +99,7 @@ public:
   }
 };
 
-// Player 类：表示一个对战方，管理名字和分数信息，并创建和管理两个数码牌。提供更新分数的接口，调用数码牌上的相关函数。
+// Player 类：表示一个对战方，管理名字和分数信息，并创建和管理三个数码牌（2 + 1（局分））。提供更新分数的接口，调用数码牌上的相关函数。
 class Player {
 public:
   enum class Side { Left, Right };
@@ -105,7 +108,10 @@ private:
   std::string mName;
   DigitPad mTensPlace;
   DigitPad mOnesPlace;
+  DigitPad mGameScore;  // 用于表示局分
+
   int mScore;
+  int mGame;            // 用于存储局分
   Side mSide;
 
 
@@ -114,15 +120,19 @@ public:
       : mName{std::move(name)},
         mTensPlace{ColorOfSide(side), 0, BaseColOfSide(side)},
         mOnesPlace{ColorOfSide(side), 0, BaseColOfSide(side) + FrameWidth},
+        mGameScore{ColorOfSide(side), 0, GameColOfSide(side), false}, // 初始化局分，不显示边框
         mScore{0},
+        mGame{0},
         mSide{side} { print(); }
 
   int getScore() const { return mScore; }
+  int getGame() const { return mGame; }
   std::string getName() const { return mName; }
 
   void print() const {
     mTensPlace.print();
     mOnesPlace.print();
+    mGameScore.print(); // 打印局分
   };
 
   void updateScore(int delta) {
@@ -149,13 +159,34 @@ public:
     mScore = newScore;
   }
 
+  void updateGame(int delta) {
+    int newGame = mGame + delta;
+    assert(newGame >= 0 && newGame < 10);
+
+    PrinterGuard printerGuard;
+    ColorGuard withColor(mGameScore.getColor());
+
+    auto dir = delta > 0 ? DigitPad::ScrollDirection::Up : DigitPad::ScrollDirection::Down;
+
+    int oldGame = mGame;
+    if (oldGame != newGame) {
+      mGameScore.updateAndScroll(newGame, dir);
+    }
+
+    mGame = newGame;
+  }
+
 private:
-  static TextColor ColorOfSide(Side side){
+  static TextColor ColorOfSide(Side side){   // 设置颜色
     return side == Side::Left ? TextColor::Red : TextColor::Blue;
   }
 
-  static int BaseColOfSide(Side side){
-    return side == Side::Left ? 0 : FrameWidth * 2 + ColonWidth;
+  static int BaseColOfSide(Side side){   // 设置单局分记分牌的位置
+    return side == Side::Left ? 0 : FrameWidth * 4 + ColonWidth;
+  }
+
+  static int GameColOfSide(Side side) {    // 设置局分记分牌的位置
+    return side == Side::Left ? FrameWidth * 2 : FrameWidth * 3 + ColonWidth;
   }
 };
 
@@ -178,7 +209,7 @@ public:
     std::cout << TextColor::Normal;
 
     // 打印冒号
-    detail::printBlock(Colon, 0, FrameWidth * 2);
+    detail::printBlock(Colon, 0, FrameWidth * 3);
     
     // 打印玩家名字
     move_cursor(FrameHeight, FrameWidth - mLeft.getName().size() / 2);
@@ -193,6 +224,11 @@ public:
   void rightInc(int delta = 1) { mRight.updateScore(delta); }
   void leftDec(int delta = 1) { mLeft.updateScore(-delta); }
   void rightDec(int delta = 1) { mRight.updateScore(-delta); }
+
+  void leftGameInc(int delta = 1) { mLeft.updateGame(delta); }  // 更新局分的方法
+  void rightGameInc(int delta = 1) { mRight.updateGame(delta); }
+  void leftGameDec(int delta = 1) { mLeft.updateGame(-delta); }
+  void rightGameDec(int delta = 1) { mRight.updateGame(-delta); }
 
   ~ScoreBoard() {
     for (int row = FrameHeight; row >= 0; --row) {

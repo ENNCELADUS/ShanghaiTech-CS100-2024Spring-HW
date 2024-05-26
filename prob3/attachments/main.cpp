@@ -18,6 +18,14 @@ int main() {
       scoreBoard.rightInc();
     else if (cmd == "r-")
       scoreBoard.rightDec();
+    else if (cmd == "lg+")
+      scoreBoard.leftGameInc();
+    else if (cmd == "lg-")
+      scoreBoard.leftGameDec();
+    else if (cmd == "rg+")
+      scoreBoard.rightGameInc();
+    else if (cmd == "rg-")
+      scoreBoard.rightGameDec();
   }
 
   return 0;
