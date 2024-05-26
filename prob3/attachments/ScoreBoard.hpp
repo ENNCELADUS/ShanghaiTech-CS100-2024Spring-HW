@@ -5,113 +5,230 @@
 #include "utils.hpp"
 
 #include <cassert>
-#include <iostream>
-#include <stdexcept>
-#include <string>
 
 inline constexpr auto MSPerTick = 50;
 
-class ScoreBoard {
-  enum class PlayerSide { Left, Right };
+namespace detail {
 
-  const std::string mNames[2];
-  int mScores[2];
+template <std::size_t Height, std::size_t Width>
+static void printBlock(const char (&object)[Height][Width], int baseRow,
+                       int baseCol) {
+  for (int row = 0; row != Height; ++row) {
+    move_cursor(baseRow + row, baseCol);
+    std::cout << object[row];
+  }
+  std::cout << std::flush;
+}
+
+} // namespace detail
+
+// DigitPad 类：表示一个数码牌，记录位置和当前数字，并负责显示和动画功能。
+class DigitPad {                    
+  const TextColor mColor;
+  const int mBaseRow;
+  const int mBaseCol;
+  int mCurrentDigit;
+  bool mShowFrame;
+
+public:
+  DigitPad(TextColor color, int baseRow, int baseCol, bool showFrame = true)   // 默认打印边框
+    : mColor{color}, mBaseRow{baseRow}, mBaseCol{baseCol}, mCurrentDigit{0}, mShowFrame{showFrame} {}
+
+  int getBaseRow() const { return mBaseRow; }
+
+  int getBaseCol() const { return mBaseCol; }
+
+  int getDigit() const { return mCurrentDigit; }
+
+  TextColor getColor() const { return mColor; }
+
+  void print() const {
+    // 根据 mColor 设置颜色
+    std::cout << mColor;
+
+    // 打印边框（如果需要）
+    if (mShowFrame) {
+      detail::printBlock(Frame, mBaseRow, mBaseCol);
+    }
+
+    // 打印数字到边框中间
+    int digitRow = mBaseRow + (FrameHeight - DigitHeight) / 2;
+    int digitCol = mBaseCol + (FrameWidth - DigitWidth) / 2;
+    detail::printBlock(ArtDigit[mCurrentDigit], digitRow, digitCol);
+
+    // 恢复正常颜色
+    std::cout << TextColor::Normal;
+  }
+
 
   enum class ScrollDirection { Up, Down };
 
-  template <std::size_t Height, std::size_t Width>   // printBlock(object, baseRow, baseCol) 会以第 baseRow⾏、第 baseCol 列为左上⾓画出 object ，其中 object 是⼀个任意⼤⼩的⼆维 char 数组。
-  static void printBlock(const char (&object)[Height][Width], int baseRow,
-                         int baseCol) {
-    for (int row = 0; row != Height; ++row) {
-      move_cursor(baseRow + row, baseCol);
-      std::cout << object[row];
-    }
-    std::cout << std::flush;
-  }
-
-  static void scrollDigit(ScrollDirection dir, int oldDigit, int newDigit,
-                          int baseRow, int baseCol) {
-    int topDigit = dir == ScrollDirection::Up ? oldDigit : newDigit;
+  void updateAndScroll(int newDigit, ScrollDirection scrollDir){
+    // 获取当前数字和新的数字
+    int oldDigit = mCurrentDigit;
+    
+    // 决定滚动方向
+    int topDigit = scrollDir == ScrollDirection::Up ? oldDigit : newDigit;
     int bottomDigit = oldDigit + newDigit - topDigit;
+    
+    // 计算数字在边框中的位置
+    int digitRow = mBaseRow + (FrameHeight - DigitHeight) / 2;
+    int digitCol = mBaseCol + (FrameWidth - DigitWidth) / 2;
+
+    // 执行滚动动画
     for (int tick = 0; tick != DigitHeight + 1; ++tick) {
-      int mid = dir == ScrollDirection::Up ? tick : DigitHeight - tick;
-      int row = baseRow;
+      int mid = scrollDir == ScrollDirection::Up ? tick : DigitHeight - tick;
+      int row = digitRow;
+
+      std::cout << mColor; // 设置颜色
       for (int i = mid; i != DigitHeight; ++i) {
-        move_cursor(row++, baseCol);
+        move_cursor(row++, digitCol);
         std::cout << ArtDigit[topDigit][i];
       }
-      for (int i = 0; i != mid; ++i) {
-        move_cursor(row++, baseCol);
+      for (int i = 0; i != mid; ++ i) {
+        move_cursor(row++, digitCol);
         std::cout << ArtDigit[bottomDigit][i];
       }
       std::cout << std::flush;
       sleep_ms(MSPerTick);
     }
-  }
 
-  static TextColor ColorOnSide(PlayerSide side) {
-    return side == PlayerSide::Left ? TextColor::Red : TextColor::Blue;
+    // 更新当前数字并重新打印
+    mCurrentDigit = newDigit;
+    print();
   }
+};
 
-  void updateScore(PlayerSide player, int delta) {
-    int &score = mScores[static_cast<int>(player)];
-    int newScore = score + delta;
+// Player 类：表示一个对战方，管理名字和分数信息，并创建和管理三个数码牌（2 + 1（局分））。提供更新分数的接口，调用数码牌上的相关函数。
+class Player {
+public:
+  enum class Side { Left, Right };
+
+private:
+  std::string mName;
+  DigitPad mTensPlace;
+  DigitPad mOnesPlace;
+  DigitPad mGameScore;  // 用于表示局分
+
+  int mScore;
+  int mGame;            // 用于存储局分
+  Side mSide;
+
+
+public:
+  Player(std::string name, Side side)
+      : mName{std::move(name)},
+        mTensPlace{ColorOfSide(side), 0, BaseColOfSide(side)},
+        mOnesPlace{ColorOfSide(side), 0, BaseColOfSide(side) + FrameWidth},
+        mGameScore{ColorOfSide(side), 0, GameColOfSide(side), false}, // 初始化局分，不显示边框
+        mScore{0},
+        mGame{0},
+        mSide{side} { print(); }
+
+  int getScore() const { return mScore; }
+  int getGame() const { return mGame; }
+  std::string getName() const { return mName; }
+
+  void print() const {
+    mTensPlace.print();
+    mOnesPlace.print();
+    mGameScore.print(); // 打印局分
+  };
+
+  void updateScore(int delta) {
+    int newScore = mScore + delta;
     assert(newScore >= 0 && newScore < 100);
 
-    int baseCol = DigitBaseCol;
-    if (player == PlayerSide::Right)
-      baseCol += FrameWidth * 2 + ColonWidth;
+    PrinterGuard printerGuard;
+    ColorGuard withColor(mTensPlace.getColor());
+
+    auto dir = delta > 0 ? DigitPad::ScrollDirection::Up : DigitPad::ScrollDirection::Down;
+
+    int oldTens = mScore / 10;
+    int oldOnes = mScore % 10;
+    int newTens = newScore / 10;
+    int newOnes = newScore % 10;
+
+    if (oldOnes != newOnes) {
+      mOnesPlace.updateAndScroll(newOnes, dir);
+    }
+    if (oldTens != newTens) {
+      mTensPlace.updateAndScroll(newTens, dir);
+    }
+
+    mScore = newScore;
+  }
+
+  void updateGame(int delta) {
+    int newGame = mGame + delta;
+    assert(newGame >= 0 && newGame < 10);
 
     PrinterGuard printerGuard;
-    ColorGuard withColor(ColorOnSide(player));
+    ColorGuard withColor(mGameScore.getColor());
 
-    auto dir = delta > 0 ? ScrollDirection::Up : ScrollDirection::Down;
-    scrollDigit(dir, score % 10, newScore % 10, DigitBaseRow,
-                baseCol + FrameWidth);
-    if (score / 10 != newScore / 10)
-      scrollDigit(dir, score / 10, newScore / 10, DigitBaseRow, baseCol);
+    auto dir = delta > 0 ? DigitPad::ScrollDirection::Up : DigitPad::ScrollDirection::Down;
 
-    score += delta;
+    int oldGame = mGame;
+    if (oldGame != newGame) {
+      mGameScore.updateAndScroll(newGame, dir);
+    }
+
+    mGame = newGame;
   }
+
+private:
+  static TextColor ColorOfSide(Side side){   // 设置颜色
+    return side == Side::Left ? TextColor::Red : TextColor::Blue;
+  }
+
+  static int BaseColOfSide(Side side){   // 设置单局分记分牌的位置
+    return side == Side::Left ? 0 : FrameWidth * 4 + ColonWidth;
+  }
+
+  static int GameColOfSide(Side side) {    // 设置局分记分牌的位置
+    return side == Side::Left ? FrameWidth * 2 : FrameWidth * 3 + ColonWidth;
+  }
+};
+
+// ScoreBoard 类：包含两个 Player 实例，每个 Player 管理自己的数码牌和名字显示。
+class ScoreBoard {
+  Player mLeft;
+  Player mRight;
 
 public:
   ScoreBoard(std::string leftName, std::string rightName)
-      : mNames{{std::move(leftName)}, {std::move(rightName)}}, mScores{} {
+      : mLeft{std::move(leftName), Player::Side::Left},
+        mRight{std::move(rightName), Player::Side::Right} {
     clear_screen();
-
     PrinterGuard printerGuard; //隐藏光标和输⼊
 
-    std::cout << TextColor::Red;
-    printBlock(Frame, 0, 0);
-    printBlock(Frame, 0, FrameWidth);
-    printBlock(ArtDigit[0], DigitBaseRow, DigitBaseCol);
-    printBlock(ArtDigit[0], DigitBaseRow, FrameWidth + DigitBaseCol);
-    std::cout << TextColor::Blue;
-    printBlock(Frame, 0, FrameWidth * 2 + ColonWidth);
-    printBlock(Frame, 0, FrameWidth * 3 + ColonWidth);
-    printBlock(ArtDigit[0], DigitBaseRow,
-               FrameWidth * 2 + ColonWidth + DigitBaseCol);
-    printBlock(ArtDigit[0], DigitBaseRow,
-               FrameWidth * 3 + ColonWidth + DigitBaseCol);
+    mLeft.print();
+    mRight.print();
 
+    // 恢复正常颜色
     std::cout << TextColor::Normal;
 
-    printBlock(Colon, 0, FrameWidth * 2);
-
-    move_cursor(FrameHeight, FrameWidth - mNames[0].size() / 2);
-    std::cout << mNames[0];
-
-    move_cursor(FrameHeight,
-                3 * FrameWidth + ColonWidth - mNames[1].size() / 2);
-    std::cout << mNames[1];
+    // 打印冒号
+    detail::printBlock(Colon, 0, FrameWidth * 3);
+    
+    // 打印玩家名字
+    move_cursor(FrameHeight, FrameWidth - mLeft.getName().size() / 2);
+    std::cout << mLeft.getName();
+    move_cursor(FrameHeight, 3 * FrameWidth + ColonWidth - mRight.getName().size() / 2);
+    std::cout << mRight.getName();
 
     std::cout << std::flush;
   }
 
-  void leftInc(int delta = 1) { updateScore(PlayerSide::Left, delta); }
-  void rightInc(int delta = 1) { updateScore(PlayerSide::Right, delta); }
-  void leftDec(int delta = 1) { updateScore(PlayerSide::Left, -delta); }
-  void rightDec(int delta = 1) { updateScore(PlayerSide::Right, -delta); }
+  void leftInc(int delta = 1) { mLeft.updateScore(delta); }
+  void rightInc(int delta = 1) { mRight.updateScore(delta); }
+  void leftDec(int delta = 1) { mLeft.updateScore(-delta); }
+  void rightDec(int delta = 1) { mRight.updateScore(-delta); }
+
+  void leftGameInc(int delta = 1) { mLeft.updateGame(delta); }  // 更新局分的方法
+  void rightGameInc(int delta = 1) { mRight.updateGame(delta); }
+  void leftGameDec(int delta = 1) { mLeft.updateGame(-delta); }
+  void rightGameDec(int delta = 1) { mRight.updateGame(-delta); }
 
   ~ScoreBoard() {
     for (int row = FrameHeight; row >= 0; --row) {
