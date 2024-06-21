@@ -13,5 +13,7 @@ int main() {
   std::cout << g.derivative(3) << std::endl;
   auto h = 2 * -x + 3;
   std::cout << h.toString() << std::endl;
+  auto i = 2 + 3 * x;
+  std::cout << i.toString() << std::endl;
   return 0;
 }
