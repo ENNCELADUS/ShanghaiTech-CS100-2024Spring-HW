@@ -54,7 +54,7 @@ public:
         return *this;
     }
 
-    // Another possible version of copy operator, but not handle self-assignment.
+    // Another possible version of copy operator
 
     // Dynarray &operator=(const Dynarray &other){
     //     if (this != &other){
