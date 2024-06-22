@@ -33,6 +33,7 @@ ENDIF()
 
 ##############################################################
 
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
 #↓↓↓↓↓↓↓↓↓↓↓ ADD YOUR SUBDIRECTORIES HERE ↓↓↓↓↓↓↓↓↓↓↓↓
 add_subdirectory(src/Framework/)
@@ -43,19 +44,10 @@ add_subdirectory(src/GameWorld/)
 add_executable(
   ${PROJECT_NAME}
   src/main.cpp
-  src/utils.hpp
 )
 
 target_link_libraries(
   ${PROJECT_NAME}
   Framework
   GameWorld
-)
-
-target_include_directories(
-  ${PROJECT_NAME} 
-  PUBLIC 
-  src/
-  src/Framework/
-  src/GameWorld/
 )

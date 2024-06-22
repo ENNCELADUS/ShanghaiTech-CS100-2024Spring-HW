@@ -1,4 +1,4 @@
-#include "GameManager.hpp"
+#include "pvz/Framework/GameManager.hpp"
 
 #ifdef __APPLE__
 #include <GLUT/glut.h>
@@ -6,10 +6,10 @@
 #include <GL/glut.h>
 #endif
 
-#include "SpriteManager.hpp"
-#include "utils.hpp"
-#include "ObjectBase.hpp"
-#include "TextBase.hpp"
+#include "pvz/Framework/SpriteManager.hpp"
+#include "pvz/utils.hpp"
+#include "pvz/Framework/ObjectBase.hpp"
+#include "pvz/Framework/TextBase.hpp"
 
 static void displayCallback() {
   GameManager::Instance().Update();

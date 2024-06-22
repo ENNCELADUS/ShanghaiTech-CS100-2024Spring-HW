@@ -9,17 +9,11 @@ set(FREEGLUT_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/third_party/freeglut/include")
 add_library(
   Framework
   STATIC
-  ObjectBase.hpp
   ObjectBase.cpp
-  WorldBase.hpp
   WorldBase.cpp
-  TextBase.hpp
   TextBase.cpp
-  GameManager.hpp
   GameManager.cpp
-  SpriteManager.hpp
   SpriteManager.cpp
-  ${CMAKE_SOURCE_DIR}/src/utils.hpp
 )
 
 IF (APPLE)
@@ -32,12 +26,6 @@ IF (APPLE)
     "-framework CoreVideo"
     "-framework GLUT"
   )
-
-  target_include_directories(
-    Framework
-    PUBLIC
-    ${CMAKE_SOURCE_DIR}/src/
-  )
 ELSE()
   target_link_libraries(
     Framework
@@ -49,7 +37,5 @@ ELSE()
     Framework
     PUBLIC 
     ${FREEGLUT_INCLUDE_DIR}
-    ${CMAKE_SOURCE_DIR}/src/
   )
 ENDIF()
-

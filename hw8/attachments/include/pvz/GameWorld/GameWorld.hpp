@@ -4,13 +4,12 @@
 #include <list>
 #include <memory>
 
-#include "WorldBase.hpp"
+#include "pvz/Framework/WorldBase.hpp"
 
-#include "GameObject.hpp"
+#include "pvz/GameObject/GameObject.hpp"
 
-#include "TextBase.hpp"
-#include "utils.hpp"
-
+#include "pvz/Framework/TextBase.hpp"
+#include "pvz/utils.hpp"
 
 class GameWorld : public WorldBase, public std::enable_shared_from_this<GameWorld> {
 public:

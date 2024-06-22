@@ -1,5 +1,5 @@
-#include "TextBase.hpp"
-#include "GameManager.hpp"
+#include "pvz/Framework/TextBase.hpp"
+#include "pvz/Framework/GameManager.hpp"
 
 // Initialize static s_allTexts to an empty set.
 std::set<TextBase*> TextBase::s_allTexts{};

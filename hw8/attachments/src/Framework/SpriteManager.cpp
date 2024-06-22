@@ -1,4 +1,4 @@
-#include "SpriteManager.hpp"
+#include "pvz/Framework/SpriteManager.hpp"
 
 #ifdef __APPLE__
 #include <GLUT/glut.h>
@@ -8,7 +8,7 @@
 
 #include <SOIL/SOIL.h>
 
-#include "utils.hpp"
+#include "pvz/utils.hpp"
 #include <iostream>
 
 SpriteManager::SpriteManager() : m_spriteInfos() {

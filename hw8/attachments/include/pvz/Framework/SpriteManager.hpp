@@ -11,7 +11,7 @@
 #include <GL/glut.h>
 #endif
 
-#include "utils.hpp"
+#include "pvz/utils.hpp"
 
 
 struct SpriteInfo {

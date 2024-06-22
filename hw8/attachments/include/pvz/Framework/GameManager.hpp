@@ -3,8 +3,8 @@
 
 #include <memory>
 
-#include "ObjectBase.hpp"
-#include "WorldBase.hpp"
+#include "pvz/Framework/ObjectBase.hpp"
+#include "pvz/Framework/WorldBase.hpp"
 
 #include <vector>
 #include <map>
