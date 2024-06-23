@@ -192,7 +192,7 @@ Range-for 本质上也是在使用迭代器遍历你的 `list` 。当你删除 `
 
 ### 生成 `build`
 
-按 Ctrl + Shift + p 输入 `cmake configure` ，最优匹配应当是“CMake: Configure”，回车。接下来如果让你选 Kit （第一次执行通常需要）， Windows 上应该选 Visual Studio 17 2022 amd64 ， Mac 上选最高版本的 gcc 。特别是对于 Windows ，如果这个选项不存在，有可能是没有正确安装 Visual Studio ，请先去安装最新版的 Visual Studio ；如果已经装好了，可以选 [Scan for kits] 刷新一下，应该就有了。
+按 Ctrl + Shift + p 输入 `cmake configure` ，最优匹配应当是“CMake: Configure”，回车。接下来如果让你选 Kit （第一次执行通常需要）， Windows 上<font color="#dd0000">~~应该~~</font><font color="#00dd00">可以</font>选 Visual Studio 17 2022 amd64 <font color="#00dd00">或者最高版本的 gcc </font>， Mac 上选最高版本的 gcc 。<font color="#dd0000">~~特别是对于 Windows ，如果这个选项不存在，有可能是没有正确安装 Visual Studio ，请先去安装最新版的 Visual Studio ；如果已经装好了，可以选 [Scan for kits] 刷新一下，应该就有了。~~</font><font color="#00dd00">之前我们认为在 Windows 上用 MinGW Makefiles (gcc) 会有问题，必须用 Visual Studio ，后来发现只需在 `Framework` 的 `CMakeLists.txt` 中将 `target_link_libraries` 中的 `SOIL` 和 `freeglut` 换一下顺序，确保 `SOIL` 在 `freeglut` 的前面，即可正常使用 MinGW Makefiles 和 gcc 。在 6.23 下午 4:30 左右发布的更新中，我们已经修复了这个顺序问题。</font>
 
 默认情况下， CMake 插件会将当前工作区中（最外层文件夹）的 `CMakeLists.txt` 作为根。如果这个文件不存在，它会报错。修改这一行为的方式是在 `settings.json` 中加入一项 `"cmake.sourceDirectory"` ，例如
 
@@ -202,7 +202,7 @@ Range-for 本质上也是在使用迭代器遍历你的 `list` 。当你删除 `
 
 就会让 CMake 插件去当前工作区下的 `attachments` 文件夹中寻找 `CMakeLists.txt` 作为根。这里我们使用了一个变量 `${workspaceFolder}` ，这也是在 VSCode 配置中十分常见的。
 
-在生成的过程中你需要密切关注的，是它采用的 generator 是什么，特别是 Windows 上可能会有问题。在你启动“CMake: Configure”时， Output 面板中会显示一些日志，其中最前面应该有一段 `[proc] Executing command: ` 开头的内容，它表示究竟执行了什么指令，找到 `-G` 后面紧跟着的东西，它就是现在 CMake 在使用何种 generator 。对于 Windows ，这一项应该是 `Visual Studio 17 2022` ，如果是 `MinGW Makefiles` 则在本次作业中大概率会引发错误（具体原因未知）。你也可以通过生成的 `build` 文件夹中的内容来看： Visual Studio 对应的是某个 `.sln` 文件，而 MinGW Makefiles 对应的是一个名为 `Makefile` （无后缀名）的文件。可以在 `settings.json` 中设置 `"cmake.generator"` ，例如
+在生成的过程中你需要密切关注的，是它采用的 generator 是什么，特别是 Windows 上可能会有问题。在你启动“CMake: Configure”时， Output 面板中会显示一些日志，其中最前面应该有一段 `[proc] Executing command: ` 开头的内容，它表示究竟执行了什么指令，找到 `-G` 后面紧跟着的东西，它就是现在 CMake 在使用何种 generator 。<font color="#dd0000">~~对于 Windows ，这一项应该是 `Visual Studio 17 2022` ，如果是 `MinGW Makefiles` 则在本次作业中大概率会引发错误（具体原因未知）。~~</font>你也可以通过生成的 `build` 文件夹中的内容来看： Visual Studio 对应的是某个 `.sln` 文件，而 MinGW Makefiles 对应的是一个名为 `Makefile` （无后缀名）的文件。可以在 `settings.json` 中设置 `"cmake.generator"` ，例如
 
 ```json
     "cmake.generator": "Visual Studio 17 2022"
