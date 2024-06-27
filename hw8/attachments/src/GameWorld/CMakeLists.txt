@@ -10,4 +10,12 @@ target_link_libraries(
   GameWorld
   GameObject
   Background
+  PlantingSpot
+  SeedButton
+  SunflowerSeed
+  PeashooterSeed
+  WallnutSeed
+  CherryBombSeed
+  RepeaterSeed
+  CooldownMask
 )

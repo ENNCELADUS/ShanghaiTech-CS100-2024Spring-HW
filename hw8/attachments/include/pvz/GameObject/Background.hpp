@@ -1,7 +1,6 @@
 #ifndef BACKGROUND_HPP__
 #define BACKGROUND_HPP__
 
-#include <memory>
 #include "pvz/GameObject/GameObject.hpp"
 
 /**

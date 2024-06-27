@@ -128,7 +128,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "GameWorld::@2c651ff0fb8a858345be"
+			"id" : "Framework::@bbcc00d4dd4c98727359"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "GameObject::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -136,11 +140,39 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Framework::@bbcc00d4dd4c98727359"
+			"id" : "RepeaterSeed::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "GameObject::@cf4d02a5657504c132a7"
+			"id" : "PlantingSpot::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "SeedButton::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CherryBombSeed::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CooldownMask::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "SunflowerSeed::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "PeashooterSeed::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "WallnutSeed::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "GameWorld::@2c651ff0fb8a858345be"
 		}
 	],
 	"id" : "PvZ::@6890427a1f51a3e7e1df",
@@ -169,6 +201,46 @@
 			{
 				"backtrace" : 4,
 				"fragment" : "lib\\libBackground.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libPlantingSpot.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libSunflowerSeed.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libPeashooterSeed.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libWallnutSeed.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libCherryBombSeed.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libRepeaterSeed.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libSeedButton.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libCooldownMask.a",
 				"role" : "libraries"
 			},
 			{

@@ -22,3 +22,100 @@ target_link_libraries(
   PUBLIC 
   GameObject
 )
+
+add_library(
+  PlantingSpot 
+  STATIC 
+  PlantingSpot.cpp
+)
+
+target_link_libraries(
+  PlantingSpot 
+  PUBLIC 
+  GameObject
+)
+
+add_library(
+  SeedButton
+  STATIC 
+  SeedButton.cpp
+)
+
+target_link_libraries(
+  SeedButton 
+  PUBLIC 
+  GameObject
+)
+
+add_library(
+  SunflowerSeed
+  STATIC
+  SunflowerSeed.cpp
+)
+
+target_link_libraries(
+  SunflowerSeed
+  PUBLIC
+  SeedButton
+)
+
+# 添加PeashooterSeed库
+add_library(
+  PeashooterSeed
+  STATIC
+  PeashooterSeed.cpp
+)
+
+target_link_libraries(
+  PeashooterSeed
+  PUBLIC
+  SeedButton
+)
+
+add_library(
+  WallnutSeed
+  STATIC
+  WallnutSeed.cpp
+)
+
+target_link_libraries(
+  WallnutSeed
+  PUBLIC
+  SeedButton
+)
+
+add_library(
+  CherryBombSeed
+  STATIC
+  CherryBombSeed.cpp
+)
+
+target_link_libraries(
+  CherryBombSeed
+  PUBLIC
+  SeedButton
+)
+
+add_library(
+  RepeaterSeed
+  STATIC
+  RepeaterSeed.cpp
+)
+
+target_link_libraries(
+  RepeaterSeed
+  PUBLIC
+  SeedButton
+)
+
+add_library(
+  CooldownMask
+  STATIC
+  CooldownMask.cpp
+)
+
+target_link_libraries(
+  CooldownMask
+  PUBLIC
+  GameObject
+)

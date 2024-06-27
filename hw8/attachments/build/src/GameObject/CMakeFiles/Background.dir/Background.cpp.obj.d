@@ -1,6 +1,7 @@
 src/GameObject/CMakeFiles/Background.dir/Background.cpp.obj: \
  E:\RICHARD\CS100\CS100-HW\hw8\attachments\src\GameObject\Background.cpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
  D:/mingw64/include/c++/13.2.0/memory \
  D:/mingw64/include/c++/13.2.0/bits/memoryfwd.h \
  D:/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -107,7 +108,6 @@ src/GameObject/CMakeFiles/Background.dir/Background.cpp.obj: \
  D:/mingw64/include/c++/13.2.0/backward/auto_ptr.h \
  D:/mingw64/include/c++/13.2.0/pstl/glue_memory_defs.h \
  D:/mingw64/include/c++/13.2.0/pstl/execution_defs.h \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/ObjectBase.hpp \
  D:/mingw64/include/c++/13.2.0/iostream \
  D:/mingw64/include/c++/13.2.0/ostream D:/mingw64/include/c++/13.2.0/ios \

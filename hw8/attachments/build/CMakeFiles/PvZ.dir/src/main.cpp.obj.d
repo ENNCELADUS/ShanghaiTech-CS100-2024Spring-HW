@@ -207,4 +207,14 @@ CMakeFiles/PvZ.dir/src/main.cpp.obj: \
  D:/mingw64/include/c++/13.2.0/bits/list.tcc \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PlantingSpot.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SunflowerSeed.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PeashooterSeed.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/WallnutSeed.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBombSeed.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/RepeaterSeed.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CooldownMask.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

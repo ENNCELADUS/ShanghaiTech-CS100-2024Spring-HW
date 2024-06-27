@@ -252,6 +252,110 @@ Background/fast:
 .PHONY : Background/fast
 
 #=============================================================================
+# Target rules for targets named PlantingSpot
+
+# Build rule for target.
+PlantingSpot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PlantingSpot
+.PHONY : PlantingSpot
+
+# fast build rule for target.
+PlantingSpot/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/build
+.PHONY : PlantingSpot/fast
+
+#=============================================================================
+# Target rules for targets named SeedButton
+
+# Build rule for target.
+SeedButton: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeedButton
+.PHONY : SeedButton
+
+# fast build rule for target.
+SeedButton/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/build
+.PHONY : SeedButton/fast
+
+#=============================================================================
+# Target rules for targets named SunflowerSeed
+
+# Build rule for target.
+SunflowerSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SunflowerSeed
+.PHONY : SunflowerSeed
+
+# fast build rule for target.
+SunflowerSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/build
+.PHONY : SunflowerSeed/fast
+
+#=============================================================================
+# Target rules for targets named PeashooterSeed
+
+# Build rule for target.
+PeashooterSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PeashooterSeed
+.PHONY : PeashooterSeed
+
+# fast build rule for target.
+PeashooterSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/build
+.PHONY : PeashooterSeed/fast
+
+#=============================================================================
+# Target rules for targets named WallnutSeed
+
+# Build rule for target.
+WallnutSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 WallnutSeed
+.PHONY : WallnutSeed
+
+# fast build rule for target.
+WallnutSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\WallnutSeed.dir\build.make src/GameObject/CMakeFiles/WallnutSeed.dir/build
+.PHONY : WallnutSeed/fast
+
+#=============================================================================
+# Target rules for targets named CherryBombSeed
+
+# Build rule for target.
+CherryBombSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CherryBombSeed
+.PHONY : CherryBombSeed
+
+# fast build rule for target.
+CherryBombSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/build
+.PHONY : CherryBombSeed/fast
+
+#=============================================================================
+# Target rules for targets named RepeaterSeed
+
+# Build rule for target.
+RepeaterSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RepeaterSeed
+.PHONY : RepeaterSeed
+
+# fast build rule for target.
+RepeaterSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RepeaterSeed.dir\build.make src/GameObject/CMakeFiles/RepeaterSeed.dir/build
+.PHONY : RepeaterSeed/fast
+
+#=============================================================================
+# Target rules for targets named CooldownMask
+
+# Build rule for target.
+CooldownMask: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CooldownMask
+.PHONY : CooldownMask
+
+# fast build rule for target.
+CooldownMask/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CooldownMask.dir\build.make src/GameObject/CMakeFiles/CooldownMask.dir/build
+.PHONY : CooldownMask/fast
+
+#=============================================================================
 # Target rules for targets named GameWorld
 
 # Build rule for target.
@@ -301,11 +405,19 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Background
+	@echo ... CherryBombSeed
+	@echo ... CooldownMask
 	@echo ... Framework
 	@echo ... GameObject
 	@echo ... GameWorld
+	@echo ... PeashooterSeed
+	@echo ... PlantingSpot
 	@echo ... PvZ
+	@echo ... RepeaterSeed
 	@echo ... SOIL
+	@echo ... SeedButton
+	@echo ... SunflowerSeed
+	@echo ... WallnutSeed
 	@echo ... freeglut
 	@echo ... freeglut_static
 	@echo ... src/main.obj

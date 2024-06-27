@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libRepeaterSeed.a CMakeFiles/RepeaterSeed.dir/RepeaterSeed.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libRepeaterSeed.a
