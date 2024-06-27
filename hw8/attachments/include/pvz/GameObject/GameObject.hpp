@@ -30,15 +30,26 @@ public:
   GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID);
   virtual ~GameObject() = default;
 
-  // Pure virtual function for updating the game object
   virtual void Update() = 0;
+  virtual void OnClick() = 0;
 
-  // Functions to check if the object is dead and to mark it as dead
+  /**
+   * @brief Check if the game object is dead.
+   * 
+   * @return true if the game object is dead, false otherwise.
+   */
   bool IsDead() const;
+  /**
+   * @brief Mark the game object as dead.
+   */
   void MarkAsDead();
+
+  void SetWorld(pGameWorld world);
+  pGameWorld GetWorld() const;
 
 private:
   bool isDead;
+  pGameWorld world;
 };
 
 

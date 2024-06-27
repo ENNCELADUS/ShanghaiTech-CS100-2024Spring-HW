@@ -14,18 +14,19 @@
 GameObject::GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID)
     : ObjectBase(imageID, x, y, layer, width, height, animID), isDead(false) {}
 
-/**
- * @brief Check if the game object is dead.
- * 
- * @return true if the game object is dead, false otherwise.
- */
+
 bool GameObject::IsDead() const {
     return isDead;
 }
 
-/**
- * @brief Mark the game object as dead.
- */
 void GameObject::MarkAsDead() {
     isDead = true;
+}
+
+void GameObject::SetWorld(pGameWorld world) {
+    this->world = world;
+}
+
+pGameWorld GameObject::GetWorld() const {
+    return world;
 }

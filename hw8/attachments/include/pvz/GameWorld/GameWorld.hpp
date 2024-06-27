@@ -40,6 +40,41 @@ public:
   int GetSunlight() const;
   int GetCurrentWave() const;
 
+  /**
+   * @brief Spend the given amount of sunlight.
+   * 
+   * @param amount The amount of sunlight to spend.
+   */
+  void SpendSunlight(int amount);
+
+  /**
+   * @brief Check if the player is holding a shovel.
+   * 
+   * @return bool True if holding a shovel, false otherwise.
+   */
+  bool IsHoldingShovel() const;
+
+  /**
+   * @brief Check if the player is holding a seed.
+   * 
+   * @return bool True if holding a seed, false otherwise.
+   */
+  bool IsHoldingSeed() const;
+  
+  /**
+   * @brief Set the currently selected seed.
+   * 
+   * @param seed The selected seed object.
+   */
+  void SetSelectedSeed(std::shared_ptr<GameObject> seed);
+  
+  /**
+   * @brief Add a game object to the game world.
+   * 
+   * @param obj The game object to add.
+   */
+  void AddGameObject(std::shared_ptr<GameObject> obj);
+
 private: 
   std::list<std::shared_ptr<GameObject>> gameObjects;
 
@@ -56,15 +91,40 @@ private:
   std::shared_ptr<TextBase> waveText;
 
   /**
+   * @brief The currently selected seed
+   */
+  std::shared_ptr<GameObject> selectedSeed; 
+
+  /**
+   * @brief Create sunlight and wave number text in init().
+   */
+  void CreateTexts();
+
+  /**
+   * @brief Create background.
+   */
+  void CreateBackground();
+
+  /**
+   * @brief Create planting spots.
+   */
+  void CreatePlantingSpot();
+
+  /**
+   * @brief Create Seed Buttons.
+   * 
+   */
+  void CreateSeedButtons();
+
+  /**
    * @brief Update sunlight and wave number text.
    * 
    */
   void UpdateText();
+
+
   
-  void CreateBackground();
-  // void CreatePlantSlots();
-  // void CreateSeedButtons();
-  // void CreateShovelButton();
+
 };
 
 #endif // !GAMEWORLD_HPP__

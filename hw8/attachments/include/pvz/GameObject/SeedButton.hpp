@@ -2,6 +2,7 @@
 #define SEEDBUTTON_HPP__
 
 #include "pvz/GameObject/GameObject.hpp"
+#include "pvz/GameObject/CooldownMask.hpp"
 
 class SeedButton : public GameObject {
 public:
@@ -14,7 +15,7 @@ public:
 protected:
     int price;       // The price of the seed in sunlight
     int cooldown;    // The cooldown time in ticks
-    int cooldownRemaining; // The remaining cooldown time
+    std::shared_ptr<CooldownMask> cooldownMask; ///< The cooldown mask
 };
 
 #endif // SEEDBUTTON_HPP__
