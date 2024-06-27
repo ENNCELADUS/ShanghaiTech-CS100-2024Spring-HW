@@ -174,6 +174,44 @@ GameObject/fast:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/build
 .PHONY : GameObject/fast
 
+# Convenience name for target.
+src/GameObject/CMakeFiles/Background.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Background.dir/rule
+.PHONY : src/GameObject/CMakeFiles/Background.dir/rule
+
+# Convenience name for target.
+Background: src/GameObject/CMakeFiles/Background.dir/rule
+.PHONY : Background
+
+# fast build rule for target.
+Background/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/build
+.PHONY : Background/fast
+
+Background.obj: Background.cpp.obj
+.PHONY : Background.obj
+
+# target to build an object file
+Background.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/Background.cpp.obj
+.PHONY : Background.cpp.obj
+
+Background.i: Background.cpp.i
+.PHONY : Background.i
+
+# target to preprocess a source file
+Background.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/Background.cpp.i
+.PHONY : Background.cpp.i
+
+Background.s: Background.cpp.s
+.PHONY : Background.s
+
+# target to generate assembly for a file
+Background.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/Background.cpp.s
+.PHONY : Background.cpp.s
+
 GameObject.obj: GameObject.cpp.obj
 .PHONY : GameObject.obj
 
@@ -210,7 +248,11 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... Background
 	@echo ... GameObject
+	@echo ... Background.obj
+	@echo ... Background.i
+	@echo ... Background.s
 	@echo ... GameObject.obj
 	@echo ... GameObject.i
 	@echo ... GameObject.s

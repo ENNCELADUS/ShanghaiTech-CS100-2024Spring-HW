@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libBackground.a CMakeFiles/Background.dir/Background.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libBackground.a

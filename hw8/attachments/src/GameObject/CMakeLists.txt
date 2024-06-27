@@ -10,3 +10,15 @@ target_link_libraries(
   GameObject
   Framework
 )
+
+add_library(
+  Background 
+  STATIC 
+  Background.cpp
+)
+
+target_link_libraries(
+  Background 
+  PUBLIC 
+  GameObject
+)

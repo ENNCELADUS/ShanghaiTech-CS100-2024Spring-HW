@@ -206,4 +206,5 @@ CMakeFiles/PvZ.dir/src/main.cpp.obj: \
  D:/mingw64/include/c++/13.2.0/bits/stl_list.h \
  D:/mingw64/include/c++/13.2.0/bits/list.tcc \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

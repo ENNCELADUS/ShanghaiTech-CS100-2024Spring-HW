@@ -239,6 +239,19 @@ GameObject/fast:
 .PHONY : GameObject/fast
 
 #=============================================================================
+# Target rules for targets named Background
+
+# Build rule for target.
+Background: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Background
+.PHONY : Background
+
+# fast build rule for target.
+Background/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/build
+.PHONY : Background/fast
+
+#=============================================================================
 # Target rules for targets named GameWorld
 
 # Build rule for target.
@@ -287,6 +300,7 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... Background
 	@echo ... Framework
 	@echo ... GameObject
 	@echo ... GameWorld

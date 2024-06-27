@@ -94,6 +94,7 @@ bin/PvZ.exe: CMakeFiles/PvZ.dir/src/main.cpp.obj
 bin/PvZ.exe: CMakeFiles/PvZ.dir/build.make
 bin/PvZ.exe: lib/libFramework.a
 bin/PvZ.exe: lib/libGameWorld.a
+bin/PvZ.exe: lib/libBackground.a
 bin/PvZ.exe: lib/libGameObject.a
 bin/PvZ.exe: lib/libFramework.a
 bin/PvZ.exe: lib/libSOIL.a

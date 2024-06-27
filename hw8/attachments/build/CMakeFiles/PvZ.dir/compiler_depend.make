@@ -208,6 +208,7 @@ CMakeFiles/PvZ.dir/src/main.cpp.obj: E:/RICHARD/CS100/CS100-HW/hw8/attachments/s
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/ObjectBase.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/WorldBase.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameWorld/GameWorld.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/utils.hpp
@@ -614,6 +615,8 @@ D:/mingw64/x86_64-w64-mingw32/include/stddef.h:
 D:/mingw64/x86_64-w64-mingw32/include/stdint.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/stdio.h:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp:
 
 D:/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 

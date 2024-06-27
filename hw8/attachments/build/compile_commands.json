@@ -522,6 +522,12 @@
   "output": "src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj"
 },
 {
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Background.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Background.dir\\Background.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Background.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Background.cpp",
+  "output": "src/GameObject/CMakeFiles/Background.dir/Background.cpp.obj"
+},
+{
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameWorld",
   "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/GameWorld.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameWorld.dir\\GameWorld.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameWorld\\GameWorld.cpp",
   "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameWorld/GameWorld.cpp",

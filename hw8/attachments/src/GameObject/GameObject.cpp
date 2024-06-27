@@ -12,8 +12,7 @@
  * @param animID The animation ID for the game object.
  */
 GameObject::GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID)
-    : ObjectBase(imageID, x, y, layer, width, height, animID), isDead(false) {
-}
+    : ObjectBase(imageID, x, y, layer, width, height, animID), isDead(false) {}
 
 /**
  * @brief Check if the game object is dead.
