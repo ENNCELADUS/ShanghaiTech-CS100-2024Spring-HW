@@ -8,27 +8,30 @@ SeedButton::SeedButton(ImageID imageID, int x, int y, int width, int height, int
 }
 
 void SeedButton::Update() {
+  
     if (cooldownMask) {
         cooldownMask->Update();
     }
 }
 
 void SeedButton::OnClick() {
-    // Check if the player is holding a shovel or an unplanted seed
     // TODO:
 
-    // Check if there is enough sunlight
-    if (GameWorld::GetSunlight() < price) {
-        return;
-    }
+    // // Check if the player is holding a shovel or an unplanted seed
+    // if (gameWorld->IsHoldingShovel() || gameWorld->IsHoldingSeed()) {
+    //     return;
+    // }
 
-    // Spend sunlight and enter cooldown
-    GameWorld::SpendSunlight(price);
+    // // Check if there is enough sunlight
+    // if (gameWorld->GetSunlight() < price) {
+    //     return;
+    // }
 
-    // Create cooldown mask
-    cooldownMask = std::make_shared<CooldownMask>(GetX(), GetY());
-    gameWorld->AddGameObject(cooldownMask);
+    // // Spend sunlight and enter cooldown
+    // gameWorld->SpendSunlight(price);
+
+    // // Create cooldown mask
+    // cooldownMask = std::make_shared<CooldownMask>(GetX(), GetY());
+    // gameWorld->AddGameObject(cooldownMask);
     
-    // Set the selected seed
-    gameWorld->SetSelectedSeed(shared_from_this());
 }

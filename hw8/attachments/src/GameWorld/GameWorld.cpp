@@ -1,5 +1,6 @@
 #include "pvz/GameWorld/GameWorld.hpp"
 
+
 /**
  * @brief Construct a new Game World:: Game World object
  * 
@@ -23,26 +24,9 @@ void GameWorld::Init() {
 
   CreatePlantingSpot();
 
+  CreateSeedButtons();
 
-
-
-
-  /**
-   * @brief Create Seed Buttons
-   */
-  int x = 130;
-  int y = WINDOW_HEIGHT - 44;
-  gameObjects.push_back(std::make_shared<SunflowerSeed>(x, y));
-  x += 60;
-  gameObjects.push_back(std::make_shared<PeashooterSeed>(x, y));
-  x += 60;
-  gameObjects.push_back(std::make_shared<WallnutSeed>(x, y));
-  x += 60;
-  gameObjects.push_back(std::make_shared<CherryBombSeed>(x, y));
-  x += 60;
-  gameObjects.push_back(std::make_shared<RepeaterSeed>(x, y));
-
-    // TODO:
+  // TODO:
 }
 
 LevelStatus GameWorld::Update() {
@@ -82,7 +66,6 @@ void GameWorld::CreateTexts(){
 
 void GameWorld::CreateBackground(){
   auto background = std::make_shared<Background>();
-  background->SetWorld(shared_from_this());
   gameObjects.push_back(background);
 }
 
@@ -92,7 +75,6 @@ void GameWorld::CreatePlantingSpot(){
       int x = FIRST_COL_CENTER + col * LAWN_GRID_WIDTH;
       int y = FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
       auto spot = std::make_shared<PlantingSpot>(x, y);
-      spot->SetWorld(shared_from_this());
       gameObjects.push_back(spot);
     }
   }
@@ -103,27 +85,22 @@ void GameWorld::CreateSeedButtons() {
   int y = WINDOW_HEIGHT - 44;
 
   auto sunflowerSeed = std::make_shared<SunflowerSeed>(x, y);
-  sunflowerSeed->SetWorld(shared_from_this());
   gameObjects.push_back(sunflowerSeed);
 
   x += 60;
   auto peashooterSeed = std::make_shared<PeashooterSeed>(x, y);
-  peashooterSeed->SetWorld(shared_from_this());
   gameObjects.push_back(peashooterSeed);
 
   x += 60;
   auto wallnutSeed = std::make_shared<WallnutSeed>(x, y);
-  wallnutSeed->SetWorld(shared_from_this());
   gameObjects.push_back(wallnutSeed);
 
   x += 60;
   auto cherryBombSeed = std::make_shared<CherryBombSeed>(x, y);
-  cherryBombSeed->SetWorld(shared_from_this());
   gameObjects.push_back(cherryBombSeed);
 
   x += 60;
   auto repeaterSeed = std::make_shared<RepeaterSeed>(x, y);
-  repeaterSeed->SetWorld(shared_from_this());
   gameObjects.push_back(repeaterSeed);
 }
 
@@ -155,7 +132,6 @@ void GameWorld::SetSelectedSeed(std::shared_ptr<GameObject> seed) {
 void GameWorld::AddGameObject(std::shared_ptr<GameObject> obj) {
   gameObjects.push_back(obj);
 }
-
 
 
 void GameWorld::UpdateText() {

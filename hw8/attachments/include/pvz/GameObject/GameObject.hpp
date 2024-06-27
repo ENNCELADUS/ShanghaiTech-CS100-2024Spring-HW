@@ -14,7 +14,7 @@ using pGameWorld = std::shared_ptr<GameWorld>;
  */
 class GameObject : public ObjectBase, public std::enable_shared_from_this<GameObject> {
 public:
-  using std::enable_shared_from_this<GameObject>::shared_from_this;
+  using std::enable_shared_from_this<GameObject>::shared_from_this; // Use shared_from_this() instead of "this".
 
   /**
    * @brief Construct a new Game Object object
@@ -44,12 +44,9 @@ public:
    */
   void MarkAsDead();
 
-  void SetWorld(pGameWorld world);
-  pGameWorld GetWorld() const;
 
 private:
   bool isDead;
-  pGameWorld world;
 };
 
 

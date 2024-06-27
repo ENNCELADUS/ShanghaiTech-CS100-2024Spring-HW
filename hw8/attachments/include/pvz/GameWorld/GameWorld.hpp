@@ -75,6 +75,8 @@ public:
    */
   void AddGameObject(std::shared_ptr<GameObject> obj);
 
+
+
 private: 
   std::list<std::shared_ptr<GameObject>> gameObjects;
 
@@ -94,6 +96,7 @@ private:
    * @brief The currently selected seed
    */
   std::shared_ptr<GameObject> selectedSeed; 
+
 
   /**
    * @brief Create sunlight and wave number text in init().
@@ -123,7 +126,6 @@ private:
   void UpdateText();
 
 
-  
 
 };
 

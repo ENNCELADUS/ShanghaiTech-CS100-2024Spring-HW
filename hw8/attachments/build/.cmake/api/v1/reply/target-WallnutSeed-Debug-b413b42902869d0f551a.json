@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libCherryBombSeed.a"
+			"path" : "lib/libWallnutSeed.a"
 		}
 	],
 	"backtrace" : 1,
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 87,
+				"line" : 75,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 93,
+				"line" : 81,
 				"parent" : 0
 			},
 			{
@@ -99,20 +99,20 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Framework::@bbcc00d4dd4c98727359"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "GameObject::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "SeedButton::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Framework::@bbcc00d4dd4c98727359"
 		}
 	],
-	"id" : "CherryBombSeed::@cf4d02a5657504c132a7",
-	"name" : "CherryBombSeed",
-	"nameOnDisk" : "libCherryBombSeed.a",
+	"id" : "WallnutSeed::@cf4d02a5657504c132a7",
+	"name" : "WallnutSeed",
+	"nameOnDisk" : "libWallnutSeed.a",
 	"paths" : 
 	{
 		"build" : "src/GameObject",
@@ -133,7 +133,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/CherryBombSeed.cpp",
+			"path" : "src/GameObject/WallnutSeed.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

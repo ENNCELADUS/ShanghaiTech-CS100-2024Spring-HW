@@ -99,11 +99,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Framework::@bbcc00d4dd4c98727359"
+			"id" : "GameObject::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "GameObject::@cf4d02a5657504c132a7"
+			"id" : "Framework::@bbcc00d4dd4c98727359"
 		}
 	],
 	"id" : "SeedButton::@cf4d02a5657504c132a7",

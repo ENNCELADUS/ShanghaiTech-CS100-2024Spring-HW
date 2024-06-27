@@ -22,11 +22,3 @@ bool GameObject::IsDead() const {
 void GameObject::MarkAsDead() {
     isDead = true;
 }
-
-void GameObject::SetWorld(pGameWorld world) {
-    this->world = world;
-}
-
-pGameWorld GameObject::GetWorld() const {
-    return world;
-}
