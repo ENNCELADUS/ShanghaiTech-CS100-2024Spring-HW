@@ -100,8 +100,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/GameObject/CMakeFiles/SunflowerSeed.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/PeashooterSeed.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/WallnutSeed.dir/DependInfo.cmake"
-  "src/GameObject/CMakeFiles/CherryBombSeed.dir/DependInfo.cmake"
-  "src/GameObject/CMakeFiles/RepeaterSeed.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/CooldownMask.dir/DependInfo.cmake"
   "src/GameWorld/CMakeFiles/GameWorld.dir/DependInfo.cmake"
   )

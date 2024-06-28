@@ -99,8 +99,6 @@ bin/PvZ.exe: lib/libPlantingSpot.a
 bin/PvZ.exe: lib/libSunflowerSeed.a
 bin/PvZ.exe: lib/libPeashooterSeed.a
 bin/PvZ.exe: lib/libWallnutSeed.a
-bin/PvZ.exe: lib/libCherryBombSeed.a
-bin/PvZ.exe: lib/libRepeaterSeed.a
 bin/PvZ.exe: lib/libSeedButton.a
 bin/PvZ.exe: lib/libCooldownMask.a
 bin/PvZ.exe: lib/libGameObject.a

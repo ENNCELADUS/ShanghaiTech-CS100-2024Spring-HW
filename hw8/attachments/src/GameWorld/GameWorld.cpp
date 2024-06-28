@@ -33,11 +33,18 @@ LevelStatus GameWorld::Update() {
   // TODO:
   /**
    * @brief Update all game objects
-   * 
-   * @param gameObjects 
    */
   for (auto& gameObject : gameObjects) {
     gameObject->Update();
+  }
+
+  // Iterate and delete game objects marked dead.
+  for (auto it = gameObjects.begin(); it != gameObjects.end(); ) {
+    if ((*it)->IsDead()) {
+      it = gameObjects.erase(it);
+    } else {
+      ++it;
+    }
   }
 
   // Update the texts
@@ -84,24 +91,17 @@ void GameWorld::CreateSeedButtons() {
   int x = 130;
   int y = WINDOW_HEIGHT - 44;
 
-  auto sunflowerSeed = std::make_shared<SunflowerSeed>(x, y);
+  auto sunflowerSeed = std::make_shared<SunflowerSeed>(x, y, *shared_from_this());
   gameObjects.push_back(sunflowerSeed);
 
   x += 60;
-  auto peashooterSeed = std::make_shared<PeashooterSeed>(x, y);
+  auto peashooterSeed = std::make_shared<PeashooterSeed>(x, y, *shared_from_this());
   gameObjects.push_back(peashooterSeed);
 
   x += 60;
-  auto wallnutSeed = std::make_shared<WallnutSeed>(x, y);
+  auto wallnutSeed = std::make_shared<WallnutSeed>(x, y, *shared_from_this());
   gameObjects.push_back(wallnutSeed);
 
-  x += 60;
-  auto cherryBombSeed = std::make_shared<CherryBombSeed>(x, y);
-  gameObjects.push_back(cherryBombSeed);
-
-  x += 60;
-  auto repeaterSeed = std::make_shared<RepeaterSeed>(x, y);
-  gameObjects.push_back(repeaterSeed);
 }
 
 

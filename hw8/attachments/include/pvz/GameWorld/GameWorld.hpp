@@ -13,8 +13,6 @@
 #include "pvz/GameObject/SunflowerSeed.hpp"
 #include "pvz/GameObject/PeashooterSeed.hpp"
 #include "pvz/GameObject/WallnutSeed.hpp"
-#include "pvz/GameObject/CherryBombSeed.hpp"
-#include "pvz/GameObject/RepeaterSeed.hpp"
 #include "pvz/GameObject/CooldownMask.hpp"
 
 #include "pvz/Framework/TextBase.hpp"

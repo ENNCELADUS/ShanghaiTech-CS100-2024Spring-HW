@@ -317,32 +317,6 @@ WallnutSeed/fast:
 .PHONY : WallnutSeed/fast
 
 #=============================================================================
-# Target rules for targets named CherryBombSeed
-
-# Build rule for target.
-CherryBombSeed: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CherryBombSeed
-.PHONY : CherryBombSeed
-
-# fast build rule for target.
-CherryBombSeed/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/build
-.PHONY : CherryBombSeed/fast
-
-#=============================================================================
-# Target rules for targets named RepeaterSeed
-
-# Build rule for target.
-RepeaterSeed: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RepeaterSeed
-.PHONY : RepeaterSeed
-
-# fast build rule for target.
-RepeaterSeed/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RepeaterSeed.dir\build.make src/GameObject/CMakeFiles/RepeaterSeed.dir/build
-.PHONY : RepeaterSeed/fast
-
-#=============================================================================
 # Target rules for targets named CooldownMask
 
 # Build rule for target.
@@ -405,7 +379,6 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Background
-	@echo ... CherryBombSeed
 	@echo ... CooldownMask
 	@echo ... Framework
 	@echo ... GameObject
@@ -413,7 +386,6 @@ help:
 	@echo ... PeashooterSeed
 	@echo ... PlantingSpot
 	@echo ... PvZ
-	@echo ... RepeaterSeed
 	@echo ... SOIL
 	@echo ... SeedButton
 	@echo ... SunflowerSeed

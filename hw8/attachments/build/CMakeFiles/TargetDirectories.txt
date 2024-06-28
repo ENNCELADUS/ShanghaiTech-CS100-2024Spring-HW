@@ -34,8 +34,6 @@ E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/SeedBu
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/SunflowerSeed.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/PeashooterSeed.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/WallnutSeed.dir
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/CherryBombSeed.dir
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/RepeaterSeed.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/CooldownMask.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/edit_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/rebuild_cache.dir

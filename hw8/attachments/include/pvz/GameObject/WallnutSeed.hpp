@@ -5,7 +5,7 @@
 
 class WallnutSeed : public SeedButton {
 public:
-    WallnutSeed(int x, int y);
+    WallnutSeed(int x, int y, GameWorld& gameworld);
 };
 
 #endif // WALLNUTSEED_HPP__

@@ -5,7 +5,7 @@
 
 class PeashooterSeed : public SeedButton {
 public:
-    PeashooterSeed(int x, int y);
+    PeashooterSeed(int x, int y, GameWorld& gameworld);
 };
 
 #endif // PEASHOOTERSEED_HPP__

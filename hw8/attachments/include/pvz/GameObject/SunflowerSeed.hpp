@@ -5,7 +5,7 @@
 
 class SunflowerSeed : public SeedButton {
 public:
-    SunflowerSeed(int x, int y);
+    SunflowerSeed(int x, int y, GameWorld& gameworld);
 };
 
 #endif // SUNFLOWERSEED_HPP__

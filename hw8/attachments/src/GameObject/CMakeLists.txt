@@ -85,30 +85,6 @@ target_link_libraries(
 )
 
 add_library(
-  CherryBombSeed
-  STATIC
-  CherryBombSeed.cpp
-)
-
-target_link_libraries(
-  CherryBombSeed
-  PUBLIC
-  SeedButton
-)
-
-add_library(
-  RepeaterSeed
-  STATIC
-  RepeaterSeed.cpp
-)
-
-target_link_libraries(
-  RepeaterSeed
-  PUBLIC
-  SeedButton
-)
-
-add_library(
   CooldownMask
   STATIC
   CooldownMask.cpp

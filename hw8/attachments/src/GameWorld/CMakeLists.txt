@@ -15,7 +15,5 @@ target_link_libraries(
   SunflowerSeed
   PeashooterSeed
   WallnutSeed
-  CherryBombSeed
-  RepeaterSeed
   CooldownMask
 )
