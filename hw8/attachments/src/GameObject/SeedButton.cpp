@@ -3,8 +3,8 @@
 #include "pvz/utils.hpp"
 
 
-SeedButton::SeedButton(ImageID imageID, int x, int y, int width, int height, int price, int cooldown, GameWorld& gameworld)
-    : GameObject(imageID, x, y, LAYER_UI, width, height, ANIMID_NO_ANIMATION), price(price), cooldown(cooldown), gameWorld(gameworld) {}
+SeedButton::SeedButton(ImageID imageID, int x, int y, int width, int height, int price, int cooldown, GameWorld& gameworld, PlantType PlantType)
+    : GameObject(imageID, x, y, LAYER_UI, width, height, ANIMID_NO_ANIMATION), price(price), cooldown(cooldown), gameWorld(gameworld), plantType(plantType) {}
 
 void SeedButton::Update() {
   
@@ -14,7 +14,7 @@ void SeedButton::OnClick() {
     // TODO:
 
     // Check if the player is holding a shovel or an unplanted seed
-    if (gameWorld.IsHoldingShovel() || gameWorld.IsHoldingSeed()) {
+    if (gameWorld.IsHoldingShovel() || (gameWorld.GetHoldingSeed() != nullptr) ) {
         return;
     }
 
@@ -28,5 +28,6 @@ void SeedButton::OnClick() {
 
     // Create cooldown mask
     gameWorld.AddGameObject(std::make_shared<CooldownMask>(GetX(), GetY()));
-    
+
+    gameWorld.SetHoldingSeed(std::make_shared<HoldingSeed>(plantType));
 }

@@ -104,5 +104,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/GameObject/CMakeFiles/Sun.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/Plant.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/Sunflower.dir/DependInfo.cmake"
+  "src/GameObject/CMakeFiles/HoldingSeed.dir/DependInfo.cmake"
   "src/GameWorld/CMakeFiles/GameWorld.dir/DependInfo.cmake"
   )

@@ -1,4 +1,5 @@
 #include "pvz/GameObject/PlantingSpot.hpp"
+#include "pvz/GameWorld/GameWorld.hpp"
 #include "pvz/utils.hpp"
 
 /**
@@ -7,8 +8,8 @@
  * @param x The x-coordinate of the planting spot.
  * @param y The y-coordinate of the planting spot.
  */
-PlantingSpot::PlantingSpot(int x, int y)
-    : GameObject(IMGID_NONE, x, y, LAYER_UI, 60, 80, ANIMID_NO_ANIMATION) {}
+PlantingSpot::PlantingSpot(int x, int y, GameWorld& gameworld)
+    : GameObject(IMGID_NONE, x, y, LAYER_UI, 60, 80, ANIMID_NO_ANIMATION), gameWorld(gameworld) {}
 
 
 void PlantingSpot::Update() {
@@ -17,5 +18,5 @@ void PlantingSpot::Update() {
 
 
 void PlantingSpot::OnClick() {
-    // TODO:Logic to plant a plant when the spot is clicked
+    gameWorld.PlantSeed(GetX(), GetY());
 }

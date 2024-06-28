@@ -314,6 +314,20 @@ Sunflower/fast:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/build
 .PHONY : Sunflower/fast
 
+# Convenience name for target.
+src/GameObject/CMakeFiles/HoldingSeed.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/HoldingSeed.dir/rule
+.PHONY : src/GameObject/CMakeFiles/HoldingSeed.dir/rule
+
+# Convenience name for target.
+HoldingSeed: src/GameObject/CMakeFiles/HoldingSeed.dir/rule
+.PHONY : HoldingSeed
+
+# fast build rule for target.
+HoldingSeed/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\HoldingSeed.dir\build.make src/GameObject/CMakeFiles/HoldingSeed.dir/build
+.PHONY : HoldingSeed/fast
+
 Background.obj: Background.cpp.obj
 .PHONY : Background.obj
 
@@ -385,6 +399,30 @@ GameObject.s: GameObject.cpp.s
 GameObject.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.s
 .PHONY : GameObject.cpp.s
+
+HoldingSeed.obj: HoldingSeed.cpp.obj
+.PHONY : HoldingSeed.obj
+
+# target to build an object file
+HoldingSeed.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\HoldingSeed.dir\build.make src/GameObject/CMakeFiles/HoldingSeed.dir/HoldingSeed.cpp.obj
+.PHONY : HoldingSeed.cpp.obj
+
+HoldingSeed.i: HoldingSeed.cpp.i
+.PHONY : HoldingSeed.i
+
+# target to preprocess a source file
+HoldingSeed.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\HoldingSeed.dir\build.make src/GameObject/CMakeFiles/HoldingSeed.dir/HoldingSeed.cpp.i
+.PHONY : HoldingSeed.cpp.i
+
+HoldingSeed.s: HoldingSeed.cpp.s
+.PHONY : HoldingSeed.s
+
+# target to generate assembly for a file
+HoldingSeed.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\HoldingSeed.dir\build.make src/GameObject/CMakeFiles/HoldingSeed.dir/HoldingSeed.cpp.s
+.PHONY : HoldingSeed.cpp.s
 
 PeashooterSeed.obj: PeashooterSeed.cpp.obj
 .PHONY : PeashooterSeed.obj
@@ -593,6 +631,7 @@ help:
 	@echo ... Background
 	@echo ... CooldownMask
 	@echo ... GameObject
+	@echo ... HoldingSeed
 	@echo ... PeashooterSeed
 	@echo ... Plant
 	@echo ... PlantingSpot
@@ -610,6 +649,9 @@ help:
 	@echo ... GameObject.obj
 	@echo ... GameObject.i
 	@echo ... GameObject.s
+	@echo ... HoldingSeed.obj
+	@echo ... HoldingSeed.i
+	@echo ... HoldingSeed.s
 	@echo ... PeashooterSeed.obj
 	@echo ... PeashooterSeed.i
 	@echo ... PeashooterSeed.s

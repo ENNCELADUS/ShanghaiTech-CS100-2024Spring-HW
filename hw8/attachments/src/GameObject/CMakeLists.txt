@@ -131,3 +131,15 @@ target_link_libraries(
   PUBLIC
   Plant
 )
+
+add_library(
+  HoldingSeed
+  STATIC
+  HoldingSeed.cpp
+)
+
+target_link_libraries(
+  HoldingSeed
+  PUBLIC
+  GameObject
+)

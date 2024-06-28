@@ -16,6 +16,8 @@
 #include "pvz/GameObject/CooldownMask.hpp"
 #include "pvz/GameObject/Sun.hpp"
 #include "pvz/Gameobject/Plant.hpp"
+#include "pvz/Gameobject/Sunflower.hpp"
+#include "pvz/Gameobject/HoldingSeed.hpp"
 
 #include "pvz/Framework/TextBase.hpp"
 #include "pvz/utils.hpp"
@@ -33,12 +35,24 @@ public:
   void CleanUp() override;
 
   /**
-   * @brief Getter
+   * @brief Get the Sunlight object
    * 
    * @return int 
    */
   int GetSunlight() const;
+
+  /**
+   * @brief Get the Current Wave object
+   * 
+   * @return int 
+   */
   int GetCurrentWave() const;
+
+  /**
+   * @brief Get the Tick Count object
+   * 
+   * @return int tickCount
+   */
   int GetTickCount() const;
 
   /**
@@ -70,18 +84,26 @@ public:
   void SetHoldingShovel(bool holding);
 
   /**
-   * @brief Check if the player is holding a seed.
+   * @brief Set the Holding Seed object.
    * 
-   * @return bool True if holding a seed, false otherwise.
+   * @param seed 
    */
-  bool IsHoldingSeed() const;
+  void SetHoldingSeed(std::shared_ptr<HoldingSeed> seed); 
+
+  /**
+   * @brief Get the Holding Seed object.
+   * 
+   * @return std::shared_ptr<HoldingSeed> 
+   */
+  std::shared_ptr<HoldingSeed> GetHoldingSeed() const;
   
   /**
-   * @brief Set the currently selected seed.
+   * @brief Plant the seed.
    * 
-   * @param seed The selected seed object.
+   * @param x 
+   * @param y 
    */
-  void SetSelectedSeed(std::shared_ptr<GameObject> seed);
+  void PlantSeed(int x, int y);
   
   /**
    * @brief Add a game object to the game world.
@@ -110,12 +132,12 @@ private:
   /**
    * @brief Track the number of game ticks.
    */
-  int tickCount;
+  int tickCount = 0;
 
   /**
-   * @brief The currently selected seed
+   * @brief The currently holding seed.
    */
-  std::shared_ptr<GameObject> selectedSeed; 
+  std::shared_ptr<HoldingSeed> holdingSeed;
 
   /**
    * @brief Whether holding a shovel.

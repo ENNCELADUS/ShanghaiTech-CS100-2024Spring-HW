@@ -198,6 +198,7 @@ src/GameObject/CMakeFiles/SeedButton.dir/SeedButton.cpp.obj: \
  D:/mingw64/include/c++/13.2.0/numeric \
  D:/mingw64/include/c++/13.2.0/bits/stl_numeric.h \
  D:/mingw64/include/c++/13.2.0/pstl/glue_numeric_defs.h \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/HoldingSeed.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameWorld/GameWorld.hpp \
  D:/mingw64/include/c++/13.2.0/list \
  D:/mingw64/include/c++/13.2.0/bits/stl_list.h \
@@ -212,4 +213,8 @@ src/GameObject/CMakeFiles/SeedButton.dir/SeedButton.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CooldownMask.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sun.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Plant.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Sunflower.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Plant.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/HoldingSeed.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

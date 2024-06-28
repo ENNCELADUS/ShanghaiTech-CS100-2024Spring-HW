@@ -91,7 +91,7 @@ void GameWorld::CreatePlantingSpot(){
     for (int col = 0; col < GAME_COLS; col++) {
       int x = FIRST_COL_CENTER + col * LAWN_GRID_WIDTH;
       int y = FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
-      auto spot = std::make_shared<PlantingSpot>(x, y);
+      auto spot = std::make_shared<PlantingSpot>(x, y, *shared_from_this());
       AddGameObject(spot);
     }
   }
@@ -101,15 +101,15 @@ void GameWorld::CreateSeedButtons() {
   int x = 130;
   int y = WINDOW_HEIGHT - 44;
 
-  auto sunflowerSeed = std::make_shared<SunflowerSeed>(x, y, *shared_from_this());
+  auto sunflowerSeed = std::make_shared<SunflowerSeed>(x, y, *shared_from_this(), PlantType::Sunflower);
   AddGameObject(sunflowerSeed);
 
   x += 60;
-  auto peashooterSeed = std::make_shared<PeashooterSeed>(x, y, *shared_from_this());
+  auto peashooterSeed = std::make_shared<PeashooterSeed>(x, y, *shared_from_this(), PlantType::Peashooter);
   AddGameObject(peashooterSeed);
 
   x += 60;
-  auto wallnutSeed = std::make_shared<WallnutSeed>(x, y, *shared_from_this());
+  auto wallnutSeed = std::make_shared<WallnutSeed>(x, y, *shared_from_this(), PlantType::Wallnut);
   AddGameObject(wallnutSeed);
 }
 
@@ -142,15 +142,40 @@ void GameWorld::SetHoldingShovel(bool holding) {
   holdingShovel = holding;
 }
 
-
-bool GameWorld::IsHoldingSeed() const {
-  return selectedSeed != nullptr;
+void GameWorld::SetHoldingSeed(std::shared_ptr<HoldingSeed> seed) {
+  holdingSeed = seed;
 }
 
-
-void GameWorld::SetSelectedSeed(std::shared_ptr<GameObject> seed) {
-  selectedSeed = seed;
+std::shared_ptr<HoldingSeed> GameWorld::GetHoldingSeed() const {
+  return holdingSeed;
 }
+
+// TODO:
+void GameWorld::PlantSeed(int x, int y) {
+  if (holdingSeed) {
+    auto plantType = holdingSeed->GetPlantType();
+    std::shared_ptr<GameObject> plant;
+
+    switch (plantType) {
+      case PlantType::Sunflower:
+        plant = std::make_shared<Sunflower>(x, y, 300, *this);
+        break;
+      // case PlantType::Peashooter:
+      //   plant = std::make_shared<Peashooter>(x, y, *this);
+      //   break;
+      // case PlantType::Wallnut:
+      //   plant = std::make_shared<Wallnut>(x, y, *this);
+      //   break;
+    }
+
+    if (plant) {
+      AddGameObject(plant);
+    }
+
+    holdingSeed = nullptr;
+  }
+}
+
 
 
 void GameWorld::AddGameObject(std::shared_ptr<GameObject> obj) {

@@ -19,7 +19,7 @@ private:
     /**
      * @brief Sunlight generation interval
      */
-    int sunGenerationInterval; 
+    int sunGenerationInterval = 600; 
 
     void GenerateSun();
 };

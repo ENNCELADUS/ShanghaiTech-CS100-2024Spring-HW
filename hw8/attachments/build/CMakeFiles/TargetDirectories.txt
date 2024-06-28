@@ -38,6 +38,7 @@ E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Cooldo
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Sun.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Plant.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Sunflower.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/HoldingSeed.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/edit_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/rebuild_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/list_install_components.dir

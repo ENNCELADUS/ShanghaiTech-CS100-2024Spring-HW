@@ -11,11 +11,14 @@
 class PlantingSpot : public GameObject {
 public:
 
-    PlantingSpot(int x, int y);
+    PlantingSpot(int x, int y, GameWorld& gameworld);
 
     void Update() override;
 
     void OnClick() override;
+
+private:
+    GameWorld& gameWorld;
 };
 
 #endif // PLANTINGSPOT_HPP__

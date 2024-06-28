@@ -205,6 +205,7 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PlantingSpot.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/HoldingSeed.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SunflowerSeed.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PeashooterSeed.hpp \
@@ -212,4 +213,8 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CooldownMask.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sun.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Plant.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Sunflower.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Plant.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/HoldingSeed.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

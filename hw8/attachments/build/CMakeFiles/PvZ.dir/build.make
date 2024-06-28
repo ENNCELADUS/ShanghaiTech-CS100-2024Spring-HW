@@ -104,6 +104,7 @@ bin/PvZ.exe: lib/libCooldownMask.a
 bin/PvZ.exe: lib/libSun.a
 bin/PvZ.exe: lib/libSunflower.a
 bin/PvZ.exe: lib/libPlant.a
+bin/PvZ.exe: lib/libHoldingSeed.a
 bin/PvZ.exe: lib/libGameObject.a
 bin/PvZ.exe: lib/libFramework.a
 bin/PvZ.exe: lib/libSOIL.a

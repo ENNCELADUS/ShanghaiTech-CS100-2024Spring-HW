@@ -369,6 +369,19 @@ Sunflower/fast:
 .PHONY : Sunflower/fast
 
 #=============================================================================
+# Target rules for targets named HoldingSeed
+
+# Build rule for target.
+HoldingSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HoldingSeed
+.PHONY : HoldingSeed
+
+# fast build rule for target.
+HoldingSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\HoldingSeed.dir\build.make src/GameObject/CMakeFiles/HoldingSeed.dir/build
+.PHONY : HoldingSeed/fast
+
+#=============================================================================
 # Target rules for targets named GameWorld
 
 # Build rule for target.
@@ -422,6 +435,7 @@ help:
 	@echo ... Framework
 	@echo ... GameObject
 	@echo ... GameWorld
+	@echo ... HoldingSeed
 	@echo ... PeashooterSeed
 	@echo ... Plant
 	@echo ... PlantingSpot

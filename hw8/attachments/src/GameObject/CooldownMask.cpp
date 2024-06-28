@@ -7,12 +7,10 @@ CooldownMask::CooldownMask(int x, int y)
 void CooldownMask::Update() {
     if (cooldownRemaining > 0) {
         --cooldownRemaining;
-        std::cout << cooldownRemaining << std::endl;
     } 
     else {
         // Remove the cooldown mask once the cooldown is complete
         GameObject::MarkAsDead();
-        std::cout << "Dead" << std::endl;
         return;
     }
 }
