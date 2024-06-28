@@ -1,5 +1,7 @@
-CMakeFiles/PvZ.dir/src/main.cpp.obj: \
- E:\RICHARD\CS100\CS100-HW\hw8\attachments\src\main.cpp \
+src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.obj: \
+ E:\RICHARD\CS100\CS100-HW\hw8\attachments\src\GameObject\Sun.cpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sun.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
  D:/mingw64/include/c++/13.2.0/memory \
  D:/mingw64/include/c++/13.2.0/bits/memoryfwd.h \
  D:/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -106,7 +108,6 @@ CMakeFiles/PvZ.dir/src/main.cpp.obj: \
  D:/mingw64/include/c++/13.2.0/backward/auto_ptr.h \
  D:/mingw64/include/c++/13.2.0/pstl/glue_memory_defs.h \
  D:/mingw64/include/c++/13.2.0/pstl/execution_defs.h \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/GameManager.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/ObjectBase.hpp \
  D:/mingw64/include/c++/13.2.0/iostream \
  D:/mingw64/include/c++/13.2.0/ostream D:/mingw64/include/c++/13.2.0/ios \
@@ -197,15 +198,11 @@ CMakeFiles/PvZ.dir/src/main.cpp.obj: \
  D:/mingw64/include/c++/13.2.0/numeric \
  D:/mingw64/include/c++/13.2.0/bits/stl_numeric.h \
  D:/mingw64/include/c++/13.2.0/pstl/glue_numeric_defs.h \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/WorldBase.hpp \
- D:/mingw64/include/c++/13.2.0/map \
- D:/mingw64/include/c++/13.2.0/bits/stl_map.h \
- D:/mingw64/include/c++/13.2.0/bits/stl_multimap.h \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameWorld/GameWorld.hpp \
  D:/mingw64/include/c++/13.2.0/list \
  D:/mingw64/include/c++/13.2.0/bits/stl_list.h \
  D:/mingw64/include/c++/13.2.0/bits/list.tcc \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/WorldBase.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PlantingSpot.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp \
@@ -215,5 +212,4 @@ CMakeFiles/PvZ.dir/src/main.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/WallnutSeed.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CooldownMask.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sun.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

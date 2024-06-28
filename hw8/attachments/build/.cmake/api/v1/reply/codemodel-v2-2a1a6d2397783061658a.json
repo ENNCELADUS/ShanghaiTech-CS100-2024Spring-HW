@@ -45,7 +45,7 @@
 				{
 					"build" : "freeglut",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-freeglut-Debug-0e4035e7e333bb7ab9ad.json",
+					"jsonFile" : "directory-freeglut-Debug-b5b87c592783c21a3266.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0.0"
@@ -55,8 +55,8 @@
 					"source" : "third_party/freeglut",
 					"targetIndexes" : 
 					[
-						12,
-						13
+						13,
+						14
 					]
 				},
 				{
@@ -93,7 +93,8 @@
 						6,
 						9,
 						10,
-						11
+						11,
+						12
 					]
 				},
 				{
@@ -141,7 +142,8 @@
 						7,
 						9,
 						10,
-						11
+						11,
+						12
 					]
 				},
 				{
@@ -165,8 +167,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						12,
-						13
+						13,
+						14
 					]
 				}
 			],
@@ -203,7 +205,7 @@
 				{
 					"directoryIndex" : 5,
 					"id" : "GameWorld::@2c651ff0fb8a858345be",
-					"jsonFile" : "target-GameWorld-Debug-a27c86dae7c9f1929e38.json",
+					"jsonFile" : "target-GameWorld-Debug-b4a60fe8554477840be9.json",
 					"name" : "GameWorld",
 					"projectIndex" : 0
 				},
@@ -224,7 +226,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PvZ::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PvZ-Debug-c80c7d1713796710dc23.json",
+					"jsonFile" : "target-PvZ-Debug-578f8b5f358f8e8b2fd2.json",
 					"name" : "PvZ",
 					"projectIndex" : 0
 				},
@@ -240,6 +242,13 @@
 					"id" : "SeedButton::@cf4d02a5657504c132a7",
 					"jsonFile" : "target-SeedButton-Debug-018e0be1b4f6cdabbf41.json",
 					"name" : "SeedButton",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Sun::@cf4d02a5657504c132a7",
+					"jsonFile" : "target-Sun-Debug-01d20dcf8b44a7933f97.json",
+					"name" : "Sun",
 					"projectIndex" : 0
 				},
 				{

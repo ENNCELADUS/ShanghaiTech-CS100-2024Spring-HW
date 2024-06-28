@@ -35,6 +35,7 @@ E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Sunflo
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/PeashooterSeed.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/WallnutSeed.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/CooldownMask.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Sun.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/edit_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/rebuild_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/list_install_components.dir

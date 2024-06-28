@@ -14,6 +14,7 @@
 #include "pvz/GameObject/PeashooterSeed.hpp"
 #include "pvz/GameObject/WallnutSeed.hpp"
 #include "pvz/GameObject/CooldownMask.hpp"
+#include "pvz/GameObject/Sun.hpp"
 
 #include "pvz/Framework/TextBase.hpp"
 #include "pvz/utils.hpp"
@@ -44,6 +45,13 @@ public:
    * @param amount The amount of sunlight to spend.
    */
   void SpendSunlight(int amount);
+
+  /**
+   * @brief Add amount of sunlight.
+   * 
+   * @param amount 
+   */
+  void AddSunlight(int amount);
 
   /**
    * @brief Check if the player is holding a shovel.
@@ -91,6 +99,11 @@ private:
   std::shared_ptr<TextBase> waveText;
 
   /**
+   * @brief Track the number of game ticks.
+   */
+  int tickCount;
+
+  /**
    * @brief The currently selected seed
    */
   std::shared_ptr<GameObject> selectedSeed; 
@@ -116,6 +129,11 @@ private:
    * 
    */
   void CreateSeedButtons();
+  
+  /**
+   * @brief Create Sun.
+   */
+  void CreateSun();
 
   /**
    * @brief Update sunlight and wave number text.

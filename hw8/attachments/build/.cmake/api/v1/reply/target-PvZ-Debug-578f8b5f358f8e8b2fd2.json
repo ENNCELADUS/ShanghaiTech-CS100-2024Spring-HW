@@ -128,15 +128,15 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "CooldownMask::@cf4d02a5657504c132a7"
+			"id" : "Background::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Sun::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "GameObject::@cf4d02a5657504c132a7"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "PlantingSpot::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -148,7 +148,15 @@
 		},
 		{
 			"backtrace" : 2,
+			"id" : "PeashooterSeed::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "WallnutSeed::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CooldownMask::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -156,11 +164,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Background::@cf4d02a5657504c132a7"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "PeashooterSeed::@cf4d02a5657504c132a7"
+			"id" : "PlantingSpot::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -223,6 +227,11 @@
 			{
 				"backtrace" : 4,
 				"fragment" : "lib\\libCooldownMask.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libSun.a",
 				"role" : "libraries"
 			},
 			{

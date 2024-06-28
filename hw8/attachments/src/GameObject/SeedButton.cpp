@@ -20,14 +20,11 @@ void SeedButton::OnClick() {
 
     // Check if there is enough sunlight
     if (gameWorld.GetSunlight() < price) {
-        std::cout << "Not Enough Sunlight" << std::endl;
         return;
     }
 
     // Spend sunlight and enter cooldown
-    std::cout << "Enough Sunlight" << std::endl;
     gameWorld.SpendSunlight(price);
-    std::cout << gameWorld.GetSunlight() << std::endl;
 
     // Create cooldown mask
     gameWorld.AddGameObject(std::make_shared<CooldownMask>(GetX(), GetY()));

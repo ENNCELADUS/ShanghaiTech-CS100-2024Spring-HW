@@ -214,6 +214,7 @@ CMakeFiles/PvZ.dir/src/main.cpp.obj: E:/RICHARD/CS100/CS100-HW/hw8/attachments/s
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PeashooterSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PlantingSpot.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sun.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SunflowerSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/WallnutSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameWorld/GameWorld.hpp \
@@ -649,6 +650,8 @@ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/WorldBase.hpp:
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PeashooterSeed.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sun.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/WallnutSeed.hpp:
 

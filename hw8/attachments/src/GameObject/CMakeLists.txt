@@ -95,3 +95,15 @@ target_link_libraries(
   PUBLIC
   GameObject
 )
+
+add_library(
+  Sun
+  STATIC
+  Sun.cpp
+)
+
+target_link_libraries(
+  Sun
+  PUBLIC
+  GameObject
+)

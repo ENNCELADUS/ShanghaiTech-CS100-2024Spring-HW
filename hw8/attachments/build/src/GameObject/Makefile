@@ -272,6 +272,20 @@ CooldownMask/fast:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CooldownMask.dir\build.make src/GameObject/CMakeFiles/CooldownMask.dir/build
 .PHONY : CooldownMask/fast
 
+# Convenience name for target.
+src/GameObject/CMakeFiles/Sun.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Sun.dir/rule
+.PHONY : src/GameObject/CMakeFiles/Sun.dir/rule
+
+# Convenience name for target.
+Sun: src/GameObject/CMakeFiles/Sun.dir/rule
+.PHONY : Sun
+
+# fast build rule for target.
+Sun/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/build
+.PHONY : Sun/fast
+
 Background.obj: Background.cpp.obj
 .PHONY : Background.obj
 
@@ -416,6 +430,30 @@ SeedButton.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/SeedButton.cpp.s
 .PHONY : SeedButton.cpp.s
 
+Sun.obj: Sun.cpp.obj
+.PHONY : Sun.obj
+
+# target to build an object file
+Sun.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.obj
+.PHONY : Sun.cpp.obj
+
+Sun.i: Sun.cpp.i
+.PHONY : Sun.i
+
+# target to preprocess a source file
+Sun.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.i
+.PHONY : Sun.cpp.i
+
+Sun.s: Sun.cpp.s
+.PHONY : Sun.s
+
+# target to generate assembly for a file
+Sun.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.s
+.PHONY : Sun.cpp.s
+
 SunflowerSeed.obj: SunflowerSeed.cpp.obj
 .PHONY : SunflowerSeed.obj
 
@@ -482,6 +520,7 @@ help:
 	@echo ... PeashooterSeed
 	@echo ... PlantingSpot
 	@echo ... SeedButton
+	@echo ... Sun
 	@echo ... SunflowerSeed
 	@echo ... WallnutSeed
 	@echo ... Background.obj
@@ -502,6 +541,9 @@ help:
 	@echo ... SeedButton.obj
 	@echo ... SeedButton.i
 	@echo ... SeedButton.s
+	@echo ... Sun.obj
+	@echo ... Sun.i
+	@echo ... Sun.s
 	@echo ... SunflowerSeed.obj
 	@echo ... SunflowerSeed.i
 	@echo ... SunflowerSeed.s

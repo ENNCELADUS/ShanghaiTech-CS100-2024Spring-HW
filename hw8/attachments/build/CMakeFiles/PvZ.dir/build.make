@@ -101,6 +101,7 @@ bin/PvZ.exe: lib/libPeashooterSeed.a
 bin/PvZ.exe: lib/libWallnutSeed.a
 bin/PvZ.exe: lib/libSeedButton.a
 bin/PvZ.exe: lib/libCooldownMask.a
+bin/PvZ.exe: lib/libSun.a
 bin/PvZ.exe: lib/libGameObject.a
 bin/PvZ.exe: lib/libFramework.a
 bin/PvZ.exe: lib/libSOIL.a

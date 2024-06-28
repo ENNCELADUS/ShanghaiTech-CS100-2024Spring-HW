@@ -101,5 +101,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/GameObject/CMakeFiles/PeashooterSeed.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/WallnutSeed.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/CooldownMask.dir/DependInfo.cmake"
+  "src/GameObject/CMakeFiles/Sun.dir/DependInfo.cmake"
   "src/GameWorld/CMakeFiles/GameWorld.dir/DependInfo.cmake"
   )

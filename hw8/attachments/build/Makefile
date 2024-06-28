@@ -330,6 +330,19 @@ CooldownMask/fast:
 .PHONY : CooldownMask/fast
 
 #=============================================================================
+# Target rules for targets named Sun
+
+# Build rule for target.
+Sun: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sun
+.PHONY : Sun
+
+# fast build rule for target.
+Sun/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/build
+.PHONY : Sun/fast
+
+#=============================================================================
 # Target rules for targets named GameWorld
 
 # Build rule for target.
@@ -388,6 +401,7 @@ help:
 	@echo ... PvZ
 	@echo ... SOIL
 	@echo ... SeedButton
+	@echo ... Sun
 	@echo ... SunflowerSeed
 	@echo ... WallnutSeed
 	@echo ... freeglut
