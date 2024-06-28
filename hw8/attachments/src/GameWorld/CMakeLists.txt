@@ -17,4 +17,6 @@ target_link_libraries(
   WallnutSeed
   CooldownMask
   Sun
+  Plant
+  Sunflower
 )

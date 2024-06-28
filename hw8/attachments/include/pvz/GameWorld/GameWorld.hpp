@@ -15,6 +15,7 @@
 #include "pvz/GameObject/WallnutSeed.hpp"
 #include "pvz/GameObject/CooldownMask.hpp"
 #include "pvz/GameObject/Sun.hpp"
+#include "pvz/Gameobject/Plant.hpp"
 
 #include "pvz/Framework/TextBase.hpp"
 #include "pvz/utils.hpp"
@@ -38,6 +39,7 @@ public:
    */
   int GetSunlight() const;
   int GetCurrentWave() const;
+  int GetTickCount() const;
 
   /**
    * @brief Spend the given amount of sunlight.
@@ -59,6 +61,13 @@ public:
    * @return bool True if holding a shovel, false otherwise.
    */
   bool IsHoldingShovel() const;
+
+  /**
+   * @brief Set the Holding Shovel object.
+   * 
+   * @param holding 
+   */
+  void SetHoldingShovel(bool holding);
 
   /**
    * @brief Check if the player is holding a seed.
@@ -108,6 +117,11 @@ private:
    */
   std::shared_ptr<GameObject> selectedSeed; 
 
+  /**
+   * @brief Whether holding a shovel.
+   * 
+   */
+  bool holdingShovel;
 
   /**
    * @brief Create sunlight and wave number text in init().

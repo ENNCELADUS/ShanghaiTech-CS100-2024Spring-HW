@@ -343,6 +343,32 @@ Sun/fast:
 .PHONY : Sun/fast
 
 #=============================================================================
+# Target rules for targets named Plant
+
+# Build rule for target.
+Plant: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Plant
+.PHONY : Plant
+
+# fast build rule for target.
+Plant/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/build
+.PHONY : Plant/fast
+
+#=============================================================================
+# Target rules for targets named Sunflower
+
+# Build rule for target.
+Sunflower: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sunflower
+.PHONY : Sunflower
+
+# fast build rule for target.
+Sunflower/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/build
+.PHONY : Sunflower/fast
+
+#=============================================================================
 # Target rules for targets named GameWorld
 
 # Build rule for target.
@@ -397,11 +423,13 @@ help:
 	@echo ... GameObject
 	@echo ... GameWorld
 	@echo ... PeashooterSeed
+	@echo ... Plant
 	@echo ... PlantingSpot
 	@echo ... PvZ
 	@echo ... SOIL
 	@echo ... SeedButton
 	@echo ... Sun
+	@echo ... Sunflower
 	@echo ... SunflowerSeed
 	@echo ... WallnutSeed
 	@echo ... freeglut

@@ -286,6 +286,34 @@ Sun/fast:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/build
 .PHONY : Sun/fast
 
+# Convenience name for target.
+src/GameObject/CMakeFiles/Plant.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Plant.dir/rule
+.PHONY : src/GameObject/CMakeFiles/Plant.dir/rule
+
+# Convenience name for target.
+Plant: src/GameObject/CMakeFiles/Plant.dir/rule
+.PHONY : Plant
+
+# fast build rule for target.
+Plant/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/build
+.PHONY : Plant/fast
+
+# Convenience name for target.
+src/GameObject/CMakeFiles/Sunflower.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Sunflower.dir/rule
+.PHONY : src/GameObject/CMakeFiles/Sunflower.dir/rule
+
+# Convenience name for target.
+Sunflower: src/GameObject/CMakeFiles/Sunflower.dir/rule
+.PHONY : Sunflower
+
+# fast build rule for target.
+Sunflower/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/build
+.PHONY : Sunflower/fast
+
 Background.obj: Background.cpp.obj
 .PHONY : Background.obj
 
@@ -382,6 +410,30 @@ PeashooterSeed.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/PeashooterSeed.cpp.s
 .PHONY : PeashooterSeed.cpp.s
 
+Plant.obj: Plant.cpp.obj
+.PHONY : Plant.obj
+
+# target to build an object file
+Plant.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.obj
+.PHONY : Plant.cpp.obj
+
+Plant.i: Plant.cpp.i
+.PHONY : Plant.i
+
+# target to preprocess a source file
+Plant.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.i
+.PHONY : Plant.cpp.i
+
+Plant.s: Plant.cpp.s
+.PHONY : Plant.s
+
+# target to generate assembly for a file
+Plant.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.s
+.PHONY : Plant.cpp.s
+
 PlantingSpot.obj: PlantingSpot.cpp.obj
 .PHONY : PlantingSpot.obj
 
@@ -454,6 +506,30 @@ Sun.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.s
 .PHONY : Sun.cpp.s
 
+Sunflower.obj: Sunflower.cpp.obj
+.PHONY : Sunflower.obj
+
+# target to build an object file
+Sunflower.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/Sunflower.cpp.obj
+.PHONY : Sunflower.cpp.obj
+
+Sunflower.i: Sunflower.cpp.i
+.PHONY : Sunflower.i
+
+# target to preprocess a source file
+Sunflower.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/Sunflower.cpp.i
+.PHONY : Sunflower.cpp.i
+
+Sunflower.s: Sunflower.cpp.s
+.PHONY : Sunflower.s
+
+# target to generate assembly for a file
+Sunflower.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/Sunflower.cpp.s
+.PHONY : Sunflower.cpp.s
+
 SunflowerSeed.obj: SunflowerSeed.cpp.obj
 .PHONY : SunflowerSeed.obj
 
@@ -518,9 +594,11 @@ help:
 	@echo ... CooldownMask
 	@echo ... GameObject
 	@echo ... PeashooterSeed
+	@echo ... Plant
 	@echo ... PlantingSpot
 	@echo ... SeedButton
 	@echo ... Sun
+	@echo ... Sunflower
 	@echo ... SunflowerSeed
 	@echo ... WallnutSeed
 	@echo ... Background.obj
@@ -535,6 +613,9 @@ help:
 	@echo ... PeashooterSeed.obj
 	@echo ... PeashooterSeed.i
 	@echo ... PeashooterSeed.s
+	@echo ... Plant.obj
+	@echo ... Plant.i
+	@echo ... Plant.s
 	@echo ... PlantingSpot.obj
 	@echo ... PlantingSpot.i
 	@echo ... PlantingSpot.s
@@ -544,6 +625,9 @@ help:
 	@echo ... Sun.obj
 	@echo ... Sun.i
 	@echo ... Sun.s
+	@echo ... Sunflower.obj
+	@echo ... Sunflower.i
+	@echo ... Sunflower.s
 	@echo ... SunflowerSeed.obj
 	@echo ... SunflowerSeed.i
 	@echo ... SunflowerSeed.s

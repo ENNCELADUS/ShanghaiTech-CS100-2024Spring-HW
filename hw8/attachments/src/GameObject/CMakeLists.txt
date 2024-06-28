@@ -107,3 +107,27 @@ target_link_libraries(
   PUBLIC
   GameObject
 )
+
+add_library(
+  Plant
+  STATIC
+  Plant.cpp
+)
+
+target_link_libraries(
+  Plant
+  PUBLIC
+  GameObject
+)
+
+add_library(
+  Sunflower
+  STATIC
+  Sunflower.cpp
+)
+
+target_link_libraries(
+  Sunflower
+  PUBLIC
+  Plant
+)

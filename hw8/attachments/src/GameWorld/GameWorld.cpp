@@ -72,6 +72,9 @@ int GameWorld::GetSunlight() const {
 int GameWorld::GetCurrentWave() const {
   return currentWave;
 }
+int GameWorld::GetTickCount() const {
+  return tickCount;
+}
 
 void GameWorld::CreateTexts(){
   sunlightText = std::make_shared<TextBase>(60, WINDOW_HEIGHT - 80, "100");
@@ -133,6 +136,10 @@ bool GameWorld::IsHoldingShovel() const {
   // Implement logic to check if the player is holding a shovel
   // TODO:
   return false; // Placeholder
+}
+
+void GameWorld::SetHoldingShovel(bool holding) {
+  holdingShovel = holding;
 }
 
 
