@@ -39,6 +39,10 @@ E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Sun.di
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Plant.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Sunflower.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/HoldingSeed.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Peashooter.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Pea.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Zombie.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/RegularZombie.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/edit_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/rebuild_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/list_install_components.dir

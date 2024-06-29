@@ -14,8 +14,6 @@ public:
 
 protected:
     PlantType plantType;
-
-private:
     GameWorld& gameWorld;
     int price;
     int cooldown;

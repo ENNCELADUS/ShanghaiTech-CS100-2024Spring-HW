@@ -26,8 +26,9 @@ public:
    * @param width The width of the game object.
    * @param height The height of the game object.
    * @param animID The animation ID for the game object.
+   * @param hp The health points for the game object.
    */
-  GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID);
+  GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID, int hp = 1);
   virtual ~GameObject() = default;
 
   virtual void Update() = 0;
@@ -39,14 +40,39 @@ public:
    * @return true if the game object is dead, false otherwise.
    */
   bool IsDead() const;
+
   /**
    * @brief Mark the game object as dead.
    */
   void MarkAsDead();
 
+  /**
+   * @brief Get the Layer of the game object.
+   * 
+   * @return LayerID of the game object.
+   */
+  LayerID GetLayer() const;
+
+  /**
+   * @brief Get the shared pointer to this object.
+   * 
+   * @return std::shared_ptr<GameObject>
+   */
+  std::shared_ptr<GameObject> GetpGameObject();
+
+  /**
+   * @brief Apply damage to the game object.
+   * 
+   * @param damage The amount of damage to apply.
+   */
+  virtual void TakeDamage(int damage);
+
+protected:
+  int hp;
 
 private:
   bool isDead;
+  LayerID Layer;
 };
 
 

@@ -11,8 +11,8 @@
  * @param height The height of the game object.
  * @param animID The animation ID for the game object.
  */
-GameObject::GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID)
-    : ObjectBase(imageID, x, y, layer, width, height, animID), isDead(false) {}
+GameObject::GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID, int hp)
+    : ObjectBase(imageID, x, y, layer, width, height, animID), isDead(false), Layer(layer), hp(hp) {}
 
 
 bool GameObject::IsDead() const {
@@ -21,4 +21,16 @@ bool GameObject::IsDead() const {
 
 void GameObject::MarkAsDead() {
     isDead = true;
+}
+
+LayerID GameObject::GetLayer() const {
+    return Layer;
+}
+
+std::shared_ptr<GameObject> GameObject::GetpGameObject() {
+    return shared_from_this();
+}
+
+void GameObject::TakeDamage(int damage) {
+
 }

@@ -18,6 +18,11 @@
 #include "pvz/Gameobject/Plant.hpp"
 #include "pvz/Gameobject/Sunflower.hpp"
 #include "pvz/Gameobject/HoldingSeed.hpp"
+#include "pvz/Gameobject/Peashooter.hpp"
+#include "pvz/Gameobject/Pea.hpp"
+#include "pvz/Gameobject/Zombie.hpp"
+#include "pvz/Gameobject/RegularZombie.hpp"
+
 
 #include "pvz/Framework/TextBase.hpp"
 #include "pvz/utils.hpp"
@@ -112,7 +117,19 @@ public:
    */
   void AddGameObject(std::shared_ptr<GameObject> obj);
 
+  /**
+   * @brief Get the Game Objects object List.
+   * 
+   * @return const std::list<std::shared_ptr<GameObject>>& 
+   */
+  const std::list<std::shared_ptr<GameObject>>& GetGameObjects() const;
 
+  /**
+   * @brief Judge whether there're zombies in this row.
+   * @return true There're zombies.
+   * @return false 
+   */
+  bool HasZombiesInRow(int y, int x) const;
 
 private: 
   std::list<std::shared_ptr<GameObject>> gameObjects;

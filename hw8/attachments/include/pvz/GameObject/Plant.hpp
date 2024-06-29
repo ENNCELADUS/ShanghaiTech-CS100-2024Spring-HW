@@ -8,12 +8,9 @@ public:
     Plant(ImageID imageID, int x, int y, int width, int height, int hp, GameWorld& gameworld, AnimID animID);
     virtual void Update() override;
     virtual void OnClick() override;
+    void TakeDamage(int damage) override;
 
 protected:
-    /**
-     * @brief Plant's health points
-     */
-    int hp; 
     GameWorld& gameWorld;
 };
 

@@ -20,4 +20,8 @@ target_link_libraries(
   Plant
   Sunflower
   HoldingSeed
+  Peashooter
+  Pea
+  Zombie
+  RegularZombie
 )

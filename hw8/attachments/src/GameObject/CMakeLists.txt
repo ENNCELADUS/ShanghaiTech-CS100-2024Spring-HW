@@ -35,6 +35,7 @@ target_link_libraries(
   GameObject
 )
 
+
 add_library(
   SeedButton
   STATIC 
@@ -59,7 +60,6 @@ target_link_libraries(
   SeedButton
 )
 
-# 添加PeashooterSeed库
 add_library(
   PeashooterSeed
   STATIC
@@ -142,4 +142,52 @@ target_link_libraries(
   HoldingSeed
   PUBLIC
   GameObject
+)
+
+add_library(
+  Peashooter
+  STATIC
+  Peashooter.cpp
+)
+
+target_link_libraries(
+  Peashooter
+  PUBLIC
+  Plant
+)
+
+add_library(
+  Pea
+  STATIC
+  Pea.cpp
+)
+
+target_link_libraries(
+  Pea
+  PUBLIC
+  GameObject
+)
+
+add_library(
+  Zombie
+  STATIC
+  Zombie.cpp
+)
+
+target_link_libraries(
+  Zombie
+  PUBLIC
+  GameObject
+)
+
+add_library(
+  RegularZombie
+  STATIC
+  RegularZombie.cpp
+)
+
+target_link_libraries(
+  RegularZombie
+  PUBLIC
+  Zombie
 )

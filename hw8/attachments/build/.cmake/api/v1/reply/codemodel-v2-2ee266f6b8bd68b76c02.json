@@ -24,7 +24,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						9
+						11
 					]
 				},
 				{
@@ -39,13 +39,13 @@
 					"source" : "third_party/SOIL",
 					"targetIndexes" : 
 					[
-						10
+						13
 					]
 				},
 				{
 					"build" : "freeglut",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-freeglut-Debug-51bc77c86c198e06f3c9.json",
+					"jsonFile" : "directory-freeglut-Debug-7ef9c318ee07ef108d68.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0.0"
@@ -55,8 +55,8 @@
 					"source" : "third_party/freeglut",
 					"targetIndexes" : 
 					[
-						16,
-						17
+						20,
+						21
 					]
 				},
 				{
@@ -93,11 +93,15 @@
 						6,
 						7,
 						8,
-						11,
+						9,
+						10,
 						12,
-						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18,
+						19
 					]
 				},
 				{
@@ -145,11 +149,15 @@
 						7,
 						8,
 						9,
+						10,
 						11,
 						12,
-						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18,
+						19
 					]
 				},
 				{
@@ -161,7 +169,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						10
+						13
 					]
 				},
 				{
@@ -173,8 +181,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						16,
-						17
+						20,
+						21
 					]
 				}
 			],
@@ -211,7 +219,7 @@
 				{
 					"directoryIndex" : 5,
 					"id" : "GameWorld::@2c651ff0fb8a858345be",
-					"jsonFile" : "target-GameWorld-Debug-c493696c84376fa7e7b1.json",
+					"jsonFile" : "target-GameWorld-Debug-e9f9af69d3796e868efb.json",
 					"name" : "GameWorld",
 					"projectIndex" : 0
 				},
@@ -224,8 +232,22 @@
 				},
 				{
 					"directoryIndex" : 4,
+					"id" : "Pea::@cf4d02a5657504c132a7",
+					"jsonFile" : "target-Pea-Debug-feb85652c388f9a2332b.json",
+					"name" : "Pea",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Peashooter::@cf4d02a5657504c132a7",
+					"jsonFile" : "target-Peashooter-Debug-d47076e7535442f4d170.json",
+					"name" : "Peashooter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
 					"id" : "PeashooterSeed::@cf4d02a5657504c132a7",
-					"jsonFile" : "target-PeashooterSeed-Debug-39ceab02d73917e8c49e.json",
+					"jsonFile" : "target-PeashooterSeed-Debug-c0d368e1cf8004c4b844.json",
 					"name" : "PeashooterSeed",
 					"projectIndex" : 0
 				},
@@ -246,8 +268,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PvZ::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PvZ-Debug-a328596507262aae284f.json",
+					"jsonFile" : "target-PvZ-Debug-0b79b66c13e4be9f5cb7.json",
 					"name" : "PvZ",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "RegularZombie::@cf4d02a5657504c132a7",
+					"jsonFile" : "target-RegularZombie-Debug-d34fcbe4070ec320de5e.json",
+					"name" : "RegularZombie",
 					"projectIndex" : 0
 				},
 				{
@@ -260,7 +289,7 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "SeedButton::@cf4d02a5657504c132a7",
-					"jsonFile" : "target-SeedButton-Debug-db1eb14d81c4410c4b4b.json",
+					"jsonFile" : "target-SeedButton-Debug-78972297ed7ff22a4003.json",
 					"name" : "SeedButton",
 					"projectIndex" : 0
 				},
@@ -274,22 +303,29 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "Sunflower::@cf4d02a5657504c132a7",
-					"jsonFile" : "target-Sunflower-Debug-4a76ce412ff87e001856.json",
+					"jsonFile" : "target-Sunflower-Debug-f2024dd68cf1aa8b3232.json",
 					"name" : "Sunflower",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "SunflowerSeed::@cf4d02a5657504c132a7",
-					"jsonFile" : "target-SunflowerSeed-Debug-f83a97cb0a38e57d4b70.json",
+					"jsonFile" : "target-SunflowerSeed-Debug-f275e78967975f33990e.json",
 					"name" : "SunflowerSeed",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "WallnutSeed::@cf4d02a5657504c132a7",
-					"jsonFile" : "target-WallnutSeed-Debug-63f84ea1e5e68569e4e1.json",
+					"jsonFile" : "target-WallnutSeed-Debug-b88be86f5ab51be2af12.json",
 					"name" : "WallnutSeed",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Zombie::@cf4d02a5657504c132a7",
+					"jsonFile" : "target-Zombie-Debug-05cc9110626985850d53.json",
+					"name" : "Zombie",
 					"projectIndex" : 0
 				},
 				{

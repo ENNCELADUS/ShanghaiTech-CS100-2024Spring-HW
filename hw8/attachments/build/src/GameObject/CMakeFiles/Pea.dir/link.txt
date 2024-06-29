@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libPea.a CMakeFiles/Pea.dir/Pea.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libPea.a

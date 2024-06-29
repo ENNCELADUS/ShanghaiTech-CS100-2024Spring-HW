@@ -217,4 +217,10 @@ src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Plant.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Sunflower.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/HoldingSeed.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Peashooter.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Pea.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Zombie.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/RegularZombie.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Zombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

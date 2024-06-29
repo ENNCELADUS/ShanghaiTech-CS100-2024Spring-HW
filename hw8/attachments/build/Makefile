@@ -382,6 +382,58 @@ HoldingSeed/fast:
 .PHONY : HoldingSeed/fast
 
 #=============================================================================
+# Target rules for targets named Peashooter
+
+# Build rule for target.
+Peashooter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Peashooter
+.PHONY : Peashooter
+
+# fast build rule for target.
+Peashooter/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Peashooter.dir\build.make src/GameObject/CMakeFiles/Peashooter.dir/build
+.PHONY : Peashooter/fast
+
+#=============================================================================
+# Target rules for targets named Pea
+
+# Build rule for target.
+Pea: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Pea
+.PHONY : Pea
+
+# fast build rule for target.
+Pea/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Pea.dir\build.make src/GameObject/CMakeFiles/Pea.dir/build
+.PHONY : Pea/fast
+
+#=============================================================================
+# Target rules for targets named Zombie
+
+# Build rule for target.
+Zombie: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Zombie
+.PHONY : Zombie
+
+# fast build rule for target.
+Zombie/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Zombie.dir\build.make src/GameObject/CMakeFiles/Zombie.dir/build
+.PHONY : Zombie/fast
+
+#=============================================================================
+# Target rules for targets named RegularZombie
+
+# Build rule for target.
+RegularZombie: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RegularZombie
+.PHONY : RegularZombie
+
+# fast build rule for target.
+RegularZombie/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/build
+.PHONY : RegularZombie/fast
+
+#=============================================================================
 # Target rules for targets named GameWorld
 
 # Build rule for target.
@@ -436,16 +488,20 @@ help:
 	@echo ... GameObject
 	@echo ... GameWorld
 	@echo ... HoldingSeed
+	@echo ... Pea
+	@echo ... Peashooter
 	@echo ... PeashooterSeed
 	@echo ... Plant
 	@echo ... PlantingSpot
 	@echo ... PvZ
+	@echo ... RegularZombie
 	@echo ... SOIL
 	@echo ... SeedButton
 	@echo ... Sun
 	@echo ... Sunflower
 	@echo ... SunflowerSeed
 	@echo ... WallnutSeed
+	@echo ... Zombie
 	@echo ... freeglut
 	@echo ... freeglut_static
 	@echo ... src/main.obj

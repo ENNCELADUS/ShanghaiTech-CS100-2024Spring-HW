@@ -3,7 +3,7 @@
 #include "pvz/utils.hpp"
 
 
-SeedButton::SeedButton(ImageID imageID, int x, int y, int width, int height, int price, int cooldown, GameWorld& gameworld, PlantType PlantType)
+SeedButton::SeedButton(ImageID imageID, int x, int y, int width, int height, int price, int cooldown, GameWorld& gameworld, PlantType plantType)
     : GameObject(imageID, x, y, LAYER_UI, width, height, ANIMID_NO_ANIMATION), price(price), cooldown(cooldown), gameWorld(gameworld), plantType(plantType) {}
 
 void SeedButton::Update() {

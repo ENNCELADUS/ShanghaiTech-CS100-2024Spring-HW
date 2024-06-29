@@ -158,11 +158,11 @@ void GameWorld::PlantSeed(int x, int y) {
 
     switch (plantType) {
       case PlantType::Sunflower:
-        plant = std::make_shared<Sunflower>(x, y, 300, *this);
+        plant = std::make_shared<Sunflower>(x, y, *this);
         break;
-      // case PlantType::Peashooter:
-      //   plant = std::make_shared<Peashooter>(x, y, *this);
-      //   break;
+      case PlantType::Peashooter:
+        plant = std::make_shared<Peashooter>(x, y, *this);
+        break;
       // case PlantType::Wallnut:
       //   plant = std::make_shared<Wallnut>(x, y, *this);
       //   break;
@@ -182,8 +182,20 @@ void GameWorld::AddGameObject(std::shared_ptr<GameObject> obj) {
   gameObjects.push_back(obj);
 }
 
+const std::list<std::shared_ptr<GameObject>>& GameWorld::GetGameObjects() const {
+  return gameObjects;
+}
 
 void GameWorld::UpdateText() {
   sunlightText->SetText(std::to_string(sunlight));
   waveText->SetText("Wave: " + std::to_string(currentWave));
+}
+
+bool GameWorld::HasZombiesInRow(int y, int x) const {
+  for (const auto& obj : gameObjects) {
+    if (obj->GetLayer() == LAYER_ZOMBIES && obj->GetY() == y && obj->GetX() > x) {
+      return true;
+    }
+  }
+  return false;
 }

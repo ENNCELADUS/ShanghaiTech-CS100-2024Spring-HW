@@ -6,7 +6,7 @@
 
 class Sunflower : public Plant {
 public:
-    Sunflower(int x, int y, int hp, GameWorld& gameworld);
+    Sunflower(int x, int y, GameWorld& gameworld);
 
     void Update() override;
 
