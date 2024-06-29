@@ -26,17 +26,19 @@ void RegularZombie::OnClick() {
 }
 
 void RegularZombie::HandleCollision(std::shared_ptr<GameObject> other) {
-    // Collide with Plant.
-    if (auto plant = std::dynamic_pointer_cast<Plant>(other)) {
-        if (isWalking) {
-            isWalking = false;
-            PlayAnimation(ANIMID_EAT_ANIM);
+    if (other->GetObjectType() == ObjectType::PLANT) {
+        if (auto plant = std::dynamic_pointer_cast<Plant>(other)) {
+            if (isWalking) {
+                isWalking = false;
+                PlayAnimation(ANIMID_EAT_ANIM);
+            }
+            plant->TakeDamage(damageToPlant);
         }
-        plant->TakeDamage(damageToPlant);
-    }
-    // Collide with Pea.
-    else if (auto pea = std::dynamic_pointer_cast<Pea>(other)) {
-        TakeDamage(20);
-        pea->MarkAsDead();
+    } 
+    else if (other->GetObjectType() == ObjectType::PEA) {
+        if (auto pea = std::dynamic_pointer_cast<Pea>(other)) {
+            TakeDamage(20);
+            pea->MarkAsDead();
+        }
     }
 }

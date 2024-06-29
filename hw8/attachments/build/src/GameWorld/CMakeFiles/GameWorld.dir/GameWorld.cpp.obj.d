@@ -230,4 +230,5 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Zombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Wallnut.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Shovel.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/PoleVaultingZombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

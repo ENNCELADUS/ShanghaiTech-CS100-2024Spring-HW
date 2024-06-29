@@ -2,7 +2,8 @@
 #define ZOMBIE_HPP__
 
 #include "pvz/GameObject/GameObject.hpp"
-#include "pvz/GameWorld/GameWorld.hpp"
+
+class GameWorld;
 
 class Zombie : public GameObject {
 public:

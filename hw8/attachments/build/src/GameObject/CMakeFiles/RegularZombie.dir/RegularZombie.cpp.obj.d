@@ -231,4 +231,5 @@ src/GameObject/CMakeFiles/RegularZombie.dir/RegularZombie.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/RegularZombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Wallnut.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Shovel.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/PoleVaultingZombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

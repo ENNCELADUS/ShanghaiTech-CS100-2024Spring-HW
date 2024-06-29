@@ -1,15 +1,15 @@
 #include "pvz/GameObject/PoleVaultingZombie.hpp"
-
+#include "pvz/GameWorld/GameWorld.hpp"
 
 PoleVaultingZombie::PoleVaultingZombie(int x, int y, GameWorld& gameworld)
-    : Zombie(IMGID_POLE_VAULTING_ZOMBIE, x, y, 20, 80, 340, gameworld, ANIMID_RUN_ANIM), isRunning(true), jumpFrameCount(0) {}
+    : Zombie(IMGID_POLE_VAULTING_ZOMBIE, x, y, 20, 80, 340, gameworld, ANIMID_RUN_ANIM), isRunning(true), jumpFrameCount(0), hasJumped(false) {}
 
 void PoleVaultingZombie::Update() {
     if (IsDead()) {
         return;
     }
 
-    if (isRunning) {
+    if (isRunning && !hasJumped) {
         // Temporarily move zombies to detect plants.
         MoveTo(GetX() - 40, GetY());
 
@@ -29,29 +29,45 @@ void PoleVaultingZombie::Update() {
             // Stop moving and play the jump animation.
             PlayAnimation(ANIMID_JUMP_ANIM);
             jumpFrameCount = 42;
-            isRunning = false;
+            hasJumped = true;
             return;
         }
-
-        if (jumpFrameCount > 0) {
-            jumpFrameCount--;
-            if (jumpFrameCount == 0) {
-                PlayAnimation(ANIMID_WALK_ANIM);
-                MoveTo(GetX() - 150, GetY());
-            }
-            return;
-        }
-
+    
         MoveTo(GetX() - 2, GetY());
     } 
-    else {
-        if (IsEating()) {
+
+    if (jumpFrameCount > 0) {
+        jumpFrameCount--;
+        if (jumpFrameCount == 0) {
+            PlayAnimation(ANIMID_WALK_ANIM);
+            MoveTo(GetX() - 150, GetY());
+            isRunning = false;
+        }
+        return;
+    }
+
+    if (IsEating()) {
+        return;
+    }
+
+    // Check for collisions with plants in walking state
+    for (const auto& obj : gameWorld.GetGameObjects()) {
+        if (obj->GetObjectType() == ObjectType::PLANT && Intersects(obj.get())) {
+            if (!IsEating()) {
+                PlayAnimation(ANIMID_EAT_ANIM);
+                isWalking = false;
+            }
+            obj->TakeDamage(3);
             return;
         }
+    }
 
-        // Is walking.
+    // Walking state.
+    if (isWalking){
         MoveTo(GetX() - 1, GetY());
     }
+
+
 }
 
 void PoleVaultingZombie::OnClick() {

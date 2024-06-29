@@ -13,6 +13,7 @@ public:
 private:
     bool isRunning = true;
     int jumpFrameCount = 0;
+    bool hasJumped = false;
 };
 
 #endif // POLEVAULTINGZOMBIE_HPP__
