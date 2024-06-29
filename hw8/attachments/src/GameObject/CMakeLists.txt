@@ -191,3 +191,39 @@ target_link_libraries(
   PUBLIC
   Zombie
 )
+
+add_library(
+  Wallnut
+  STATIC
+  Wallnut.cpp
+)
+
+target_link_libraries(
+  Wallnut
+  PUBLIC
+  Plant
+)
+
+add_library(
+  Shovel
+  STATIC
+  Shovel.cpp
+)
+
+target_link_libraries(
+  Shovel
+  PUBLIC
+  GameObject
+)
+
+add_library(
+  PoleVaultingZombie
+  STATIC
+  PoleVaultingZombie.cpp
+)
+
+target_link_libraries(
+  PoleVaultingZombie
+  PUBLIC
+  Zombie
+)

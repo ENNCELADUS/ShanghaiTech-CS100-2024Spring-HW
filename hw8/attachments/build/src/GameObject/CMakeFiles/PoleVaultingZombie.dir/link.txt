@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libPoleVaultingZombie.a CMakeFiles/PoleVaultingZombie.dir/PoleVaultingZombie.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libPoleVaultingZombie.a

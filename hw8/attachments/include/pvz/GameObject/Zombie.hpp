@@ -2,6 +2,7 @@
 #define ZOMBIE_HPP__
 
 #include "pvz/GameObject/GameObject.hpp"
+#include "pvz/GameWorld/GameWorld.hpp"
 
 class Zombie : public GameObject {
 public:
@@ -9,16 +10,21 @@ public:
     void Update() override;
     void OnClick() override;
     void TakeDamage(int damage) override;
+    void HandleNoCollision() override;
 
     /**
      * @brief Handle collision with another game object.
      * 
      * @param other The other game object.
      */
-    virtual void HandleCollision(std::shared_ptr<GameObject> other) = 0;
+    virtual void HandleCollision(std::shared_ptr<GameObject> other);
+
+    bool IsEating() const;
+    void StopEating();
 
 protected:
     GameWorld& gameWorld;
+    bool isWalking;
 };
 
 #endif // ZOMBIE_HPP__

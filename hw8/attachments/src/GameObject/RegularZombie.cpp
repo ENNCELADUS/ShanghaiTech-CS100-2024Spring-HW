@@ -3,7 +3,7 @@
 #include "pvz/GameObject/Pea.hpp"
 
 RegularZombie::RegularZombie(int x, int y, GameWorld& gameworld)
-    : Zombie(IMGID_REGULAR_ZOMBIE, x, y, 20, 80, 200, gameworld, ANIMID_WALK_ANIM), isWalking(true) {}
+    : Zombie(IMGID_REGULAR_ZOMBIE, x, y, 20, 80, 200, gameworld, ANIMID_WALK_ANIM) {}
 
 void RegularZombie::Update() {
     if (IsDead()) {

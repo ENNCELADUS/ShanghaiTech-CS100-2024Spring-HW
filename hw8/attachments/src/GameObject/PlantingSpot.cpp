@@ -9,7 +9,7 @@
  * @param y The y-coordinate of the planting spot.
  */
 PlantingSpot::PlantingSpot(int x, int y, GameWorld& gameworld)
-    : GameObject(IMGID_NONE, x, y, LAYER_UI, 60, 80, ANIMID_NO_ANIMATION), gameWorld(gameworld) {}
+    : GameObject(IMGID_NONE, x, y, LAYER_UI, 60, 80, ANIMID_NO_ANIMATION, 1, ObjectType::PLANT_SLOT), gameWorld(gameworld) {}
 
 
 void PlantingSpot::Update() {

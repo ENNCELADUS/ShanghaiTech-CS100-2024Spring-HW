@@ -11,8 +11,8 @@
  * @param height The height of the game object.
  * @param animID The animation ID for the game object.
  */
-GameObject::GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID, int hp)
-    : ObjectBase(imageID, x, y, layer, width, height, animID), isDead(false), Layer(layer), hp(hp) {}
+GameObject::GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID, int hp, ObjectType type)
+    : ObjectBase(imageID, x, y, layer, width, height, animID), isDead(false), Layer(layer), hp(hp), objectType(type) {}
 
 
 bool GameObject::IsDead() const {
@@ -32,5 +32,35 @@ std::shared_ptr<GameObject> GameObject::GetpGameObject() {
 }
 
 void GameObject::TakeDamage(int damage) {
+    // NULL
+}
 
+ObjectType GameObject::GetObjectType() const {
+    return objectType;
+}
+
+int GameObject::GetHp() const {
+    return hp;
+}
+
+bool GameObject::Intersects(GameObject* other) const {
+    int thisLeft = GetX();
+    int thisRight = GetX() + GetWidth();
+    int thisTop = GetY();
+    int thisBottom = GetY() + GetHeight();
+
+    int otherLeft = other->GetX();
+    int otherRight = other->GetX() + other->GetWidth();
+    int otherTop = other->GetY();
+    int otherBottom = other->GetY() + other->GetHeight();
+
+
+    bool horizontalOverlap = (thisLeft < otherRight) && (thisRight > otherLeft);
+    bool verticalOverlap = (thisTop < otherBottom) && (thisBottom > otherTop);
+
+    return horizontalOverlap && verticalOverlap;
+}
+
+void GameObject::HandleNoCollision() {
+    // NULL
 }

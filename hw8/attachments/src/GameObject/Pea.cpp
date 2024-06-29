@@ -2,7 +2,7 @@
 #include "pvz/GameObject/Zombie.hpp"
 
 Pea::Pea(int x, int y, GameWorld& gameworld)
-    : GameObject(IMGID_PEA, x, y, LAYER_PROJECTILES, 28, 28, ANIMID_NO_ANIMATION), gameWorld(gameworld) {}
+    : GameObject(IMGID_PEA, x, y, LAYER_PROJECTILES, 28, 28, ANIMID_NO_ANIMATION, 1, ObjectType::PEA), gameWorld(gameworld) {}
 
 void Pea::Update() {
     if (IsDead()) {

@@ -24,4 +24,7 @@ target_link_libraries(
   Pea
   Zombie
   RegularZombie
+  Wallnut
+  Shovel
+  PoleVaultingZombie
 )

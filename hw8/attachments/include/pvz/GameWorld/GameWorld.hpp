@@ -1,6 +1,8 @@
 #ifndef GAMEWORLD_HPP__
 #define GAMEWORLD_HPP__
 
+#include <algorithm>
+#include <iostream>
 #include <list>
 #include <memory>
 
@@ -22,6 +24,9 @@
 #include "pvz/Gameobject/Pea.hpp"
 #include "pvz/Gameobject/Zombie.hpp"
 #include "pvz/Gameobject/RegularZombie.hpp"
+#include "pvz/Gameobject/Wallnut.hpp"
+#include "pvz/Gameobject/Shovel.hpp"
+#include "pvz/Gameobject/PoleVaultingZombie.hpp"
 
 
 #include "pvz/Framework/TextBase.hpp"
@@ -149,7 +154,7 @@ private:
   /**
    * @brief Track the number of game ticks.
    */
-  int tickCount = 0;
+  size_t tickCount = 0;
 
   /**
    * @brief The currently holding seed.
@@ -160,7 +165,7 @@ private:
    * @brief Whether holding a shovel.
    * 
    */
-  bool holdingShovel;
+  bool holdingShovel = false;
 
   /**
    * @brief Create sunlight and wave number text in init().
@@ -182,11 +187,26 @@ private:
    * 
    */
   void CreateSeedButtons();
+
+  /**
+   * @brief Create a Shovel object.
+   */
+  void CreateShovel();
   
   /**
    * @brief Create Sun.
    */
   void CreateSun();
+
+  /**
+   * @brief Create new Zombies.
+   */
+  void CreateZombies();
+
+  /**
+   * @brief Detect and handle collisions.
+   */
+  void HandleCollisions();
 
   /**
    * @brief Update sunlight and wave number text.

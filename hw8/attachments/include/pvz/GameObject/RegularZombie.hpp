@@ -12,7 +12,6 @@ public:
     void HandleCollision(std::shared_ptr<GameObject> other) override;
 
 private:
-    bool isWalking;
     int damageToPlant = 3;
 };
 

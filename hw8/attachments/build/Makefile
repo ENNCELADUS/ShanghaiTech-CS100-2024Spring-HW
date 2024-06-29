@@ -434,6 +434,45 @@ RegularZombie/fast:
 .PHONY : RegularZombie/fast
 
 #=============================================================================
+# Target rules for targets named Wallnut
+
+# Build rule for target.
+Wallnut: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Wallnut
+.PHONY : Wallnut
+
+# fast build rule for target.
+Wallnut/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/build
+.PHONY : Wallnut/fast
+
+#=============================================================================
+# Target rules for targets named Shovel
+
+# Build rule for target.
+Shovel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Shovel
+.PHONY : Shovel
+
+# fast build rule for target.
+Shovel/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/build
+.PHONY : Shovel/fast
+
+#=============================================================================
+# Target rules for targets named PoleVaultingZombie
+
+# Build rule for target.
+PoleVaultingZombie: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PoleVaultingZombie
+.PHONY : PoleVaultingZombie
+
+# fast build rule for target.
+PoleVaultingZombie/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/build
+.PHONY : PoleVaultingZombie/fast
+
+#=============================================================================
 # Target rules for targets named GameWorld
 
 # Build rule for target.
@@ -493,13 +532,16 @@ help:
 	@echo ... PeashooterSeed
 	@echo ... Plant
 	@echo ... PlantingSpot
+	@echo ... PoleVaultingZombie
 	@echo ... PvZ
 	@echo ... RegularZombie
 	@echo ... SOIL
 	@echo ... SeedButton
+	@echo ... Shovel
 	@echo ... Sun
 	@echo ... Sunflower
 	@echo ... SunflowerSeed
+	@echo ... Wallnut
 	@echo ... WallnutSeed
 	@echo ... Zombie
 	@echo ... freeglut

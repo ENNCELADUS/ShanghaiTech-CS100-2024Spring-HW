@@ -384,6 +384,48 @@ RegularZombie/fast:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/build
 .PHONY : RegularZombie/fast
 
+# Convenience name for target.
+src/GameObject/CMakeFiles/Wallnut.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Wallnut.dir/rule
+.PHONY : src/GameObject/CMakeFiles/Wallnut.dir/rule
+
+# Convenience name for target.
+Wallnut: src/GameObject/CMakeFiles/Wallnut.dir/rule
+.PHONY : Wallnut
+
+# fast build rule for target.
+Wallnut/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/build
+.PHONY : Wallnut/fast
+
+# Convenience name for target.
+src/GameObject/CMakeFiles/Shovel.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Shovel.dir/rule
+.PHONY : src/GameObject/CMakeFiles/Shovel.dir/rule
+
+# Convenience name for target.
+Shovel: src/GameObject/CMakeFiles/Shovel.dir/rule
+.PHONY : Shovel
+
+# fast build rule for target.
+Shovel/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/build
+.PHONY : Shovel/fast
+
+# Convenience name for target.
+src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule
+.PHONY : src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule
+
+# Convenience name for target.
+PoleVaultingZombie: src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule
+.PHONY : PoleVaultingZombie
+
+# fast build rule for target.
+PoleVaultingZombie/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/build
+.PHONY : PoleVaultingZombie/fast
+
 Background.obj: Background.cpp.obj
 .PHONY : Background.obj
 
@@ -600,6 +642,30 @@ PlantingSpot.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/PlantingSpot.cpp.s
 .PHONY : PlantingSpot.cpp.s
 
+PoleVaultingZombie.obj: PoleVaultingZombie.cpp.obj
+.PHONY : PoleVaultingZombie.obj
+
+# target to build an object file
+PoleVaultingZombie.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/PoleVaultingZombie.cpp.obj
+.PHONY : PoleVaultingZombie.cpp.obj
+
+PoleVaultingZombie.i: PoleVaultingZombie.cpp.i
+.PHONY : PoleVaultingZombie.i
+
+# target to preprocess a source file
+PoleVaultingZombie.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/PoleVaultingZombie.cpp.i
+.PHONY : PoleVaultingZombie.cpp.i
+
+PoleVaultingZombie.s: PoleVaultingZombie.cpp.s
+.PHONY : PoleVaultingZombie.s
+
+# target to generate assembly for a file
+PoleVaultingZombie.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/PoleVaultingZombie.cpp.s
+.PHONY : PoleVaultingZombie.cpp.s
+
 RegularZombie.obj: RegularZombie.cpp.obj
 .PHONY : RegularZombie.obj
 
@@ -647,6 +713,30 @@ SeedButton.s: SeedButton.cpp.s
 SeedButton.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/SeedButton.cpp.s
 .PHONY : SeedButton.cpp.s
+
+Shovel.obj: Shovel.cpp.obj
+.PHONY : Shovel.obj
+
+# target to build an object file
+Shovel.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/Shovel.cpp.obj
+.PHONY : Shovel.cpp.obj
+
+Shovel.i: Shovel.cpp.i
+.PHONY : Shovel.i
+
+# target to preprocess a source file
+Shovel.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/Shovel.cpp.i
+.PHONY : Shovel.cpp.i
+
+Shovel.s: Shovel.cpp.s
+.PHONY : Shovel.s
+
+# target to generate assembly for a file
+Shovel.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/Shovel.cpp.s
+.PHONY : Shovel.cpp.s
 
 Sun.obj: Sun.cpp.obj
 .PHONY : Sun.obj
@@ -720,6 +810,30 @@ SunflowerSeed.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/SunflowerSeed.cpp.s
 .PHONY : SunflowerSeed.cpp.s
 
+Wallnut.obj: Wallnut.cpp.obj
+.PHONY : Wallnut.obj
+
+# target to build an object file
+Wallnut.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/Wallnut.cpp.obj
+.PHONY : Wallnut.cpp.obj
+
+Wallnut.i: Wallnut.cpp.i
+.PHONY : Wallnut.i
+
+# target to preprocess a source file
+Wallnut.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/Wallnut.cpp.i
+.PHONY : Wallnut.cpp.i
+
+Wallnut.s: Wallnut.cpp.s
+.PHONY : Wallnut.s
+
+# target to generate assembly for a file
+Wallnut.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/Wallnut.cpp.s
+.PHONY : Wallnut.cpp.s
+
 WallnutSeed.obj: WallnutSeed.cpp.obj
 .PHONY : WallnutSeed.obj
 
@@ -789,11 +903,14 @@ help:
 	@echo ... PeashooterSeed
 	@echo ... Plant
 	@echo ... PlantingSpot
+	@echo ... PoleVaultingZombie
 	@echo ... RegularZombie
 	@echo ... SeedButton
+	@echo ... Shovel
 	@echo ... Sun
 	@echo ... Sunflower
 	@echo ... SunflowerSeed
+	@echo ... Wallnut
 	@echo ... WallnutSeed
 	@echo ... Zombie
 	@echo ... Background.obj
@@ -823,12 +940,18 @@ help:
 	@echo ... PlantingSpot.obj
 	@echo ... PlantingSpot.i
 	@echo ... PlantingSpot.s
+	@echo ... PoleVaultingZombie.obj
+	@echo ... PoleVaultingZombie.i
+	@echo ... PoleVaultingZombie.s
 	@echo ... RegularZombie.obj
 	@echo ... RegularZombie.i
 	@echo ... RegularZombie.s
 	@echo ... SeedButton.obj
 	@echo ... SeedButton.i
 	@echo ... SeedButton.s
+	@echo ... Shovel.obj
+	@echo ... Shovel.i
+	@echo ... Shovel.s
 	@echo ... Sun.obj
 	@echo ... Sun.i
 	@echo ... Sun.s
@@ -838,6 +961,9 @@ help:
 	@echo ... SunflowerSeed.obj
 	@echo ... SunflowerSeed.i
 	@echo ... SunflowerSeed.s
+	@echo ... Wallnut.obj
+	@echo ... Wallnut.i
+	@echo ... Wallnut.s
 	@echo ... WallnutSeed.obj
 	@echo ... WallnutSeed.i
 	@echo ... WallnutSeed.s

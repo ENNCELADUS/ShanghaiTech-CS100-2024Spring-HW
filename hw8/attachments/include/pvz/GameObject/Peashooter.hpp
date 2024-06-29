@@ -13,7 +13,7 @@ public:
 
 private:
     int cooldown;
-    const int attackCooldown = 30;
+    static const int attackCooldown = 30;
 
     void FirePea();
 };

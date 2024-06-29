@@ -2,7 +2,7 @@
 #include "pvz/GameWorld/GameWorld.hpp"
 
 Plant::Plant(ImageID imageID, int x, int y, int width, int height, int hp, GameWorld& gameworld, AnimID animID)
-    : GameObject(imageID, x, y, LAYER_PLANTS, width, height, ANIMID_IDLE_ANIM, hp), gameWorld(gameworld) {}
+    : GameObject(imageID, x, y, LAYER_PLANTS, width, height, ANIMID_IDLE_ANIM, hp, ObjectType::PLANT), gameWorld(gameworld) {}
 
 /**
  * @brief Judge whether a plant is dead.

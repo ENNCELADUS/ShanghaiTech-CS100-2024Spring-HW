@@ -109,5 +109,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/GameObject/CMakeFiles/Pea.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/Zombie.dir/DependInfo.cmake"
   "src/GameObject/CMakeFiles/RegularZombie.dir/DependInfo.cmake"
+  "src/GameObject/CMakeFiles/Wallnut.dir/DependInfo.cmake"
+  "src/GameObject/CMakeFiles/Shovel.dir/DependInfo.cmake"
+  "src/GameObject/CMakeFiles/PoleVaultingZombie.dir/DependInfo.cmake"
   "src/GameWorld/CMakeFiles/GameWorld.dir/DependInfo.cmake"
   )

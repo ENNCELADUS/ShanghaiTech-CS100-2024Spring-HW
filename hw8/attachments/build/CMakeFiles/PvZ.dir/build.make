@@ -105,9 +105,12 @@ bin/PvZ.exe: lib/libSun.a
 bin/PvZ.exe: lib/libSunflower.a
 bin/PvZ.exe: lib/libHoldingSeed.a
 bin/PvZ.exe: lib/libPeashooter.a
-bin/PvZ.exe: lib/libPlant.a
 bin/PvZ.exe: lib/libPea.a
 bin/PvZ.exe: lib/libRegularZombie.a
+bin/PvZ.exe: lib/libWallnut.a
+bin/PvZ.exe: lib/libPlant.a
+bin/PvZ.exe: lib/libShovel.a
+bin/PvZ.exe: lib/libPoleVaultingZombie.a
 bin/PvZ.exe: lib/libZombie.a
 bin/PvZ.exe: lib/libGameObject.a
 bin/PvZ.exe: lib/libFramework.a

@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libShovel.a CMakeFiles/Shovel.dir/Shovel.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libShovel.a

@@ -25,6 +25,4 @@ void Peashooter::Update() {
 void Peashooter::FirePea() {
     auto pea = std::make_shared<Pea>(GetX() + 30, GetY() + 20, gameWorld);
     gameWorld.AddGameObject(pea);
-    // TODO:
-    std::cout << "Peashooter fires a pea" << std::endl;
 }
