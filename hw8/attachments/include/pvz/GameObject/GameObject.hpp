@@ -9,6 +9,7 @@ enum class ObjectType {
   ZOMBIE,
   PEA,
   PLANT_SLOT,
+  EXPLOSION,
   OTHER
 };
 
@@ -94,7 +95,7 @@ public:
    * @param other The other game object to check for intersection.
    * @return true if the objects intersect, false otherwise.
    */
-  bool Intersects(GameObject* other) const;
+  virtual bool Intersects(GameObject* other) const;
 
   /**
    * @brief Handle the situation where the object does not collide with a specific type of object.

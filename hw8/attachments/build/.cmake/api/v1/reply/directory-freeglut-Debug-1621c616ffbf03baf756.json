@@ -63,7 +63,7 @@
 				"lib/libfreeglut.dll.a"
 			],
 			"targetId" : "freeglut::@9f489802bb4ec236f2d4",
-			"targetIndex" : 23,
+			"targetIndex" : 25,
 			"targetIsImportLibrary" : true,
 			"type" : "target"
 		},
@@ -76,7 +76,7 @@
 				"bin/libfreeglut.dll"
 			],
 			"targetId" : "freeglut::@9f489802bb4ec236f2d4",
-			"targetIndex" : 23,
+			"targetIndex" : 25,
 			"type" : "target"
 		},
 		{
@@ -88,7 +88,7 @@
 				"lib/libfreeglut_static.a"
 			],
 			"targetId" : "freeglut_static::@9f489802bb4ec236f2d4",
-			"targetIndex" : 24,
+			"targetIndex" : 26,
 			"type" : "target"
 		},
 		{
@@ -123,11 +123,11 @@
 			[
 				{
 					"id" : "freeglut::@9f489802bb4ec236f2d4",
-					"index" : 23
+					"index" : 25
 				},
 				{
 					"id" : "freeglut_static::@9f489802bb4ec236f2d4",
-					"index" : 24
+					"index" : 26
 				}
 			],
 			"paths" : 

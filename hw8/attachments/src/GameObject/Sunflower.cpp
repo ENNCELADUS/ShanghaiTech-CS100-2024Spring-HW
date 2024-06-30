@@ -1,5 +1,6 @@
 #include "pvz/GameObject/Sunflower.hpp"
 #include "pvz/GameWorld/GameWorld.hpp"
+#include "pvz/GameObject/Sun.hpp"
 
 Sunflower::Sunflower(int x, int y, GameWorld& gameworld)
     : Plant(IMGID_SUNFLOWER, x, y, 60, 80, 300, gameworld, ANIMID_IDLE_ANIM), nextSunGenerationTick(gameworld.GetTickCount() + randInt(30, 600)) {}

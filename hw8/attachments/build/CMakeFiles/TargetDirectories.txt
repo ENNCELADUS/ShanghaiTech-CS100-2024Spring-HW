@@ -44,8 +44,10 @@ E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Pea.di
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Zombie.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/RegularZombie.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Wallnut.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/CherryBombSeed.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/CherryBomb.dir
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Explosion.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/Shovel.dir
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/PoleVaultingZombie.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/edit_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/rebuild_cache.dir
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject/CMakeFiles/list_install_components.dir

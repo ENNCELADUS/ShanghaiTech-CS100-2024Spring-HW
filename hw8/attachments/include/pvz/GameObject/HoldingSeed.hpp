@@ -6,7 +6,8 @@
 enum class PlantType {
     Sunflower,
     Peashooter,
-    Wallnut
+    Wallnut,
+    CherryBomb
 };
 
 class HoldingSeed : public GameObject {

@@ -24,7 +24,7 @@ target_link_libraries(PlantingSpot PUBLIC GameObject)
 
 # 定义和链接 SeedButton 库
 add_library(SeedButton STATIC SeedButton.cpp)
-target_link_libraries(SeedButton PUBLIC GameObject)
+target_link_libraries(SeedButton PUBLIC GameObject CooldownMask)
 
 # 定义和链接 SunflowerSeed 库
 add_library(SunflowerSeed STATIC SunflowerSeed.cpp)
@@ -52,7 +52,7 @@ target_link_libraries(Plant PUBLIC GameObject)
 
 # 定义和链接 Sunflower 库
 add_library(Sunflower STATIC Sunflower.cpp)
-target_link_libraries(Sunflower PUBLIC Plant)
+target_link_libraries(Sunflower PUBLIC Plant Sun)
 
 # 定义和链接 HoldingSeed 库
 add_library(HoldingSeed STATIC HoldingSeed.cpp)
@@ -60,7 +60,7 @@ target_link_libraries(HoldingSeed PUBLIC GameObject)
 
 # 定义和链接 Peashooter 库
 add_library(Peashooter STATIC Peashooter.cpp)
-target_link_libraries(Peashooter PUBLIC Plant)
+target_link_libraries(Peashooter PUBLIC Plant Pea)
 
 # 定义和链接 Pea 库
 add_library(Pea STATIC Pea.cpp)
@@ -78,10 +78,18 @@ target_link_libraries(RegularZombie PUBLIC Zombie)
 add_library(Wallnut STATIC Wallnut.cpp)
 target_link_libraries(Wallnut PUBLIC Plant)
 
+# 定义和链接 CherryBombSeed 库
+add_library(CherryBombSeed STATIC CherryBombSeed.cpp)
+target_link_libraries(CherryBombSeed PUBLIC SeedButton)
+
+# 定义和链接 CherryBomb 库
+add_library(CherryBomb STATIC CherryBomb.cpp)
+target_link_libraries(CherryBomb PUBLIC Plant)
+
+# 定义和链接 Shovel 库
+add_library(Explosion STATIC Explosion.cpp)
+target_link_libraries(Explosion PUBLIC GameObject)
+
 # 定义和链接 Shovel 库
 add_library(Shovel STATIC Shovel.cpp)
 target_link_libraries(Shovel PUBLIC GameObject)
-
-# 定义和链接 PoleVaultingZombie 库
-add_library(PoleVaultingZombie STATIC PoleVaultingZombie.cpp)
-target_link_libraries(PoleVaultingZombie PUBLIC Zombie)

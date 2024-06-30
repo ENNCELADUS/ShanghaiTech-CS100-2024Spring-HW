@@ -15,24 +15,8 @@ void Pea::Update() {
         MarkAsDead();
         return;
     }
-
-    if (CheckCollisionWithZombies()) {
-        MarkAsDead();
-    }
 }
 
 void Pea::OnClick() {
     // Do nothing.
-}
-
-bool Pea::CheckCollisionWithZombies() {
-    for (const auto& obj : gameWorld.GetGameObjects()) {
-        if (obj->GetLayer() == LAYER_ZOMBIES && std::abs(obj->GetX() - GetX()) < 10 && std::abs(obj->GetY() - GetY()) < 10) {
-            if (auto zombie = std::dynamic_pointer_cast<Zombie>(obj)) {
-                zombie->HandleCollision(GetpGameObject());
-                return true;
-            }
-        }
-    }
-    return false;
 }

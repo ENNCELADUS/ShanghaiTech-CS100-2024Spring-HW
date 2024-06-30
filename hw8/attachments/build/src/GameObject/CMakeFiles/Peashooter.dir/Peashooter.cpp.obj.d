@@ -199,7 +199,6 @@ src/GameObject/CMakeFiles/Peashooter.dir/Peashooter.cpp.obj: \
  D:/mingw64/include/c++/13.2.0/numeric \
  D:/mingw64/include/c++/13.2.0/bits/stl_numeric.h \
  D:/mingw64/include/c++/13.2.0/pstl/glue_numeric_defs.h \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameWorld/GameWorld.hpp \
  D:/mingw64/include/c++/13.2.0/algorithm \
  D:/mingw64/include/c++/13.2.0/bits/stl_algo.h \
@@ -231,5 +230,8 @@ src/GameObject/CMakeFiles/Peashooter.dir/Peashooter.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Zombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Wallnut.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Shovel.hpp \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/PoleVaultingZombie.hpp \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBombSeed.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBomb.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Explosion.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp

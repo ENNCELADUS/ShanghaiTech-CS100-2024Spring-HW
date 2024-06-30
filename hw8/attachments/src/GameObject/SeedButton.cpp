@@ -1,6 +1,6 @@
 #include "pvz/GameObject/SeedButton.hpp"
+#include "pvz/GameObject/CooldownMask.hpp"
 #include "pvz/GameWorld/GameWorld.hpp"
-#include "pvz/utils.hpp"
 
 
 SeedButton::SeedButton(ImageID imageID, int x, int y, int width, int height, int price, int cooldown, GameWorld& gameworld, PlantType plantType)
@@ -27,7 +27,8 @@ void SeedButton::OnClick() {
     gameWorld.SpendSunlight(price);
 
     // Create cooldown mask
-    gameWorld.AddGameObject(std::make_shared<CooldownMask>(GetX(), GetY()));
+    auto cooldownMask = std::make_shared<CooldownMask>(GetX(), GetY(), cooldown);
+    gameWorld.AddGameObject(cooldownMask);
 
     gameWorld.SetHoldingSeed(std::make_shared<HoldingSeed>(plantType));
 }

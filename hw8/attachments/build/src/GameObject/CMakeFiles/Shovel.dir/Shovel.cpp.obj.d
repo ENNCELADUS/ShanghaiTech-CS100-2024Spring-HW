@@ -224,12 +224,13 @@ src/GameObject/CMakeFiles/Shovel.dir/Shovel.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Plant.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/HoldingSeed.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Peashooter.hpp \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Pea.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Zombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/RegularZombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Zombie.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Wallnut.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/Shovel.hpp \
- E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Gameobject/PoleVaultingZombie.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBombSeed.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBomb.hpp \
+ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Explosion.hpp \
  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp

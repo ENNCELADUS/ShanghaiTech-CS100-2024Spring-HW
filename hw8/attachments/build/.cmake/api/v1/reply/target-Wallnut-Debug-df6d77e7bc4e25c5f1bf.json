@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libSunflower.a"
+			"path" : "lib/libWallnut.a"
 		}
 	],
 	"backtrace" : 1,
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 54,
+				"line" : 78,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 55,
+				"line" : 79,
 				"parent" : 0
 			},
 			{
@@ -103,16 +103,16 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Framework::@bbcc00d4dd4c98727359"
+			"id" : "Plant::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Plant::@cf4d02a5657504c132a7"
+			"id" : "Framework::@bbcc00d4dd4c98727359"
 		}
 	],
-	"id" : "Sunflower::@cf4d02a5657504c132a7",
-	"name" : "Sunflower",
-	"nameOnDisk" : "libSunflower.a",
+	"id" : "Wallnut::@cf4d02a5657504c132a7",
+	"name" : "Wallnut",
+	"nameOnDisk" : "libWallnut.a",
 	"paths" : 
 	{
 		"build" : "src/GameObject",
@@ -133,7 +133,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/Sunflower.cpp",
+			"path" : "src/GameObject/Wallnut.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

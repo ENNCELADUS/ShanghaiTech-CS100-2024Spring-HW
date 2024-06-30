@@ -42,30 +42,22 @@ void PoleVaultingZombie::Update() {
             PlayAnimation(ANIMID_WALK_ANIM);
             MoveTo(GetX() - 150, GetY());
             isRunning = false;
+            StopEating();
         }
         return;
     }
 
-    if (IsEating()) {
-        return;
-    }
+    Zombie::Update();
 
     // Check for collisions with plants in walking state
     for (const auto& obj : gameWorld.GetGameObjects()) {
         if (obj->GetObjectType() == ObjectType::PLANT && Intersects(obj.get())) {
-            if (!IsEating()) {
-                PlayAnimation(ANIMID_EAT_ANIM);
-                isWalking = false;
-            }
-            obj->TakeDamage(3);
+            HandleCollisionWithPlant(obj);
             return;
         }
     }
 
-    // Walking state.
-    if (isWalking){
-        MoveTo(GetX() - 1, GetY());
-    }
+
 
 
 }

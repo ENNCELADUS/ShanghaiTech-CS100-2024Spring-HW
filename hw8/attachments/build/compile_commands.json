@@ -523,33 +523,21 @@
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Sun.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Sun.dir\\Sun.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Sun.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Sun.cpp",
-  "output": "src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.obj"
-},
-{
-  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
   "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/PlantingSpot.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\PlantingSpot.dir\\PlantingSpot.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\PlantingSpot.cpp",
   "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/PlantingSpot.cpp",
   "output": "src/GameObject/CMakeFiles/PlantingSpot.dir/PlantingSpot.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Background.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Background.dir\\Background.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Background.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Background.cpp",
-  "output": "src/GameObject/CMakeFiles/Background.dir/Background.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/CooldownMask.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CooldownMask.dir\\CooldownMask.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\CooldownMask.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/CooldownMask.cpp",
+  "output": "src/GameObject/CMakeFiles/CooldownMask.dir/CooldownMask.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
   "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/SeedButton.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeedButton.dir\\SeedButton.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\SeedButton.cpp",
   "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/SeedButton.cpp",
   "output": "src/GameObject/CMakeFiles/SeedButton.dir/SeedButton.cpp.obj"
-},
-{
-  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/SunflowerSeed.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SunflowerSeed.dir\\SunflowerSeed.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\SunflowerSeed.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/SunflowerSeed.cpp",
-  "output": "src/GameObject/CMakeFiles/SunflowerSeed.dir/SunflowerSeed.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
@@ -565,9 +553,9 @@
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/CooldownMask.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CooldownMask.dir\\CooldownMask.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\CooldownMask.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/CooldownMask.cpp",
-  "output": "src/GameObject/CMakeFiles/CooldownMask.dir/CooldownMask.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Sun.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Sun.dir\\Sun.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Sun.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Sun.cpp",
+  "output": "src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
@@ -577,15 +565,15 @@
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Zombie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Zombie.dir\\Zombie.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Zombie.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Zombie.cpp",
-  "output": "src/GameObject/CMakeFiles/Zombie.dir/Zombie.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/SunflowerSeed.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SunflowerSeed.dir\\SunflowerSeed.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\SunflowerSeed.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/SunflowerSeed.cpp",
+  "output": "src/GameObject/CMakeFiles/SunflowerSeed.dir/SunflowerSeed.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Wallnut.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Wallnut.dir\\Wallnut.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Wallnut.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Wallnut.cpp",
-  "output": "src/GameObject/CMakeFiles/Wallnut.dir/Wallnut.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Background.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Background.dir\\Background.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Background.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Background.cpp",
+  "output": "src/GameObject/CMakeFiles/Background.dir/Background.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
@@ -595,9 +583,15 @@
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/PoleVaultingZombie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\PoleVaultingZombie.dir\\PoleVaultingZombie.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\PoleVaultingZombie.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/PoleVaultingZombie.cpp",
-  "output": "src/GameObject/CMakeFiles/PoleVaultingZombie.dir/PoleVaultingZombie.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Explosion.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Explosion.dir\\Explosion.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Explosion.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Explosion.cpp",
+  "output": "src/GameObject/CMakeFiles/Explosion.dir/Explosion.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Pea.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Pea.dir\\Pea.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Pea.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Pea.cpp",
+  "output": "src/GameObject/CMakeFiles/Pea.dir/Pea.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
@@ -607,9 +601,21 @@
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Pea.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Pea.dir\\Pea.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Pea.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Pea.cpp",
-  "output": "src/GameObject/CMakeFiles/Pea.dir/Pea.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/CherryBomb.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CherryBomb.dir\\CherryBomb.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\CherryBomb.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/CherryBomb.cpp",
+  "output": "src/GameObject/CMakeFiles/CherryBomb.dir/CherryBomb.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Zombie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Zombie.dir\\Zombie.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Zombie.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Zombie.cpp",
+  "output": "src/GameObject/CMakeFiles/Zombie.dir/Zombie.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/RegularZombie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\RegularZombie.dir\\RegularZombie.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\RegularZombie.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/RegularZombie.cpp",
+  "output": "src/GameObject/CMakeFiles/RegularZombie.dir/RegularZombie.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
@@ -625,9 +631,15 @@
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
-  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/RegularZombie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\RegularZombie.dir\\RegularZombie.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\RegularZombie.cpp",
-  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/RegularZombie.cpp",
-  "output": "src/GameObject/CMakeFiles/RegularZombie.dir/RegularZombie.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Wallnut.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Wallnut.dir\\Wallnut.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Wallnut.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Wallnut.cpp",
+  "output": "src/GameObject/CMakeFiles/Wallnut.dir/Wallnut.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/CherryBombSeed.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CherryBombSeed.dir\\CherryBombSeed.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\CherryBombSeed.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/CherryBombSeed.cpp",
+  "output": "src/GameObject/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.obj"
 },
 {
   "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameWorld",

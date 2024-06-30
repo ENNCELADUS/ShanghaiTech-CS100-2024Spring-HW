@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libExplosion.a CMakeFiles/Explosion.dir/Explosion.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libExplosion.a

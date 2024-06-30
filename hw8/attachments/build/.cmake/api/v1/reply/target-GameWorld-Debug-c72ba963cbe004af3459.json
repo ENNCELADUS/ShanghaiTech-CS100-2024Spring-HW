@@ -99,27 +99,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Sun::@cf4d02a5657504c132a7"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "GameObject::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Framework::@bbcc00d4dd4c98727359"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "PlantingSpot::@cf4d02a5657504c132a7"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "Background::@cf4d02a5657504c132a7"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "SunflowerSeed::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -135,7 +119,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "SeedButton::@cf4d02a5657504c132a7"
+			"id" : "Sun::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -143,11 +127,19 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Zombie::@cf4d02a5657504c132a7"
+			"id" : "SunflowerSeed::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Wallnut::@cf4d02a5657504c132a7"
+			"id" : "SeedButton::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Framework::@bbcc00d4dd4c98727359"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Background::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -155,7 +147,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "PoleVaultingZombie::@cf4d02a5657504c132a7"
+			"id" : "Explosion::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -163,7 +155,19 @@
 		},
 		{
 			"backtrace" : 2,
+			"id" : "CherryBomb::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Zombie::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "Pea::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "RegularZombie::@cf4d02a5657504c132a7"
 		},
 		{
 			"backtrace" : 2,
@@ -175,7 +179,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "RegularZombie::@cf4d02a5657504c132a7"
+			"id" : "Wallnut::@cf4d02a5657504c132a7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CherryBombSeed::@cf4d02a5657504c132a7"
 		}
 	],
 	"id" : "GameWorld::@2c651ff0fb8a858345be",

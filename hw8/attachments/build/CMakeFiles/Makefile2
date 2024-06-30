@@ -151,8 +151,10 @@ src/GameObject/all: src/GameObject/CMakeFiles/Pea.dir/all
 src/GameObject/all: src/GameObject/CMakeFiles/Zombie.dir/all
 src/GameObject/all: src/GameObject/CMakeFiles/RegularZombie.dir/all
 src/GameObject/all: src/GameObject/CMakeFiles/Wallnut.dir/all
+src/GameObject/all: src/GameObject/CMakeFiles/CherryBombSeed.dir/all
+src/GameObject/all: src/GameObject/CMakeFiles/CherryBomb.dir/all
+src/GameObject/all: src/GameObject/CMakeFiles/Explosion.dir/all
 src/GameObject/all: src/GameObject/CMakeFiles/Shovel.dir/all
-src/GameObject/all: src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all
 .PHONY : src/GameObject/all
 
 # Recursive "preinstall" directory target.
@@ -177,8 +179,10 @@ src/GameObject/clean: src/GameObject/CMakeFiles/Pea.dir/clean
 src/GameObject/clean: src/GameObject/CMakeFiles/Zombie.dir/clean
 src/GameObject/clean: src/GameObject/CMakeFiles/RegularZombie.dir/clean
 src/GameObject/clean: src/GameObject/CMakeFiles/Wallnut.dir/clean
+src/GameObject/clean: src/GameObject/CMakeFiles/CherryBombSeed.dir/clean
+src/GameObject/clean: src/GameObject/CMakeFiles/CherryBomb.dir/clean
+src/GameObject/clean: src/GameObject/CMakeFiles/Explosion.dir/clean
 src/GameObject/clean: src/GameObject/CMakeFiles/Shovel.dir/clean
-src/GameObject/clean: src/GameObject/CMakeFiles/PoleVaultingZombie.dir/clean
 .PHONY : src/GameObject/clean
 
 #=============================================================================
@@ -202,35 +206,37 @@ src/GameWorld/clean: src/GameWorld/CMakeFiles/GameWorld.dir/clean
 # All Build rule for target.
 CMakeFiles/PvZ.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 CMakeFiles/PvZ.dir/all: freeglut/CMakeFiles/freeglut.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Sun.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-CMakeFiles/PvZ.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/PlantingSpot.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Background.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/SunflowerSeed.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/PeashooterSeed.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/WallnutSeed.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/SeedButton.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Sun.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Plant.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Zombie.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Wallnut.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Shovel.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/SunflowerSeed.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/SeedButton.dir/all
+CMakeFiles/PvZ.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Background.dir/all
 CMakeFiles/PvZ.dir/all: src/GameWorld/CMakeFiles/GameWorld.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Shovel.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Explosion.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Peashooter.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/CherryBomb.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Zombie.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/RegularZombie.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/HoldingSeed.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Sunflower.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/RegularZombie.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Wallnut.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/CherryBombSeed.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PvZ.dir\build.make CMakeFiles/PvZ.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PvZ.dir\build.make CMakeFiles/PvZ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=22 "Built target PvZ"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=24 "Built target PvZ"
 .PHONY : CMakeFiles/PvZ.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PvZ.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 69
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 70
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/PvZ.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : CMakeFiles/PvZ.dir/rule
@@ -251,7 +257,7 @@ CMakeFiles/PvZ.dir/clean:
 SOIL/CMakeFiles/SOIL.dir/all:
 	$(MAKE) $(MAKESILENT) -f SOIL\CMakeFiles\SOIL.dir\build.make SOIL/CMakeFiles/SOIL.dir/depend
 	$(MAKE) $(MAKESILENT) -f SOIL\CMakeFiles\SOIL.dir\build.make SOIL/CMakeFiles/SOIL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=25,26,27 "Built target SOIL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=27,28,29 "Built target SOIL"
 .PHONY : SOIL/CMakeFiles/SOIL.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,12 +283,12 @@ SOIL/CMakeFiles/SOIL.dir/clean:
 freeglut/CMakeFiles/freeglut.dir/all:
 	$(MAKE) $(MAKESILENT) -f freeglut\CMakeFiles\freeglut.dir\build.make freeglut/CMakeFiles/freeglut.dir/depend
 	$(MAKE) $(MAKESILENT) -f freeglut\CMakeFiles\freeglut.dir\build.make freeglut/CMakeFiles/freeglut.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Built target freeglut"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target freeglut"
 .PHONY : freeglut/CMakeFiles/freeglut.dir/all
 
 # Build rule for subdir invocation for target.
 freeglut/CMakeFiles/freeglut.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 freeglut/CMakeFiles/freeglut.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : freeglut/CMakeFiles/freeglut.dir/rule
@@ -303,12 +309,12 @@ freeglut/CMakeFiles/freeglut.dir/clean:
 freeglut/CMakeFiles/freeglut_static.dir/all:
 	$(MAKE) $(MAKESILENT) -f freeglut\CMakeFiles\freeglut_static.dir\build.make freeglut/CMakeFiles/freeglut_static.dir/depend
 	$(MAKE) $(MAKESILENT) -f freeglut\CMakeFiles\freeglut_static.dir\build.make freeglut/CMakeFiles/freeglut_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target freeglut_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target freeglut_static"
 .PHONY : freeglut/CMakeFiles/freeglut_static.dir/all
 
 # Build rule for subdir invocation for target.
 freeglut/CMakeFiles/freeglut_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 freeglut/CMakeFiles/freeglut_static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : freeglut/CMakeFiles/freeglut_static.dir/rule
@@ -330,12 +336,12 @@ src/Framework/CMakeFiles/Framework.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/Framework/CMakeFiles/Framework.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 	$(MAKE) $(MAKESILENT) -f src\Framework\CMakeFiles\Framework.dir\build.make src/Framework/CMakeFiles/Framework.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\Framework\CMakeFiles\Framework.dir\build.make src/Framework/CMakeFiles/Framework.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=4,5,6,7 "Built target Framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=8,9,10,11 "Built target Framework"
 .PHONY : src/Framework/CMakeFiles/Framework.dir/all
 
 # Build rule for subdir invocation for target.
 src/Framework/CMakeFiles/Framework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/Framework/CMakeFiles/Framework.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/Framework/CMakeFiles/Framework.dir/rule
@@ -358,12 +364,12 @@ src/GameObject/CMakeFiles/GameObject.dir/all: freeglut/CMakeFiles/freeglut.dir/a
 src/GameObject/CMakeFiles/GameObject.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=8,9 "Built target GameObject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=12,13 "Built target GameObject"
 .PHONY : src/GameObject/CMakeFiles/GameObject.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/GameObject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 38
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/GameObject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/GameObject.dir/rule
@@ -392,7 +398,7 @@ src/GameObject/CMakeFiles/Background.dir/all: src/Framework/CMakeFiles/Framework
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/Background.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Background.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/Background.dir/rule
@@ -416,7 +422,7 @@ src/GameObject/CMakeFiles/PlantingSpot.dir/all: src/GameObject/CMakeFiles/GameOb
 src/GameObject/CMakeFiles/PlantingSpot.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=19 "Built target PlantingSpot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=22,23 "Built target PlantingSpot"
 .PHONY : src/GameObject/CMakeFiles/PlantingSpot.dir/all
 
 # Build rule for subdir invocation for target.
@@ -442,10 +448,11 @@ src/GameObject/CMakeFiles/PlantingSpot.dir/clean:
 src/GameObject/CMakeFiles/SeedButton.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameObject/CMakeFiles/SeedButton.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 src/GameObject/CMakeFiles/SeedButton.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
+src/GameObject/CMakeFiles/SeedButton.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
 src/GameObject/CMakeFiles/SeedButton.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=28,29 "Built target SeedButton"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=30,31 "Built target SeedButton"
 .PHONY : src/GameObject/CMakeFiles/SeedButton.dir/all
 
 # Build rule for subdir invocation for target.
@@ -471,11 +478,12 @@ src/GameObject/CMakeFiles/SeedButton.dir/clean:
 src/GameObject/CMakeFiles/SunflowerSeed.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameObject/CMakeFiles/SunflowerSeed.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 src/GameObject/CMakeFiles/SunflowerSeed.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-src/GameObject/CMakeFiles/SunflowerSeed.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+src/GameObject/CMakeFiles/SunflowerSeed.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
 src/GameObject/CMakeFiles/SunflowerSeed.dir/all: src/GameObject/CMakeFiles/SeedButton.dir/all
+src/GameObject/CMakeFiles/SunflowerSeed.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=34,35 "Built target SunflowerSeed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=36,37 "Built target SunflowerSeed"
 .PHONY : src/GameObject/CMakeFiles/SunflowerSeed.dir/all
 
 # Build rule for subdir invocation for target.
@@ -501,16 +509,17 @@ src/GameObject/CMakeFiles/SunflowerSeed.dir/clean:
 src/GameObject/CMakeFiles/PeashooterSeed.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameObject/CMakeFiles/PeashooterSeed.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 src/GameObject/CMakeFiles/PeashooterSeed.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-src/GameObject/CMakeFiles/PeashooterSeed.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+src/GameObject/CMakeFiles/PeashooterSeed.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
 src/GameObject/CMakeFiles/PeashooterSeed.dir/all: src/GameObject/CMakeFiles/SeedButton.dir/all
+src/GameObject/CMakeFiles/PeashooterSeed.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=16 "Built target PeashooterSeed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=19,20 "Built target PeashooterSeed"
 .PHONY : src/GameObject/CMakeFiles/PeashooterSeed.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/PeashooterSeed.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/PeashooterSeed.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/PeashooterSeed.dir/rule
@@ -531,11 +540,12 @@ src/GameObject/CMakeFiles/PeashooterSeed.dir/clean:
 src/GameObject/CMakeFiles/WallnutSeed.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameObject/CMakeFiles/WallnutSeed.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 src/GameObject/CMakeFiles/WallnutSeed.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-src/GameObject/CMakeFiles/WallnutSeed.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+src/GameObject/CMakeFiles/WallnutSeed.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
 src/GameObject/CMakeFiles/WallnutSeed.dir/all: src/GameObject/CMakeFiles/SeedButton.dir/all
+src/GameObject/CMakeFiles/WallnutSeed.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\WallnutSeed.dir\build.make src/GameObject/CMakeFiles/WallnutSeed.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\WallnutSeed.dir\build.make src/GameObject/CMakeFiles/WallnutSeed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=37,38 "Built target WallnutSeed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=39,40 "Built target WallnutSeed"
 .PHONY : src/GameObject/CMakeFiles/WallnutSeed.dir/all
 
 # Build rule for subdir invocation for target.
@@ -564,12 +574,12 @@ src/GameObject/CMakeFiles/CooldownMask.dir/all: src/GameObject/CMakeFiles/GameOb
 src/GameObject/CMakeFiles/CooldownMask.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CooldownMask.dir\build.make src/GameObject/CMakeFiles/CooldownMask.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CooldownMask.dir\build.make src/GameObject/CMakeFiles/CooldownMask.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=2,3 "Built target CooldownMask"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=5 "Built target CooldownMask"
 .PHONY : src/GameObject/CMakeFiles/CooldownMask.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/CooldownMask.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/CooldownMask.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/CooldownMask.dir/rule
@@ -593,12 +603,12 @@ src/GameObject/CMakeFiles/Sun.dir/all: src/GameObject/CMakeFiles/GameObject.dir/
 src/GameObject/CMakeFiles/Sun.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=31,32 "Built target Sun"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=33,34 "Built target Sun"
 .PHONY : src/GameObject/CMakeFiles/Sun.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/Sun.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Sun.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/Sun.dir/rule
@@ -622,12 +632,12 @@ src/GameObject/CMakeFiles/Plant.dir/all: src/GameObject/CMakeFiles/GameObject.di
 src/GameObject/CMakeFiles/Plant.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=17,18 "Built target Plant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=21 "Built target Plant"
 .PHONY : src/GameObject/CMakeFiles/Plant.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/Plant.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Plant.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/Plant.dir/rule
@@ -648,11 +658,12 @@ src/GameObject/CMakeFiles/Plant.dir/clean:
 src/GameObject/CMakeFiles/Sunflower.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameObject/CMakeFiles/Sunflower.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 src/GameObject/CMakeFiles/Sunflower.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-src/GameObject/CMakeFiles/Sunflower.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+src/GameObject/CMakeFiles/Sunflower.dir/all: src/GameObject/CMakeFiles/Sun.dir/all
 src/GameObject/CMakeFiles/Sunflower.dir/all: src/GameObject/CMakeFiles/Plant.dir/all
+src/GameObject/CMakeFiles/Sunflower.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=33 "Built target Sunflower"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=35 "Built target Sunflower"
 .PHONY : src/GameObject/CMakeFiles/Sunflower.dir/all
 
 # Build rule for subdir invocation for target.
@@ -681,12 +692,12 @@ src/GameObject/CMakeFiles/HoldingSeed.dir/all: src/GameObject/CMakeFiles/GameObj
 src/GameObject/CMakeFiles/HoldingSeed.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\HoldingSeed.dir\build.make src/GameObject/CMakeFiles/HoldingSeed.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\HoldingSeed.dir\build.make src/GameObject/CMakeFiles/HoldingSeed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=11,12 "Built target HoldingSeed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=15,16 "Built target HoldingSeed"
 .PHONY : src/GameObject/CMakeFiles/HoldingSeed.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/HoldingSeed.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/HoldingSeed.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/HoldingSeed.dir/rule
@@ -707,16 +718,17 @@ src/GameObject/CMakeFiles/HoldingSeed.dir/clean:
 src/GameObject/CMakeFiles/Peashooter.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameObject/CMakeFiles/Peashooter.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 src/GameObject/CMakeFiles/Peashooter.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-src/GameObject/CMakeFiles/Peashooter.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 src/GameObject/CMakeFiles/Peashooter.dir/all: src/GameObject/CMakeFiles/Plant.dir/all
+src/GameObject/CMakeFiles/Peashooter.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+src/GameObject/CMakeFiles/Peashooter.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Peashooter.dir\build.make src/GameObject/CMakeFiles/Peashooter.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Peashooter.dir\build.make src/GameObject/CMakeFiles/Peashooter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=14,15 "Built target Peashooter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=18 "Built target Peashooter"
 .PHONY : src/GameObject/CMakeFiles/Peashooter.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/Peashooter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Peashooter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/Peashooter.dir/rule
@@ -740,12 +752,12 @@ src/GameObject/CMakeFiles/Pea.dir/all: src/GameObject/CMakeFiles/GameObject.dir/
 src/GameObject/CMakeFiles/Pea.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Pea.dir\build.make src/GameObject/CMakeFiles/Pea.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Pea.dir\build.make src/GameObject/CMakeFiles/Pea.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=13 "Built target Pea"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=17 "Built target Pea"
 .PHONY : src/GameObject/CMakeFiles/Pea.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/Pea.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Pea.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/Pea.dir/rule
@@ -769,12 +781,12 @@ src/GameObject/CMakeFiles/Zombie.dir/all: src/GameObject/CMakeFiles/GameObject.d
 src/GameObject/CMakeFiles/Zombie.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Zombie.dir\build.make src/GameObject/CMakeFiles/Zombie.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Zombie.dir\build.make src/GameObject/CMakeFiles/Zombie.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=39 "Built target Zombie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=41 "Built target Zombie"
 .PHONY : src/GameObject/CMakeFiles/Zombie.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/Zombie.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Zombie.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/Zombie.dir/rule
@@ -799,12 +811,12 @@ src/GameObject/CMakeFiles/RegularZombie.dir/all: src/Framework/CMakeFiles/Framew
 src/GameObject/CMakeFiles/RegularZombie.dir/all: src/GameObject/CMakeFiles/Zombie.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=23,24 "Built target RegularZombie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=25,26 "Built target RegularZombie"
 .PHONY : src/GameObject/CMakeFiles/RegularZombie.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/RegularZombie.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/RegularZombie.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/RegularZombie.dir/rule
@@ -825,16 +837,16 @@ src/GameObject/CMakeFiles/RegularZombie.dir/clean:
 src/GameObject/CMakeFiles/Wallnut.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameObject/CMakeFiles/Wallnut.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 src/GameObject/CMakeFiles/Wallnut.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-src/GameObject/CMakeFiles/Wallnut.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 src/GameObject/CMakeFiles/Wallnut.dir/all: src/GameObject/CMakeFiles/Plant.dir/all
+src/GameObject/CMakeFiles/Wallnut.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=36 "Built target Wallnut"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=38 "Built target Wallnut"
 .PHONY : src/GameObject/CMakeFiles/Wallnut.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/Wallnut.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Wallnut.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/Wallnut.dir/rule
@@ -849,6 +861,96 @@ src/GameObject/CMakeFiles/Wallnut.dir/clean:
 .PHONY : src/GameObject/CMakeFiles/Wallnut.dir/clean
 
 #=============================================================================
+# Target rules for target src/GameObject/CMakeFiles/CherryBombSeed.dir
+
+# All Build rule for target.
+src/GameObject/CMakeFiles/CherryBombSeed.dir/all: SOIL/CMakeFiles/SOIL.dir/all
+src/GameObject/CMakeFiles/CherryBombSeed.dir/all: freeglut/CMakeFiles/freeglut.dir/all
+src/GameObject/CMakeFiles/CherryBombSeed.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
+src/GameObject/CMakeFiles/CherryBombSeed.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
+src/GameObject/CMakeFiles/CherryBombSeed.dir/all: src/GameObject/CMakeFiles/SeedButton.dir/all
+src/GameObject/CMakeFiles/CherryBombSeed.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=3,4 "Built target CherryBombSeed"
+.PHONY : src/GameObject/CMakeFiles/CherryBombSeed.dir/all
+
+# Build rule for subdir invocation for target.
+src/GameObject/CMakeFiles/CherryBombSeed.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 43
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/CherryBombSeed.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
+.PHONY : src/GameObject/CMakeFiles/CherryBombSeed.dir/rule
+
+# Convenience name for target.
+CherryBombSeed: src/GameObject/CMakeFiles/CherryBombSeed.dir/rule
+.PHONY : CherryBombSeed
+
+# clean rule for target.
+src/GameObject/CMakeFiles/CherryBombSeed.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/clean
+.PHONY : src/GameObject/CMakeFiles/CherryBombSeed.dir/clean
+
+#=============================================================================
+# Target rules for target src/GameObject/CMakeFiles/CherryBomb.dir
+
+# All Build rule for target.
+src/GameObject/CMakeFiles/CherryBomb.dir/all: SOIL/CMakeFiles/SOIL.dir/all
+src/GameObject/CMakeFiles/CherryBomb.dir/all: freeglut/CMakeFiles/freeglut.dir/all
+src/GameObject/CMakeFiles/CherryBomb.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
+src/GameObject/CMakeFiles/CherryBomb.dir/all: src/GameObject/CMakeFiles/Plant.dir/all
+src/GameObject/CMakeFiles/CherryBomb.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=2 "Built target CherryBomb"
+.PHONY : src/GameObject/CMakeFiles/CherryBomb.dir/all
+
+# Build rule for subdir invocation for target.
+src/GameObject/CMakeFiles/CherryBomb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/CherryBomb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
+.PHONY : src/GameObject/CMakeFiles/CherryBomb.dir/rule
+
+# Convenience name for target.
+CherryBomb: src/GameObject/CMakeFiles/CherryBomb.dir/rule
+.PHONY : CherryBomb
+
+# clean rule for target.
+src/GameObject/CMakeFiles/CherryBomb.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/clean
+.PHONY : src/GameObject/CMakeFiles/CherryBomb.dir/clean
+
+#=============================================================================
+# Target rules for target src/GameObject/CMakeFiles/Explosion.dir
+
+# All Build rule for target.
+src/GameObject/CMakeFiles/Explosion.dir/all: SOIL/CMakeFiles/SOIL.dir/all
+src/GameObject/CMakeFiles/Explosion.dir/all: freeglut/CMakeFiles/freeglut.dir/all
+src/GameObject/CMakeFiles/Explosion.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
+src/GameObject/CMakeFiles/Explosion.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Explosion.dir\build.make src/GameObject/CMakeFiles/Explosion.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Explosion.dir\build.make src/GameObject/CMakeFiles/Explosion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=6,7 "Built target Explosion"
+.PHONY : src/GameObject/CMakeFiles/Explosion.dir/all
+
+# Build rule for subdir invocation for target.
+src/GameObject/CMakeFiles/Explosion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Explosion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
+.PHONY : src/GameObject/CMakeFiles/Explosion.dir/rule
+
+# Convenience name for target.
+Explosion: src/GameObject/CMakeFiles/Explosion.dir/rule
+.PHONY : Explosion
+
+# clean rule for target.
+src/GameObject/CMakeFiles/Explosion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Explosion.dir\build.make src/GameObject/CMakeFiles/Explosion.dir/clean
+.PHONY : src/GameObject/CMakeFiles/Explosion.dir/clean
+
+#=============================================================================
 # Target rules for target src/GameObject/CMakeFiles/Shovel.dir
 
 # All Build rule for target.
@@ -858,12 +960,12 @@ src/GameObject/CMakeFiles/Shovel.dir/all: src/GameObject/CMakeFiles/GameObject.d
 src/GameObject/CMakeFiles/Shovel.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=30 "Built target Shovel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=32 "Built target Shovel"
 .PHONY : src/GameObject/CMakeFiles/Shovel.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/Shovel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Shovel.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/Shovel.dir/rule
@@ -878,69 +980,41 @@ src/GameObject/CMakeFiles/Shovel.dir/clean:
 .PHONY : src/GameObject/CMakeFiles/Shovel.dir/clean
 
 #=============================================================================
-# Target rules for target src/GameObject/CMakeFiles/PoleVaultingZombie.dir
-
-# All Build rule for target.
-src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all: SOIL/CMakeFiles/SOIL.dir/all
-src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all: freeglut/CMakeFiles/freeglut.dir/all
-src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all: src/Framework/CMakeFiles/Framework.dir/all
-src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all: src/GameObject/CMakeFiles/Zombie.dir/all
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/depend
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=20,21 "Built target PoleVaultingZombie"
-.PHONY : src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all
-
-# Build rule for subdir invocation for target.
-src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 42
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
-.PHONY : src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule
-
-# Convenience name for target.
-PoleVaultingZombie: src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule
-.PHONY : PoleVaultingZombie
-
-# clean rule for target.
-src/GameObject/CMakeFiles/PoleVaultingZombie.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/clean
-.PHONY : src/GameObject/CMakeFiles/PoleVaultingZombie.dir/clean
-
-#=============================================================================
 # Target rules for target src/GameWorld/CMakeFiles/GameWorld.dir
 
 # All Build rule for target.
 src/GameWorld/CMakeFiles/GameWorld.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: freeglut/CMakeFiles/freeglut.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Sun.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/PlantingSpot.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Background.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/SunflowerSeed.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/PeashooterSeed.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/WallnutSeed.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/SeedButton.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Sun.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Plant.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Zombie.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Wallnut.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/SunflowerSeed.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/SeedButton.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Framework/CMakeFiles/Framework.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Background.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Shovel.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/PoleVaultingZombie.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Explosion.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Peashooter.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/CherryBomb.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Zombie.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/RegularZombie.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/HoldingSeed.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Sunflower.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/RegularZombie.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Wallnut.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/CherryBombSeed.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameWorld\CMakeFiles\GameWorld.dir\build.make src/GameWorld/CMakeFiles/GameWorld.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameWorld\CMakeFiles\GameWorld.dir\build.make src/GameWorld/CMakeFiles/GameWorld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=10 "Built target GameWorld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=14 "Built target GameWorld"
 .PHONY : src/GameWorld/CMakeFiles/GameWorld.dir/all
 
 # Build rule for subdir invocation for target.
 src/GameWorld/CMakeFiles/GameWorld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 68
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 69
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameWorld/CMakeFiles/GameWorld.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles 0
 .PHONY : src/GameWorld/CMakeFiles/GameWorld.dir/rule

@@ -2,7 +2,6 @@
 #define PEASHOOTER_HPP__
 
 #include "pvz/GameObject/Plant.hpp"
-#include "pvz/GameObject/Pea.hpp"
 #include "pvz/GameWorld/GameWorld.hpp"
 
 class Peashooter : public Plant {

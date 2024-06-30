@@ -447,6 +447,45 @@ Wallnut/fast:
 .PHONY : Wallnut/fast
 
 #=============================================================================
+# Target rules for targets named CherryBombSeed
+
+# Build rule for target.
+CherryBombSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CherryBombSeed
+.PHONY : CherryBombSeed
+
+# fast build rule for target.
+CherryBombSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/build
+.PHONY : CherryBombSeed/fast
+
+#=============================================================================
+# Target rules for targets named CherryBomb
+
+# Build rule for target.
+CherryBomb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CherryBomb
+.PHONY : CherryBomb
+
+# fast build rule for target.
+CherryBomb/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/build
+.PHONY : CherryBomb/fast
+
+#=============================================================================
+# Target rules for targets named Explosion
+
+# Build rule for target.
+Explosion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Explosion
+.PHONY : Explosion
+
+# fast build rule for target.
+Explosion/fast:
+	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Explosion.dir\build.make src/GameObject/CMakeFiles/Explosion.dir/build
+.PHONY : Explosion/fast
+
+#=============================================================================
 # Target rules for targets named Shovel
 
 # Build rule for target.
@@ -458,19 +497,6 @@ Shovel: cmake_check_build_system
 Shovel/fast:
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/build
 .PHONY : Shovel/fast
-
-#=============================================================================
-# Target rules for targets named PoleVaultingZombie
-
-# Build rule for target.
-PoleVaultingZombie: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PoleVaultingZombie
-.PHONY : PoleVaultingZombie
-
-# fast build rule for target.
-PoleVaultingZombie/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/build
-.PHONY : PoleVaultingZombie/fast
 
 #=============================================================================
 # Target rules for targets named GameWorld
@@ -522,7 +548,10 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Background
+	@echo ... CherryBomb
+	@echo ... CherryBombSeed
 	@echo ... CooldownMask
+	@echo ... Explosion
 	@echo ... Framework
 	@echo ... GameObject
 	@echo ... GameWorld
@@ -532,7 +561,6 @@ help:
 	@echo ... PeashooterSeed
 	@echo ... Plant
 	@echo ... PlantingSpot
-	@echo ... PoleVaultingZombie
 	@echo ... PvZ
 	@echo ... RegularZombie
 	@echo ... SOIL

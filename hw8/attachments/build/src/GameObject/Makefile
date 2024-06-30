@@ -399,6 +399,48 @@ Wallnut/fast:
 .PHONY : Wallnut/fast
 
 # Convenience name for target.
+src/GameObject/CMakeFiles/CherryBombSeed.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/CherryBombSeed.dir/rule
+.PHONY : src/GameObject/CMakeFiles/CherryBombSeed.dir/rule
+
+# Convenience name for target.
+CherryBombSeed: src/GameObject/CMakeFiles/CherryBombSeed.dir/rule
+.PHONY : CherryBombSeed
+
+# fast build rule for target.
+CherryBombSeed/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/build
+.PHONY : CherryBombSeed/fast
+
+# Convenience name for target.
+src/GameObject/CMakeFiles/CherryBomb.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/CherryBomb.dir/rule
+.PHONY : src/GameObject/CMakeFiles/CherryBomb.dir/rule
+
+# Convenience name for target.
+CherryBomb: src/GameObject/CMakeFiles/CherryBomb.dir/rule
+.PHONY : CherryBomb
+
+# fast build rule for target.
+CherryBomb/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/build
+.PHONY : CherryBomb/fast
+
+# Convenience name for target.
+src/GameObject/CMakeFiles/Explosion.dir/rule:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Explosion.dir/rule
+.PHONY : src/GameObject/CMakeFiles/Explosion.dir/rule
+
+# Convenience name for target.
+Explosion: src/GameObject/CMakeFiles/Explosion.dir/rule
+.PHONY : Explosion
+
+# fast build rule for target.
+Explosion/fast:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Explosion.dir\build.make src/GameObject/CMakeFiles/Explosion.dir/build
+.PHONY : Explosion/fast
+
+# Convenience name for target.
 src/GameObject/CMakeFiles/Shovel.dir/rule:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Shovel.dir/rule
 .PHONY : src/GameObject/CMakeFiles/Shovel.dir/rule
@@ -411,20 +453,6 @@ Shovel: src/GameObject/CMakeFiles/Shovel.dir/rule
 Shovel/fast:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/build
 .PHONY : Shovel/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule
-.PHONY : src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule
-
-# Convenience name for target.
-PoleVaultingZombie: src/GameObject/CMakeFiles/PoleVaultingZombie.dir/rule
-.PHONY : PoleVaultingZombie
-
-# fast build rule for target.
-PoleVaultingZombie/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/build
-.PHONY : PoleVaultingZombie/fast
 
 Background.obj: Background.cpp.obj
 .PHONY : Background.obj
@@ -450,6 +478,54 @@ Background.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/Background.cpp.s
 .PHONY : Background.cpp.s
 
+CherryBomb.obj: CherryBomb.cpp.obj
+.PHONY : CherryBomb.obj
+
+# target to build an object file
+CherryBomb.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/CherryBomb.cpp.obj
+.PHONY : CherryBomb.cpp.obj
+
+CherryBomb.i: CherryBomb.cpp.i
+.PHONY : CherryBomb.i
+
+# target to preprocess a source file
+CherryBomb.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/CherryBomb.cpp.i
+.PHONY : CherryBomb.cpp.i
+
+CherryBomb.s: CherryBomb.cpp.s
+.PHONY : CherryBomb.s
+
+# target to generate assembly for a file
+CherryBomb.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/CherryBomb.cpp.s
+.PHONY : CherryBomb.cpp.s
+
+CherryBombSeed.obj: CherryBombSeed.cpp.obj
+.PHONY : CherryBombSeed.obj
+
+# target to build an object file
+CherryBombSeed.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.obj
+.PHONY : CherryBombSeed.cpp.obj
+
+CherryBombSeed.i: CherryBombSeed.cpp.i
+.PHONY : CherryBombSeed.i
+
+# target to preprocess a source file
+CherryBombSeed.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.i
+.PHONY : CherryBombSeed.cpp.i
+
+CherryBombSeed.s: CherryBombSeed.cpp.s
+.PHONY : CherryBombSeed.s
+
+# target to generate assembly for a file
+CherryBombSeed.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.s
+.PHONY : CherryBombSeed.cpp.s
+
 CooldownMask.obj: CooldownMask.cpp.obj
 .PHONY : CooldownMask.obj
 
@@ -473,6 +549,30 @@ CooldownMask.s: CooldownMask.cpp.s
 CooldownMask.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CooldownMask.dir\build.make src/GameObject/CMakeFiles/CooldownMask.dir/CooldownMask.cpp.s
 .PHONY : CooldownMask.cpp.s
+
+Explosion.obj: Explosion.cpp.obj
+.PHONY : Explosion.obj
+
+# target to build an object file
+Explosion.cpp.obj:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Explosion.dir\build.make src/GameObject/CMakeFiles/Explosion.dir/Explosion.cpp.obj
+.PHONY : Explosion.cpp.obj
+
+Explosion.i: Explosion.cpp.i
+.PHONY : Explosion.i
+
+# target to preprocess a source file
+Explosion.cpp.i:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Explosion.dir\build.make src/GameObject/CMakeFiles/Explosion.dir/Explosion.cpp.i
+.PHONY : Explosion.cpp.i
+
+Explosion.s: Explosion.cpp.s
+.PHONY : Explosion.s
+
+# target to generate assembly for a file
+Explosion.cpp.s:
+	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Explosion.dir\build.make src/GameObject/CMakeFiles/Explosion.dir/Explosion.cpp.s
+.PHONY : Explosion.cpp.s
 
 GameObject.obj: GameObject.cpp.obj
 .PHONY : GameObject.obj
@@ -641,30 +741,6 @@ PlantingSpot.s: PlantingSpot.cpp.s
 PlantingSpot.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/PlantingSpot.cpp.s
 .PHONY : PlantingSpot.cpp.s
-
-PoleVaultingZombie.obj: PoleVaultingZombie.cpp.obj
-.PHONY : PoleVaultingZombie.obj
-
-# target to build an object file
-PoleVaultingZombie.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/PoleVaultingZombie.cpp.obj
-.PHONY : PoleVaultingZombie.cpp.obj
-
-PoleVaultingZombie.i: PoleVaultingZombie.cpp.i
-.PHONY : PoleVaultingZombie.i
-
-# target to preprocess a source file
-PoleVaultingZombie.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/PoleVaultingZombie.cpp.i
-.PHONY : PoleVaultingZombie.cpp.i
-
-PoleVaultingZombie.s: PoleVaultingZombie.cpp.s
-.PHONY : PoleVaultingZombie.s
-
-# target to generate assembly for a file
-PoleVaultingZombie.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PoleVaultingZombie.dir\build.make src/GameObject/CMakeFiles/PoleVaultingZombie.dir/PoleVaultingZombie.cpp.s
-.PHONY : PoleVaultingZombie.cpp.s
 
 RegularZombie.obj: RegularZombie.cpp.obj
 .PHONY : RegularZombie.obj
@@ -895,7 +971,10 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Background
+	@echo ... CherryBomb
+	@echo ... CherryBombSeed
 	@echo ... CooldownMask
+	@echo ... Explosion
 	@echo ... GameObject
 	@echo ... HoldingSeed
 	@echo ... Pea
@@ -903,7 +982,6 @@ help:
 	@echo ... PeashooterSeed
 	@echo ... Plant
 	@echo ... PlantingSpot
-	@echo ... PoleVaultingZombie
 	@echo ... RegularZombie
 	@echo ... SeedButton
 	@echo ... Shovel
@@ -916,9 +994,18 @@ help:
 	@echo ... Background.obj
 	@echo ... Background.i
 	@echo ... Background.s
+	@echo ... CherryBomb.obj
+	@echo ... CherryBomb.i
+	@echo ... CherryBomb.s
+	@echo ... CherryBombSeed.obj
+	@echo ... CherryBombSeed.i
+	@echo ... CherryBombSeed.s
 	@echo ... CooldownMask.obj
 	@echo ... CooldownMask.i
 	@echo ... CooldownMask.s
+	@echo ... Explosion.obj
+	@echo ... Explosion.i
+	@echo ... Explosion.s
 	@echo ... GameObject.obj
 	@echo ... GameObject.i
 	@echo ... GameObject.s
@@ -940,9 +1027,6 @@ help:
 	@echo ... PlantingSpot.obj
 	@echo ... PlantingSpot.i
 	@echo ... PlantingSpot.s
-	@echo ... PoleVaultingZombie.obj
-	@echo ... PoleVaultingZombie.i
-	@echo ... PoleVaultingZombie.s
 	@echo ... RegularZombie.obj
 	@echo ... RegularZombie.i
 	@echo ... RegularZombie.s

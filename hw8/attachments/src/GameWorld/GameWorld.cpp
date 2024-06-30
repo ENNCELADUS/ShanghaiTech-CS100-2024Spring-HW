@@ -5,7 +5,7 @@
  * @brief Construct a new Game World:: Game World object
  */
 GameWorld::GameWorld() 
-  : sunlight(100), currentWave(0){}
+  : sunlight(300), currentWave(0){}
 
 GameWorld::~GameWorld() {}
 
@@ -15,7 +15,7 @@ GameWorld::~GameWorld() {}
  */
 void GameWorld::Init() {
   // Initialize statistics.
-  sunlight = 100, currentWave = 0;
+  sunlight = 300, currentWave = 0;
 
   CreateTexts();
 
@@ -34,7 +34,7 @@ LevelStatus GameWorld::Update() {
   /**
    * @brief Step 1: Drop new sunlight
    */
-  if ((tickCount - 180) % 300 == 0) {
+  if ((tickCount + 150) % 300 == 0) {
       CreateSun();
   }
 
@@ -78,17 +78,21 @@ LevelStatus GameWorld::Update() {
   /**
    * @brief Step 7: Check for zombie collision with plants
    */
-  for (auto& gameObject : gameObjects) {
-    if (gameObject->GetObjectType() == ObjectType::ZOMBIE) {
+  for (auto it = gameObjects.begin(); it != gameObjects.end(); ++it) {
+    if ((*it)->GetObjectType() == ObjectType::ZOMBIE) {
       bool collidedWithPlant = false;
-      for (const auto& otherObject : gameObjects) {
-        if (otherObject->GetObjectType() == ObjectType::PLANT &&
-          gameObject->Intersects(otherObject.get())) {
+      for (auto it2 = gameObjects.begin(); it2 != gameObjects.end(); ++it2) {
+        if ((*it2)->GetObjectType() == ObjectType::PLANT && (*it)->Intersects((*it2).get())) {
           collidedWithPlant = true;
           break;
         }
       }
-      gameObject->HandleNoCollision();
+      if (!collidedWithPlant) {
+        auto zombie = std::dynamic_pointer_cast<Zombie>(*it);
+        if (zombie) {
+          zombie->HandleNoCollision();
+        }
+      }
     }
   }
 
@@ -101,11 +105,10 @@ LevelStatus GameWorld::Update() {
 }
 
 void GameWorld::CleanUp() {
-  // TODO:
   gameObjects.clear();
 
   // Reset sunlight, wave, and tick count
-  sunlight = 100;
+  sunlight = 300;
   currentWave = 0;
   tickCount = 0;
 
@@ -164,6 +167,10 @@ void GameWorld::CreateSeedButtons() {
   x += 60;
   auto wallnutSeed = std::make_shared<WallnutSeed>(x, y, *shared_from_this(), PlantType::Wallnut);
   AddGameObject(wallnutSeed);
+
+  x += 60;
+  auto cherryBombSeed = std::make_shared<CherryBombSeed>(x, y, *shared_from_this(), PlantType::CherryBomb);
+  AddGameObject(cherryBombSeed);
 }
 
 void GameWorld::CreateShovel() {
@@ -186,9 +193,9 @@ void GameWorld::CreateZombies() {
        * @brief Calculate the possibility of generating zombies.
        */
       int P1 = 20;
-      int P2 = 2 * std::max(currentWave - 2, 0);
+      // int P2 = 2 * std::max(currentWave - 2, 0);
       // int P3 = 3 * std::max(currentWave - 15, 0);
-      int totalP = P1 + P2;
+      int totalP = P1;
 
       int randVal = randInt(1, totalP);
       std::shared_ptr<Zombie> zombie;
@@ -197,24 +204,25 @@ void GameWorld::CreateZombies() {
       ZombieType zombieType;
       if (randVal <= P1) {
         zombieType = REGULAR;
-      } else if (randVal <= P1 + P2) {
-        zombieType = POLE_VAULTING;
-      }
+      } 
+      // else if (randVal <= P1 + P2) {
+      //   zombieType = POLE_VAULTING;
+      // }
       // } else {
       //   zombieType = BUCKETHEAD;
       // }
 
-      // TODO:
+      // DONE:
       switch (zombieType) {
         case REGULAR:
           zombie = std::make_shared<RegularZombie>(randInt(WINDOW_WIDTH - 40, WINDOW_WIDTH - 1), 
             FIRST_ROW_CENTER + randInt(0, GAME_ROWS - 1) * LAWN_GRID_HEIGHT, *this);
           break;
 
-        case POLE_VAULTING:
-          zombie = std::make_shared<PoleVaultingZombie>(randInt(WINDOW_WIDTH - 40, WINDOW_WIDTH - 1), 
-            FIRST_ROW_CENTER + randInt(0, GAME_ROWS - 1) * LAWN_GRID_HEIGHT, *this);
-          break;
+        // case POLE_VAULTING:
+        //   zombie = std::make_shared<PoleVaultingZombie>(randInt(WINDOW_WIDTH - 40, WINDOW_WIDTH - 1), 
+        //     FIRST_ROW_CENTER + randInt(0, GAME_ROWS - 1) * LAWN_GRID_HEIGHT, *this);
+        //   break;
 
         // case BUCKETHEAD:
         //   zombie = std::make_shared<BucketheadZombie>(randInt(WINDOW_WIDTH - 40, WINDOW_WIDTH - 1), 
@@ -269,6 +277,9 @@ void GameWorld::PlantSeed(int x, int y) {
       case PlantType::Wallnut:
         plant = std::make_shared<Wallnut>(x, y, *this);
         break;
+      case PlantType::CherryBomb:
+        plant = std::make_shared<CherryBomb>(x, y, *this);
+        break;
     }
 
     if (plant) {
@@ -301,6 +312,7 @@ bool GameWorld::HasZombiesInRow(int y, int x) const {
   return false;
 }
 
+
 void GameWorld::HandleCollisions() {
   // Handle collisions between zombies and peas
   for (auto it1 = gameObjects.begin(); it1 != gameObjects.end(); ++it1) {
@@ -308,28 +320,61 @@ void GameWorld::HandleCollisions() {
       for (auto it2 = gameObjects.begin(); it2 != gameObjects.end(); ++it2) {
         if ((*it2)->GetObjectType() == ObjectType::PEA) {
           if ((*it1)->Intersects((*it2).get())) {
-            (*it1)->TakeDamage(20);
+            auto zombie = std::dynamic_pointer_cast<Zombie>(*it1);
+            if (zombie) {
+              zombie->HandleCollision(*it2);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Handle collisions between explosions and zombies
+  for (auto it1 = gameObjects.begin(); it1 != gameObjects.end(); ++it1) {
+    if (auto explosion = std::dynamic_pointer_cast<Explosion>(*it1)) {
+      for (auto it2 = gameObjects.begin(); it2 != gameObjects.end(); ++it2) {
+        if ((*it2)->GetObjectType() == ObjectType::ZOMBIE) {
+          if (explosion->Intersects((*it2).get())) {
             (*it2)->MarkAsDead();
           }
         }
       }
     }
   }
+
   // Handle collisions between zombies and plants
   for (auto it1 = gameObjects.begin(); it1 != gameObjects.end(); ++it1) {
     if ((*it1)->GetObjectType() == ObjectType::ZOMBIE) {
-        bool collidedWithPlant = false;
-        for (auto it2 = gameObjects.begin(); it2 != gameObjects.end(); ++it2) {
-            if ((*it2)->GetObjectType() == ObjectType::PLANT) {
-                if ((*it1)->Intersects((*it2).get())) {
-                    collidedWithPlant = true;
-                    break;
-                }
+      for (auto it2 = gameObjects.begin(); it2 != gameObjects.end(); ++it2) {
+        if ((*it2)->GetObjectType() == ObjectType::PLANT) {
+          if ((*it1)->Intersects((*it2).get())) {
+            auto zombie = std::dynamic_pointer_cast<Zombie>(*it1);
+            if (zombie) {
+              zombie->HandleCollision(*it2);
             }
+          }
         }
-        if (!collidedWithPlant) {
-            (*it1)->HandleNoCollision();
-        }
+      }
     }
-  } 
+  }
+
+  // Handle cases where zombies are not colliding with plants
+  for (auto it = gameObjects.begin(); it != gameObjects.end(); ++it) {
+    if ((*it)->GetObjectType() == ObjectType::ZOMBIE) {
+      bool collidedWithPlant = false;
+      for (auto it2 = gameObjects.begin(); it2 != gameObjects.end(); ++it2) {
+        if ((*it2)->GetObjectType() == ObjectType::PLANT && (*it)->Intersects((*it2).get())) {
+          collidedWithPlant = true;
+          break;
+        }
+      }
+      if (!collidedWithPlant) {
+        auto zombie = std::dynamic_pointer_cast<Zombie>(*it);
+        if (zombie) {
+          zombie->HandleNoCollision();
+        }
+      }
+    }
+  }
 }

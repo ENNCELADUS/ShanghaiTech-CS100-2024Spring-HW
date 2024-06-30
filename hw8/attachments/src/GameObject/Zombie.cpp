@@ -21,30 +21,9 @@ void Zombie::TakeDamage(int damage) {
     }
 }
 
-bool Zombie::IsEating() const {
-    return !isWalking;
-}
-
-void Zombie::StopEating() {
-    isWalking = true;
-    PlayAnimation(ANIMID_WALK_ANIM);
-}
-
 void Zombie::HandleNoCollision() {
-    if (IsEating()) {
-        StopEating();
-    }
-}
-
-void Zombie::HandleCollision(std::shared_ptr<GameObject> other) {
-    if (other->GetObjectType() == ObjectType::PEA) {
-        TakeDamage(20);
-        other->MarkAsDead();
-    } else if (other->GetObjectType() == ObjectType::PLANT) {
-        if (!IsEating()) {
-            isWalking = false;
-            PlayAnimation(ANIMID_EAT_ANIM);
-        }
-        other->TakeDamage(3); // 每次 Update 扣 3 点 HP
+    if (!isWalking) {
+        isWalking = true;
+        PlayAnimation(ANIMID_WALK_ANIM);
     }
 }

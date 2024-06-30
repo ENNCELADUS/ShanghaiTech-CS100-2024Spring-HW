@@ -26,8 +26,9 @@
 #include "pvz/Gameobject/RegularZombie.hpp"
 #include "pvz/Gameobject/Wallnut.hpp"
 #include "pvz/Gameobject/Shovel.hpp"
-#include "pvz/Gameobject/PoleVaultingZombie.hpp"
-
+#include "pvz/GameObject/CherryBombSeed.hpp"
+#include "pvz/GameObject/CherryBomb.hpp"
+#include "pvz/GameObject/Explosion.hpp"
 
 #include "pvz/Framework/TextBase.hpp"
 #include "pvz/utils.hpp"

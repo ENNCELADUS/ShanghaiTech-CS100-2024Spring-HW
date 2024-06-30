@@ -1,5 +1,7 @@
 #include "pvz/GameObject/Peashooter.hpp"
 #include "pvz/GameWorld/GameWorld.hpp"
+#include "pvz/GameObject/Pea.hpp"
+
 
 Peashooter::Peashooter(int x, int y, GameWorld& gameworld)
     : Plant(IMGID_PEASHOOTER, x, y, 60, 80, 300, gameworld, ANIMID_IDLE_ANIM), cooldown(0) {}

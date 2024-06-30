@@ -14,11 +14,6 @@ public:
 private:
     int speed = 8;
     GameWorld& gameWorld;
-
-    /**
-     * @brief Check whether Pea collises with a Zombie.
-     */
-    bool CheckCollisionWithZombies();
 };
 
 #endif // PEA_HPP__

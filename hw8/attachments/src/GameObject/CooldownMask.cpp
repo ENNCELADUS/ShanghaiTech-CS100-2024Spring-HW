@@ -1,8 +1,7 @@
 #include "pvz/GameObject/CooldownMask.hpp"
-#include "pvz/utils.hpp"
 
-CooldownMask::CooldownMask(int x, int y)
-    : GameObject(IMGID_COOLDOWN_MASK, x, y, LAYER_COOLDOWN_MASK, 50, 70, ANIMID_NO_ANIMATION), cooldownRemaining(240) {}
+CooldownMask::CooldownMask(int x, int y, int coolDown)
+    : GameObject(IMGID_COOLDOWN_MASK, x, y, LAYER_COOLDOWN_MASK, 50, 70, ANIMID_NO_ANIMATION), cooldownRemaining(coolDown) {}
 
 void CooldownMask::Update() {
     if (cooldownRemaining > 0) {

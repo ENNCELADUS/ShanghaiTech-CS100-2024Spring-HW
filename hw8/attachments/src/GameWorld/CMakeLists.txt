@@ -26,5 +26,7 @@ target_link_libraries(
   RegularZombie
   Wallnut
   Shovel
-  PoleVaultingZombie
+  CherryBombSeed
+  CherryBomb
+  Explosion
 )

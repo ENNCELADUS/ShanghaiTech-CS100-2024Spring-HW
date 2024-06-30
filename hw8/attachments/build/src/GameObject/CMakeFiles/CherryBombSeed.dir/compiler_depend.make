@@ -201,6 +201,7 @@ src/GameObject/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.obj: E:/RICHARD/
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/ObjectBase.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBombSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/HoldingSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/utils.hpp
 
@@ -336,6 +337,8 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h:
 D:/mingw64/include/c++/13.2.0/bits/ostream_insert.h:
 
 D:/mingw64/include/c++/13.2.0/bits/predefined_ops.h:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/HoldingSeed.hpp:
 
 D:/mingw64/include/c++/13.2.0/bits/ptr_traits.h:
 

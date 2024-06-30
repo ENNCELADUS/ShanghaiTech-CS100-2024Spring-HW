@@ -210,10 +210,12 @@ src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.obj: E:/RICHARD/CS100/CS100-HW/hw8
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/WorldBase.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBomb.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBombSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CooldownMask.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Explosion.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/HoldingSeed.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PeashooterSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Plant.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PlantingSpot.hpp \
@@ -227,7 +229,6 @@ src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.obj: E:/RICHARD/CS100/CS100-HW/hw8
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Peashooter.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Plant.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PoleVaultingZombie.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/RegularZombie.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Shovel.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sunflower.hpp \
@@ -295,8 +296,6 @@ D:/mingw64/include/c++/13.2.0/bits/basic_ios.tcc:
 D:/mingw64/include/c++/13.2.0/tr1/gamma.tcc:
 
 D:/mingw64/include/c++/13.2.0/bits/hash_bytes.h:
-
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PoleVaultingZombie.hpp:
 
 D:/mingw64/include/c++/13.2.0/bits/basic_string.tcc:
 
@@ -666,9 +665,13 @@ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/WorldBase.hpp:
 
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBomb.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBombSeed.hpp:
+
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CooldownMask.hpp:
 
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp:
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Explosion.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PeashooterSeed.hpp:
 
@@ -683,6 +686,8 @@ E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/WallnutSeed.hpp
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Zombie.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameWorld/GameWorld.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Peashooter.hpp:
 

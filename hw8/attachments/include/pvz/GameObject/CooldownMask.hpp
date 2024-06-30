@@ -5,7 +5,7 @@
 
 class CooldownMask : public GameObject {
 public:
-    CooldownMask(int x, int y);
+    CooldownMask(int x, int y, int coolDown);
 
     void Update() override;
     void OnClick() override;
