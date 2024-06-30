@@ -1,2 +1,0 @@
-D:\mingw64\bin\ar.exe qc ..\..\lib\libWallnut.a CMakeFiles/Wallnut.dir/Wallnut.cpp.obj
-D:\mingw64\bin\ranlib.exe ..\..\lib\libWallnut.a

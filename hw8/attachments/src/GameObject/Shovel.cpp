@@ -10,21 +10,14 @@ void Shovel::Update() {
 
 void Shovel::OnClick() {
     if (gameWorld.GetHoldingSeed()) {
-        /**
-         * @brief If the player is holding a seed, ignore the click
-         */
         return;
     }
 
     if (gameWorld.IsHoldingShovel()) {
-        /**
-         * @brief If the player is already holding the shovel, put it down
-         */
         gameWorld.SetHoldingShovel(false);
-    } else {
-        /**
-         * @brief If the player is not holding the shovel, pick it up
-         */
+    } 
+    
+    else {
         gameWorld.SetHoldingShovel(true);
     }
 }

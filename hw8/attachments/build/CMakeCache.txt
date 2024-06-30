@@ -314,15 +314,6 @@ OPENGL_gl_LIBRARY:STRING=opengl32
 OPENGL_glu_LIBRARY:STRING=glu32
 
 //Value Computed by CMake
-PVZ_BINARY_DIR:STATIC=E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject
-
-//Value Computed by CMake
-PVZ_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-PVZ_SOURCE_DIR:STATIC=E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject
-
-//Value Computed by CMake
 PvZ_BINARY_DIR:STATIC=E:/RICHARD/CS100/CS100-HW/hw8/attachments/build
 
 //Value Computed by CMake

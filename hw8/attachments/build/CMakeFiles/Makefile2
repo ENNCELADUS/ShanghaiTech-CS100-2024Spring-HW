@@ -270,28 +270,28 @@ src/Zombie/clean: src/Zombie/CMakeFiles/RegularZombie.dir/clean
 # All Build rule for target.
 CMakeFiles/PvZ.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 CMakeFiles/PvZ.dir/all: freeglut/CMakeFiles/freeglut.dir/all
+CMakeFiles/PvZ.dir/all: src/Environment/CMakeFiles/Background.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
-CMakeFiles/PvZ.dir/all: src/Environment/CMakeFiles/Background.dir/all
-CMakeFiles/PvZ.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 CMakeFiles/PvZ.dir/all: src/Environment/CMakeFiles/PlantingSpot.dir/all
-CMakeFiles/PvZ.dir/all: src/Plant/CMakeFiles/Sunflower.dir/all
-CMakeFiles/PvZ.dir/all: src/Plant/CMakeFiles/Peashooter.dir/all
+CMakeFiles/PvZ.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Explosion.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Shovel.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Sun.dir/all
 CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/HoldingSeed.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Shovel.dir/all
-CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
 CMakeFiles/PvZ.dir/all: src/GameWorld/CMakeFiles/GameWorld.dir/all
+CMakeFiles/PvZ.dir/all: src/Plant/CMakeFiles/Peashooter.dir/all
 CMakeFiles/PvZ.dir/all: src/Plant/CMakeFiles/Plant.dir/all
+CMakeFiles/PvZ.dir/all: src/Plant/CMakeFiles/Sunflower.dir/all
+CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
 CMakeFiles/PvZ.dir/all: src/Zombie/CMakeFiles/RegularZombie.dir/all
 CMakeFiles/PvZ.dir/all: src/Plant/CMakeFiles/Wallnut.dir/all
-CMakeFiles/PvZ.dir/all: src/SeedButton/CMakeFiles/PeashooterSeed.dir/all
-CMakeFiles/PvZ.dir/all: src/SeedButton/CMakeFiles/CherryBombSeed.dir/all
-CMakeFiles/PvZ.dir/all: src/Plant/CMakeFiles/CherryBomb.dir/all
-CMakeFiles/PvZ.dir/all: src/SeedButton/CMakeFiles/SunflowerSeed.dir/all
 CMakeFiles/PvZ.dir/all: src/SeedButton/CMakeFiles/WallnutSeed.dir/all
+CMakeFiles/PvZ.dir/all: src/SeedButton/CMakeFiles/CherryBombSeed.dir/all
 CMakeFiles/PvZ.dir/all: src/SeedButton/CMakeFiles/SeedButton.dir/all
+CMakeFiles/PvZ.dir/all: src/SeedButton/CMakeFiles/SunflowerSeed.dir/all
+CMakeFiles/PvZ.dir/all: src/SeedButton/CMakeFiles/PeashooterSeed.dir/all
+CMakeFiles/PvZ.dir/all: src/Plant/CMakeFiles/CherryBomb.dir/all
 CMakeFiles/PvZ.dir/all: src/Zombie/CMakeFiles/Zombie.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PvZ.dir\build.make CMakeFiles/PvZ.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PvZ.dir\build.make CMakeFiles/PvZ.dir/build
@@ -679,27 +679,27 @@ src/GameObject/CMakeFiles/Shovel.dir/clean:
 # All Build rule for target.
 src/GameWorld/CMakeFiles/GameWorld.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: freeglut/CMakeFiles/freeglut.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Environment/CMakeFiles/Background.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/CooldownMask.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Environment/CMakeFiles/Background.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Environment/CMakeFiles/PlantingSpot.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Plant/CMakeFiles/Sunflower.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Plant/CMakeFiles/Peashooter.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Explosion.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Shovel.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Sun.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/HoldingSeed.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Shovel.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Plant/CMakeFiles/Peashooter.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Plant/CMakeFiles/Plant.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Plant/CMakeFiles/Sunflower.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Zombie/CMakeFiles/RegularZombie.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Plant/CMakeFiles/Wallnut.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/SeedButton/CMakeFiles/PeashooterSeed.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/SeedButton/CMakeFiles/CherryBombSeed.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Plant/CMakeFiles/CherryBomb.dir/all
-src/GameWorld/CMakeFiles/GameWorld.dir/all: src/SeedButton/CMakeFiles/SunflowerSeed.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/SeedButton/CMakeFiles/WallnutSeed.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/SeedButton/CMakeFiles/CherryBombSeed.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/SeedButton/CMakeFiles/SeedButton.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/SeedButton/CMakeFiles/SunflowerSeed.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/SeedButton/CMakeFiles/PeashooterSeed.dir/all
+src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Plant/CMakeFiles/CherryBomb.dir/all
 src/GameWorld/CMakeFiles/GameWorld.dir/all: src/Zombie/CMakeFiles/Zombie.dir/all
 	$(MAKE) $(MAKESILENT) -f src\GameWorld\CMakeFiles\GameWorld.dir\build.make src/GameWorld/CMakeFiles/GameWorld.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\GameWorld\CMakeFiles\GameWorld.dir\build.make src/GameWorld/CMakeFiles/GameWorld.dir/build
@@ -790,8 +790,8 @@ src/Plant/CMakeFiles/Peashooter.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 src/Plant/CMakeFiles/Peashooter.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 src/Plant/CMakeFiles/Peashooter.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
 src/Plant/CMakeFiles/Peashooter.dir/all: src/Framework/CMakeFiles/Framework.dir/all
-src/Plant/CMakeFiles/Peashooter.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
 src/Plant/CMakeFiles/Peashooter.dir/all: src/Plant/CMakeFiles/Plant.dir/all
+src/Plant/CMakeFiles/Peashooter.dir/all: src/GameObject/CMakeFiles/Pea.dir/all
 	$(MAKE) $(MAKESILENT) -f src\Plant\CMakeFiles\Peashooter.dir\build.make src/Plant/CMakeFiles/Peashooter.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\Plant\CMakeFiles\Peashooter.dir\build.make src/Plant/CMakeFiles/Peashooter.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\hw8\attachments\build\CMakeFiles --progress-num=18 "Built target Peashooter"

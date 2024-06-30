@@ -11,8 +11,6 @@ void SeedButton::Update() {
 }
 
 void SeedButton::OnClick() {
-    // TODO:
-
     // Check if the player is holding a shovel or an unplanted seed
     if (gameWorld.IsHoldingShovel() || (gameWorld.GetHoldingSeed() != nullptr) ) {
         return;

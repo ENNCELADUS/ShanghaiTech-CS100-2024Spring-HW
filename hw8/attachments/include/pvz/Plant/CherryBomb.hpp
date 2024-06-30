@@ -11,7 +11,7 @@ public:
     void Update() override;
 
 private:
-    int frameCount;
+    int frameCount = 0;
 };
 
 #endif // CHERRYBOMB_HPP__

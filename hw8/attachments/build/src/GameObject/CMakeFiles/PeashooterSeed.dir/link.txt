@@ -1,2 +1,0 @@
-D:\mingw64\bin\ar.exe qc ..\..\lib\libPeashooterSeed.a CMakeFiles/PeashooterSeed.dir/PeashooterSeed.cpp.obj
-D:\mingw64\bin\ranlib.exe ..\..\lib\libPeashooterSeed.a

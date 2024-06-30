@@ -61,7 +61,8 @@ LevelStatus GameWorld::Update() {
   for (auto it = gameObjects.begin(); it != gameObjects.end(); ) {
     if ((*it)->IsDead() || ((*it)->GetHp() == 0)) {
       it = gameObjects.erase(it);
-    } else {
+    } 
+    else {
       ++it;
     }
   }
@@ -340,7 +341,7 @@ void GameWorld::HandleCollisions() {
           }
         }
       }
-    }
+    } 
   }
 
   // Handle collisions between zombies and plants

@@ -1,2 +1,0 @@
-D:\mingw64\bin\ar.exe qc ..\..\lib\libPeashooter.a CMakeFiles/Peashooter.dir/Peashooter.cpp.obj
-D:\mingw64\bin\ranlib.exe ..\..\lib\libPeashooter.a

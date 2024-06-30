@@ -7,7 +7,8 @@ Sun::Sun(int x, int y, bool fromSunflower, GameWorld& gameworld)
     if (fromSunflower) {
         fallTime = 12;
         verticalSpeed = 4;
-    } else {
+    } 
+    else {
         initializeFallTime();
     }
 }
@@ -22,14 +23,17 @@ void Sun::Update() {
             // From sunflower.
             MoveTo(GetX() - 1, GetY() + verticalSpeed);
             verticalSpeed -= 1;
-        } else {
+        } 
+        else {
             // From sky.
             MoveTo(GetX(), GetY() - 2);
         }
         ticksSinceFalling++;
-    } else if (ticksSinceFalling < fallTime + 300) {
+    } 
+    else if (ticksSinceFalling < fallTime + 300) {
         ticksSinceFalling++;
-    } else {
+    } 
+    else {
         MarkAsDead();
     }
 }

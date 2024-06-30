@@ -1,2 +1,0 @@
-D:\mingw64\bin\ar.exe qc ..\..\lib\libSunflowerSeed.a CMakeFiles/SunflowerSeed.dir/SunflowerSeed.cpp.obj
-D:\mingw64\bin\ranlib.exe ..\..\lib\libSunflowerSeed.a

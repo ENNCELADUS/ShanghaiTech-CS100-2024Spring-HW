@@ -1,2 +1,0 @@
-D:\mingw64\bin\ar.exe qc ..\..\lib\libSeedButton.a CMakeFiles/SeedButton.dir/SeedButton.cpp.obj
-D:\mingw64\bin\ranlib.exe ..\..\lib\libSeedButton.a
