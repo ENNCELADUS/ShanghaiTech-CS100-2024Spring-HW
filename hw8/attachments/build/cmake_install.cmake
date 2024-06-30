@@ -39,6 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Environment/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Framework/cmake_install.cmake")
 endif()
 
@@ -50,6 +55,21 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameWorld/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Plant/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/SeedButton/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Zombie/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

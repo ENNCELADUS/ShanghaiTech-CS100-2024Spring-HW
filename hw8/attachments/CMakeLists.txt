@@ -36,9 +36,14 @@ ENDIF()
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 #↓↓↓↓↓↓↓↓↓↓↓ ADD YOUR SUBDIRECTORIES HERE ↓↓↓↓↓↓↓↓↓↓↓↓
-add_subdirectory(src/Framework/)
-add_subdirectory(src/GameObject/)
-add_subdirectory(src/GameWorld/)
+add_subdirectory(src/Environment)
+add_subdirectory(src/Framework)
+add_subdirectory(src/GameObject)
+add_subdirectory(src/GameWorld)
+add_subdirectory(src/Plant)
+add_subdirectory(src/SeedButton)
+add_subdirectory(src/Zombie)
+
 #↑↑↑↑↑↑↑↑↑↑↑ ADD YOUR SUBDIRECTORIES HERE ↑↑↑↑↑↑↑↑↑↑↑↑↑
 
 add_executable(
@@ -48,6 +53,12 @@ add_executable(
 
 target_link_libraries(
   ${PROJECT_NAME}
+  Background
+  PlantingSpot
   Framework
+  GameObject
   GameWorld
+  Plant
+  SeedButton
+  Zombie
 )

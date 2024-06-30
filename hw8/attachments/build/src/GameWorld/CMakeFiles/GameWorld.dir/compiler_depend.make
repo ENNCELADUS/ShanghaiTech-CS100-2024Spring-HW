@@ -206,34 +206,32 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj: E:/RICHARD/CS100/CS100
   D:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   D:/mingw64/x86_64-w64-mingw32/include/wchar.h \
   D:/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Environment/Background.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Environment/PlantingSpot.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/ObjectBase.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/WorldBase.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBomb.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBombSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CooldownMask.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Explosion.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/HoldingSeed.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PeashooterSeed.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Plant.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PlantingSpot.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sun.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SunflowerSeed.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/WallnutSeed.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Zombie.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameWorld/GameWorld.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/HoldingSeed.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Peashooter.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Plant.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/RegularZombie.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Shovel.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sunflower.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Wallnut.hpp \
-  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Zombie.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/CherryBomb.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/Peashooter.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/Plant.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/Sunflower.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/Wallnut.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/CherryBombSeed.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/PeashooterSeed.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/SeedButton.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/SunflowerSeed.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/WallnutSeed.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Zombie/RegularZombie.hpp \
+  E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Zombie/Zombie.hpp \
   E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/utils.hpp
 
 
@@ -256,6 +254,8 @@ D:/mingw64/include/c++/13.2.0/algorithm:
 D:/mingw64/include/c++/13.2.0/bit:
 
 D:/mingw64/include/c++/13.2.0/bits/specfun.h:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Environment/Background.hpp:
 
 D:/mingw64/include/c++/13.2.0/initializer_list:
 
@@ -310,6 +310,8 @@ D:/mingw64/include/c++/13.2.0/bits/requires_hosted.h:
 D:/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h:
 
 D:/mingw64/include/c++/13.2.0/bits/functional_hash.h:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Zombie/Zombie.hpp:
 
 D:/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h:
 
@@ -392,6 +394,8 @@ D:/mingw64/include/c++/13.2.0/bits/stl_construct.h:
 D:/mingw64/include/c++/13.2.0/bits/stl_heap.h:
 
 D:/mingw64/include/c++/13.2.0/bits/stl_iterator.h:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/SunflowerSeed.hpp:
 
 D:/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h:
 
@@ -599,6 +603,8 @@ D:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
 
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/Peashooter.hpp:
+
 D:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
@@ -619,8 +625,6 @@ D:/mingw64/x86_64-w64-mingw32/include/process.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/pthread.h:
 
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PlantingSpot.hpp:
-
 D:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
@@ -639,15 +643,11 @@ D:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/signal.h:
 
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SunflowerSeed.hpp:
-
 D:/mingw64/x86_64-w64-mingw32/include/stddef.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/stdint.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/stdio.h:
-
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Background.hpp:
 
 D:/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 
@@ -659,42 +659,40 @@ D:/mingw64/x86_64-w64-mingw32/include/wchar.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/wctype.h:
 
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Environment/PlantingSpot.hpp:
+
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/GameObject.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/TextBase.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Framework/WorldBase.hpp:
 
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBomb.hpp:
-
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CherryBombSeed.hpp:
-
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/CooldownMask.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Explosion.hpp:
 
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/PeashooterSeed.hpp:
-
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Plant.hpp:
-
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/SeedButton.hpp:
-
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sun.hpp:
-
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/WallnutSeed.hpp:
-
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Zombie.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameWorld/GameWorld.hpp:
 
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Pea.hpp:
 
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Peashooter.hpp:
-
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/RegularZombie.hpp:
-
 E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Shovel.hpp:
 
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Sunflower.hpp:
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/CherryBomb.hpp:
 
-E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/GameObject/Wallnut.hpp:
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/Plant.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/Sunflower.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Plant/Wallnut.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/CherryBombSeed.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/PeashooterSeed.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/SeedButton.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/SeedButton/WallnutSeed.hpp:
+
+E:/RICHARD/CS100/CS100-HW/hw8/attachments/include/pvz/Zombie/RegularZombie.hpp:

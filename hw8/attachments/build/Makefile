@@ -213,6 +213,32 @@ freeglut_static/fast:
 .PHONY : freeglut_static/fast
 
 #=============================================================================
+# Target rules for targets named Background
+
+# Build rule for target.
+Background: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Background
+.PHONY : Background
+
+# fast build rule for target.
+Background/fast:
+	$(MAKE) $(MAKESILENT) -f src\Environment\CMakeFiles\Background.dir\build.make src/Environment/CMakeFiles/Background.dir/build
+.PHONY : Background/fast
+
+#=============================================================================
+# Target rules for targets named PlantingSpot
+
+# Build rule for target.
+PlantingSpot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PlantingSpot
+.PHONY : PlantingSpot
+
+# fast build rule for target.
+PlantingSpot/fast:
+	$(MAKE) $(MAKESILENT) -f src\Environment\CMakeFiles\PlantingSpot.dir\build.make src/Environment/CMakeFiles/PlantingSpot.dir/build
+.PHONY : PlantingSpot/fast
+
+#=============================================================================
 # Target rules for targets named Framework
 
 # Build rule for target.
@@ -237,84 +263,6 @@ GameObject: cmake_check_build_system
 GameObject/fast:
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/build
 .PHONY : GameObject/fast
-
-#=============================================================================
-# Target rules for targets named Background
-
-# Build rule for target.
-Background: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Background
-.PHONY : Background
-
-# fast build rule for target.
-Background/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/build
-.PHONY : Background/fast
-
-#=============================================================================
-# Target rules for targets named PlantingSpot
-
-# Build rule for target.
-PlantingSpot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PlantingSpot
-.PHONY : PlantingSpot
-
-# fast build rule for target.
-PlantingSpot/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/build
-.PHONY : PlantingSpot/fast
-
-#=============================================================================
-# Target rules for targets named SeedButton
-
-# Build rule for target.
-SeedButton: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeedButton
-.PHONY : SeedButton
-
-# fast build rule for target.
-SeedButton/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/build
-.PHONY : SeedButton/fast
-
-#=============================================================================
-# Target rules for targets named SunflowerSeed
-
-# Build rule for target.
-SunflowerSeed: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SunflowerSeed
-.PHONY : SunflowerSeed
-
-# fast build rule for target.
-SunflowerSeed/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/build
-.PHONY : SunflowerSeed/fast
-
-#=============================================================================
-# Target rules for targets named PeashooterSeed
-
-# Build rule for target.
-PeashooterSeed: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PeashooterSeed
-.PHONY : PeashooterSeed
-
-# fast build rule for target.
-PeashooterSeed/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/build
-.PHONY : PeashooterSeed/fast
-
-#=============================================================================
-# Target rules for targets named WallnutSeed
-
-# Build rule for target.
-WallnutSeed: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 WallnutSeed
-.PHONY : WallnutSeed
-
-# fast build rule for target.
-WallnutSeed/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\WallnutSeed.dir\build.make src/GameObject/CMakeFiles/WallnutSeed.dir/build
-.PHONY : WallnutSeed/fast
 
 #=============================================================================
 # Target rules for targets named CooldownMask
@@ -343,32 +291,6 @@ Sun/fast:
 .PHONY : Sun/fast
 
 #=============================================================================
-# Target rules for targets named Plant
-
-# Build rule for target.
-Plant: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Plant
-.PHONY : Plant
-
-# fast build rule for target.
-Plant/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/build
-.PHONY : Plant/fast
-
-#=============================================================================
-# Target rules for targets named Sunflower
-
-# Build rule for target.
-Sunflower: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sunflower
-.PHONY : Sunflower
-
-# fast build rule for target.
-Sunflower/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/build
-.PHONY : Sunflower/fast
-
-#=============================================================================
 # Target rules for targets named HoldingSeed
 
 # Build rule for target.
@@ -382,19 +304,6 @@ HoldingSeed/fast:
 .PHONY : HoldingSeed/fast
 
 #=============================================================================
-# Target rules for targets named Peashooter
-
-# Build rule for target.
-Peashooter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Peashooter
-.PHONY : Peashooter
-
-# fast build rule for target.
-Peashooter/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Peashooter.dir\build.make src/GameObject/CMakeFiles/Peashooter.dir/build
-.PHONY : Peashooter/fast
-
-#=============================================================================
 # Target rules for targets named Pea
 
 # Build rule for target.
@@ -406,71 +315,6 @@ Pea: cmake_check_build_system
 Pea/fast:
 	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Pea.dir\build.make src/GameObject/CMakeFiles/Pea.dir/build
 .PHONY : Pea/fast
-
-#=============================================================================
-# Target rules for targets named Zombie
-
-# Build rule for target.
-Zombie: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Zombie
-.PHONY : Zombie
-
-# fast build rule for target.
-Zombie/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Zombie.dir\build.make src/GameObject/CMakeFiles/Zombie.dir/build
-.PHONY : Zombie/fast
-
-#=============================================================================
-# Target rules for targets named RegularZombie
-
-# Build rule for target.
-RegularZombie: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RegularZombie
-.PHONY : RegularZombie
-
-# fast build rule for target.
-RegularZombie/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/build
-.PHONY : RegularZombie/fast
-
-#=============================================================================
-# Target rules for targets named Wallnut
-
-# Build rule for target.
-Wallnut: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Wallnut
-.PHONY : Wallnut
-
-# fast build rule for target.
-Wallnut/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/build
-.PHONY : Wallnut/fast
-
-#=============================================================================
-# Target rules for targets named CherryBombSeed
-
-# Build rule for target.
-CherryBombSeed: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CherryBombSeed
-.PHONY : CherryBombSeed
-
-# fast build rule for target.
-CherryBombSeed/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/build
-.PHONY : CherryBombSeed/fast
-
-#=============================================================================
-# Target rules for targets named CherryBomb
-
-# Build rule for target.
-CherryBomb: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CherryBomb
-.PHONY : CherryBomb
-
-# fast build rule for target.
-CherryBomb/fast:
-	$(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/build
-.PHONY : CherryBomb/fast
 
 #=============================================================================
 # Target rules for targets named Explosion
@@ -510,6 +354,162 @@ GameWorld: cmake_check_build_system
 GameWorld/fast:
 	$(MAKE) $(MAKESILENT) -f src\GameWorld\CMakeFiles\GameWorld.dir\build.make src/GameWorld/CMakeFiles/GameWorld.dir/build
 .PHONY : GameWorld/fast
+
+#=============================================================================
+# Target rules for targets named Plant
+
+# Build rule for target.
+Plant: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Plant
+.PHONY : Plant
+
+# fast build rule for target.
+Plant/fast:
+	$(MAKE) $(MAKESILENT) -f src\Plant\CMakeFiles\Plant.dir\build.make src/Plant/CMakeFiles/Plant.dir/build
+.PHONY : Plant/fast
+
+#=============================================================================
+# Target rules for targets named Sunflower
+
+# Build rule for target.
+Sunflower: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sunflower
+.PHONY : Sunflower
+
+# fast build rule for target.
+Sunflower/fast:
+	$(MAKE) $(MAKESILENT) -f src\Plant\CMakeFiles\Sunflower.dir\build.make src/Plant/CMakeFiles/Sunflower.dir/build
+.PHONY : Sunflower/fast
+
+#=============================================================================
+# Target rules for targets named Peashooter
+
+# Build rule for target.
+Peashooter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Peashooter
+.PHONY : Peashooter
+
+# fast build rule for target.
+Peashooter/fast:
+	$(MAKE) $(MAKESILENT) -f src\Plant\CMakeFiles\Peashooter.dir\build.make src/Plant/CMakeFiles/Peashooter.dir/build
+.PHONY : Peashooter/fast
+
+#=============================================================================
+# Target rules for targets named Wallnut
+
+# Build rule for target.
+Wallnut: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Wallnut
+.PHONY : Wallnut
+
+# fast build rule for target.
+Wallnut/fast:
+	$(MAKE) $(MAKESILENT) -f src\Plant\CMakeFiles\Wallnut.dir\build.make src/Plant/CMakeFiles/Wallnut.dir/build
+.PHONY : Wallnut/fast
+
+#=============================================================================
+# Target rules for targets named CherryBomb
+
+# Build rule for target.
+CherryBomb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CherryBomb
+.PHONY : CherryBomb
+
+# fast build rule for target.
+CherryBomb/fast:
+	$(MAKE) $(MAKESILENT) -f src\Plant\CMakeFiles\CherryBomb.dir\build.make src/Plant/CMakeFiles/CherryBomb.dir/build
+.PHONY : CherryBomb/fast
+
+#=============================================================================
+# Target rules for targets named SeedButton
+
+# Build rule for target.
+SeedButton: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SeedButton
+.PHONY : SeedButton
+
+# fast build rule for target.
+SeedButton/fast:
+	$(MAKE) $(MAKESILENT) -f src\SeedButton\CMakeFiles\SeedButton.dir\build.make src/SeedButton/CMakeFiles/SeedButton.dir/build
+.PHONY : SeedButton/fast
+
+#=============================================================================
+# Target rules for targets named SunflowerSeed
+
+# Build rule for target.
+SunflowerSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SunflowerSeed
+.PHONY : SunflowerSeed
+
+# fast build rule for target.
+SunflowerSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\SeedButton\CMakeFiles\SunflowerSeed.dir\build.make src/SeedButton/CMakeFiles/SunflowerSeed.dir/build
+.PHONY : SunflowerSeed/fast
+
+#=============================================================================
+# Target rules for targets named PeashooterSeed
+
+# Build rule for target.
+PeashooterSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PeashooterSeed
+.PHONY : PeashooterSeed
+
+# fast build rule for target.
+PeashooterSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\SeedButton\CMakeFiles\PeashooterSeed.dir\build.make src/SeedButton/CMakeFiles/PeashooterSeed.dir/build
+.PHONY : PeashooterSeed/fast
+
+#=============================================================================
+# Target rules for targets named WallnutSeed
+
+# Build rule for target.
+WallnutSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 WallnutSeed
+.PHONY : WallnutSeed
+
+# fast build rule for target.
+WallnutSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\SeedButton\CMakeFiles\WallnutSeed.dir\build.make src/SeedButton/CMakeFiles/WallnutSeed.dir/build
+.PHONY : WallnutSeed/fast
+
+#=============================================================================
+# Target rules for targets named CherryBombSeed
+
+# Build rule for target.
+CherryBombSeed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CherryBombSeed
+.PHONY : CherryBombSeed
+
+# fast build rule for target.
+CherryBombSeed/fast:
+	$(MAKE) $(MAKESILENT) -f src\SeedButton\CMakeFiles\CherryBombSeed.dir\build.make src/SeedButton/CMakeFiles/CherryBombSeed.dir/build
+.PHONY : CherryBombSeed/fast
+
+#=============================================================================
+# Target rules for targets named Zombie
+
+# Build rule for target.
+Zombie: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Zombie
+.PHONY : Zombie
+
+# fast build rule for target.
+Zombie/fast:
+	$(MAKE) $(MAKESILENT) -f src\Zombie\CMakeFiles\Zombie.dir\build.make src/Zombie/CMakeFiles/Zombie.dir/build
+.PHONY : Zombie/fast
+
+#=============================================================================
+# Target rules for targets named RegularZombie
+
+# Build rule for target.
+RegularZombie: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RegularZombie
+.PHONY : RegularZombie
+
+# fast build rule for target.
+RegularZombie/fast:
+	$(MAKE) $(MAKESILENT) -f src\Zombie\CMakeFiles\RegularZombie.dir\build.make src/Zombie/CMakeFiles/RegularZombie.dir/build
+.PHONY : RegularZombie/fast
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj

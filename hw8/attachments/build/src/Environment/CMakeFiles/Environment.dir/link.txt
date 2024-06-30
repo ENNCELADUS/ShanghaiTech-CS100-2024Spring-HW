@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libEnvironment.a CMakeFiles/Environment.dir/Background.cpp.obj CMakeFiles/Environment.dir/PlantingSpot.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libEnvironment.a

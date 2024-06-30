@@ -175,90 +175,6 @@ GameObject/fast:
 .PHONY : GameObject/fast
 
 # Convenience name for target.
-src/GameObject/CMakeFiles/Background.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Background.dir/rule
-.PHONY : src/GameObject/CMakeFiles/Background.dir/rule
-
-# Convenience name for target.
-Background: src/GameObject/CMakeFiles/Background.dir/rule
-.PHONY : Background
-
-# fast build rule for target.
-Background/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/build
-.PHONY : Background/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/PlantingSpot.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/PlantingSpot.dir/rule
-.PHONY : src/GameObject/CMakeFiles/PlantingSpot.dir/rule
-
-# Convenience name for target.
-PlantingSpot: src/GameObject/CMakeFiles/PlantingSpot.dir/rule
-.PHONY : PlantingSpot
-
-# fast build rule for target.
-PlantingSpot/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/build
-.PHONY : PlantingSpot/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/SeedButton.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/SeedButton.dir/rule
-.PHONY : src/GameObject/CMakeFiles/SeedButton.dir/rule
-
-# Convenience name for target.
-SeedButton: src/GameObject/CMakeFiles/SeedButton.dir/rule
-.PHONY : SeedButton
-
-# fast build rule for target.
-SeedButton/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/build
-.PHONY : SeedButton/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/SunflowerSeed.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/SunflowerSeed.dir/rule
-.PHONY : src/GameObject/CMakeFiles/SunflowerSeed.dir/rule
-
-# Convenience name for target.
-SunflowerSeed: src/GameObject/CMakeFiles/SunflowerSeed.dir/rule
-.PHONY : SunflowerSeed
-
-# fast build rule for target.
-SunflowerSeed/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/build
-.PHONY : SunflowerSeed/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/PeashooterSeed.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/PeashooterSeed.dir/rule
-.PHONY : src/GameObject/CMakeFiles/PeashooterSeed.dir/rule
-
-# Convenience name for target.
-PeashooterSeed: src/GameObject/CMakeFiles/PeashooterSeed.dir/rule
-.PHONY : PeashooterSeed
-
-# fast build rule for target.
-PeashooterSeed/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/build
-.PHONY : PeashooterSeed/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/WallnutSeed.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/WallnutSeed.dir/rule
-.PHONY : src/GameObject/CMakeFiles/WallnutSeed.dir/rule
-
-# Convenience name for target.
-WallnutSeed: src/GameObject/CMakeFiles/WallnutSeed.dir/rule
-.PHONY : WallnutSeed
-
-# fast build rule for target.
-WallnutSeed/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\WallnutSeed.dir\build.make src/GameObject/CMakeFiles/WallnutSeed.dir/build
-.PHONY : WallnutSeed/fast
-
-# Convenience name for target.
 src/GameObject/CMakeFiles/CooldownMask.dir/rule:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/CooldownMask.dir/rule
 .PHONY : src/GameObject/CMakeFiles/CooldownMask.dir/rule
@@ -287,34 +203,6 @@ Sun/fast:
 .PHONY : Sun/fast
 
 # Convenience name for target.
-src/GameObject/CMakeFiles/Plant.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Plant.dir/rule
-.PHONY : src/GameObject/CMakeFiles/Plant.dir/rule
-
-# Convenience name for target.
-Plant: src/GameObject/CMakeFiles/Plant.dir/rule
-.PHONY : Plant
-
-# fast build rule for target.
-Plant/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/build
-.PHONY : Plant/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/Sunflower.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Sunflower.dir/rule
-.PHONY : src/GameObject/CMakeFiles/Sunflower.dir/rule
-
-# Convenience name for target.
-Sunflower: src/GameObject/CMakeFiles/Sunflower.dir/rule
-.PHONY : Sunflower
-
-# fast build rule for target.
-Sunflower/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/build
-.PHONY : Sunflower/fast
-
-# Convenience name for target.
 src/GameObject/CMakeFiles/HoldingSeed.dir/rule:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/HoldingSeed.dir/rule
 .PHONY : src/GameObject/CMakeFiles/HoldingSeed.dir/rule
@@ -329,20 +217,6 @@ HoldingSeed/fast:
 .PHONY : HoldingSeed/fast
 
 # Convenience name for target.
-src/GameObject/CMakeFiles/Peashooter.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Peashooter.dir/rule
-.PHONY : src/GameObject/CMakeFiles/Peashooter.dir/rule
-
-# Convenience name for target.
-Peashooter: src/GameObject/CMakeFiles/Peashooter.dir/rule
-.PHONY : Peashooter
-
-# fast build rule for target.
-Peashooter/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Peashooter.dir\build.make src/GameObject/CMakeFiles/Peashooter.dir/build
-.PHONY : Peashooter/fast
-
-# Convenience name for target.
 src/GameObject/CMakeFiles/Pea.dir/rule:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Pea.dir/rule
 .PHONY : src/GameObject/CMakeFiles/Pea.dir/rule
@@ -355,76 +229,6 @@ Pea: src/GameObject/CMakeFiles/Pea.dir/rule
 Pea/fast:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Pea.dir\build.make src/GameObject/CMakeFiles/Pea.dir/build
 .PHONY : Pea/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/Zombie.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Zombie.dir/rule
-.PHONY : src/GameObject/CMakeFiles/Zombie.dir/rule
-
-# Convenience name for target.
-Zombie: src/GameObject/CMakeFiles/Zombie.dir/rule
-.PHONY : Zombie
-
-# fast build rule for target.
-Zombie/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Zombie.dir\build.make src/GameObject/CMakeFiles/Zombie.dir/build
-.PHONY : Zombie/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/RegularZombie.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/RegularZombie.dir/rule
-.PHONY : src/GameObject/CMakeFiles/RegularZombie.dir/rule
-
-# Convenience name for target.
-RegularZombie: src/GameObject/CMakeFiles/RegularZombie.dir/rule
-.PHONY : RegularZombie
-
-# fast build rule for target.
-RegularZombie/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/build
-.PHONY : RegularZombie/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/Wallnut.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/Wallnut.dir/rule
-.PHONY : src/GameObject/CMakeFiles/Wallnut.dir/rule
-
-# Convenience name for target.
-Wallnut: src/GameObject/CMakeFiles/Wallnut.dir/rule
-.PHONY : Wallnut
-
-# fast build rule for target.
-Wallnut/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/build
-.PHONY : Wallnut/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/CherryBombSeed.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/CherryBombSeed.dir/rule
-.PHONY : src/GameObject/CMakeFiles/CherryBombSeed.dir/rule
-
-# Convenience name for target.
-CherryBombSeed: src/GameObject/CMakeFiles/CherryBombSeed.dir/rule
-.PHONY : CherryBombSeed
-
-# fast build rule for target.
-CherryBombSeed/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/build
-.PHONY : CherryBombSeed/fast
-
-# Convenience name for target.
-src/GameObject/CMakeFiles/CherryBomb.dir/rule:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/CherryBomb.dir/rule
-.PHONY : src/GameObject/CMakeFiles/CherryBomb.dir/rule
-
-# Convenience name for target.
-CherryBomb: src/GameObject/CMakeFiles/CherryBomb.dir/rule
-.PHONY : CherryBomb
-
-# fast build rule for target.
-CherryBomb/fast:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/build
-.PHONY : CherryBomb/fast
 
 # Convenience name for target.
 src/GameObject/CMakeFiles/Explosion.dir/rule:
@@ -453,78 +257,6 @@ Shovel: src/GameObject/CMakeFiles/Shovel.dir/rule
 Shovel/fast:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Shovel.dir\build.make src/GameObject/CMakeFiles/Shovel.dir/build
 .PHONY : Shovel/fast
-
-Background.obj: Background.cpp.obj
-.PHONY : Background.obj
-
-# target to build an object file
-Background.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/Background.cpp.obj
-.PHONY : Background.cpp.obj
-
-Background.i: Background.cpp.i
-.PHONY : Background.i
-
-# target to preprocess a source file
-Background.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/Background.cpp.i
-.PHONY : Background.cpp.i
-
-Background.s: Background.cpp.s
-.PHONY : Background.s
-
-# target to generate assembly for a file
-Background.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Background.dir\build.make src/GameObject/CMakeFiles/Background.dir/Background.cpp.s
-.PHONY : Background.cpp.s
-
-CherryBomb.obj: CherryBomb.cpp.obj
-.PHONY : CherryBomb.obj
-
-# target to build an object file
-CherryBomb.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/CherryBomb.cpp.obj
-.PHONY : CherryBomb.cpp.obj
-
-CherryBomb.i: CherryBomb.cpp.i
-.PHONY : CherryBomb.i
-
-# target to preprocess a source file
-CherryBomb.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/CherryBomb.cpp.i
-.PHONY : CherryBomb.cpp.i
-
-CherryBomb.s: CherryBomb.cpp.s
-.PHONY : CherryBomb.s
-
-# target to generate assembly for a file
-CherryBomb.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBomb.dir\build.make src/GameObject/CMakeFiles/CherryBomb.dir/CherryBomb.cpp.s
-.PHONY : CherryBomb.cpp.s
-
-CherryBombSeed.obj: CherryBombSeed.cpp.obj
-.PHONY : CherryBombSeed.obj
-
-# target to build an object file
-CherryBombSeed.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.obj
-.PHONY : CherryBombSeed.cpp.obj
-
-CherryBombSeed.i: CherryBombSeed.cpp.i
-.PHONY : CherryBombSeed.i
-
-# target to preprocess a source file
-CherryBombSeed.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.i
-.PHONY : CherryBombSeed.cpp.i
-
-CherryBombSeed.s: CherryBombSeed.cpp.s
-.PHONY : CherryBombSeed.s
-
-# target to generate assembly for a file
-CherryBombSeed.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\CherryBombSeed.dir\build.make src/GameObject/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.s
-.PHONY : CherryBombSeed.cpp.s
 
 CooldownMask.obj: CooldownMask.cpp.obj
 .PHONY : CooldownMask.obj
@@ -646,150 +378,6 @@ Pea.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Pea.dir\build.make src/GameObject/CMakeFiles/Pea.dir/Pea.cpp.s
 .PHONY : Pea.cpp.s
 
-Peashooter.obj: Peashooter.cpp.obj
-.PHONY : Peashooter.obj
-
-# target to build an object file
-Peashooter.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Peashooter.dir\build.make src/GameObject/CMakeFiles/Peashooter.dir/Peashooter.cpp.obj
-.PHONY : Peashooter.cpp.obj
-
-Peashooter.i: Peashooter.cpp.i
-.PHONY : Peashooter.i
-
-# target to preprocess a source file
-Peashooter.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Peashooter.dir\build.make src/GameObject/CMakeFiles/Peashooter.dir/Peashooter.cpp.i
-.PHONY : Peashooter.cpp.i
-
-Peashooter.s: Peashooter.cpp.s
-.PHONY : Peashooter.s
-
-# target to generate assembly for a file
-Peashooter.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Peashooter.dir\build.make src/GameObject/CMakeFiles/Peashooter.dir/Peashooter.cpp.s
-.PHONY : Peashooter.cpp.s
-
-PeashooterSeed.obj: PeashooterSeed.cpp.obj
-.PHONY : PeashooterSeed.obj
-
-# target to build an object file
-PeashooterSeed.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/PeashooterSeed.cpp.obj
-.PHONY : PeashooterSeed.cpp.obj
-
-PeashooterSeed.i: PeashooterSeed.cpp.i
-.PHONY : PeashooterSeed.i
-
-# target to preprocess a source file
-PeashooterSeed.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/PeashooterSeed.cpp.i
-.PHONY : PeashooterSeed.cpp.i
-
-PeashooterSeed.s: PeashooterSeed.cpp.s
-.PHONY : PeashooterSeed.s
-
-# target to generate assembly for a file
-PeashooterSeed.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PeashooterSeed.dir\build.make src/GameObject/CMakeFiles/PeashooterSeed.dir/PeashooterSeed.cpp.s
-.PHONY : PeashooterSeed.cpp.s
-
-Plant.obj: Plant.cpp.obj
-.PHONY : Plant.obj
-
-# target to build an object file
-Plant.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.obj
-.PHONY : Plant.cpp.obj
-
-Plant.i: Plant.cpp.i
-.PHONY : Plant.i
-
-# target to preprocess a source file
-Plant.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.i
-.PHONY : Plant.cpp.i
-
-Plant.s: Plant.cpp.s
-.PHONY : Plant.s
-
-# target to generate assembly for a file
-Plant.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Plant.dir\build.make src/GameObject/CMakeFiles/Plant.dir/Plant.cpp.s
-.PHONY : Plant.cpp.s
-
-PlantingSpot.obj: PlantingSpot.cpp.obj
-.PHONY : PlantingSpot.obj
-
-# target to build an object file
-PlantingSpot.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/PlantingSpot.cpp.obj
-.PHONY : PlantingSpot.cpp.obj
-
-PlantingSpot.i: PlantingSpot.cpp.i
-.PHONY : PlantingSpot.i
-
-# target to preprocess a source file
-PlantingSpot.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/PlantingSpot.cpp.i
-.PHONY : PlantingSpot.cpp.i
-
-PlantingSpot.s: PlantingSpot.cpp.s
-.PHONY : PlantingSpot.s
-
-# target to generate assembly for a file
-PlantingSpot.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\PlantingSpot.dir\build.make src/GameObject/CMakeFiles/PlantingSpot.dir/PlantingSpot.cpp.s
-.PHONY : PlantingSpot.cpp.s
-
-RegularZombie.obj: RegularZombie.cpp.obj
-.PHONY : RegularZombie.obj
-
-# target to build an object file
-RegularZombie.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/RegularZombie.cpp.obj
-.PHONY : RegularZombie.cpp.obj
-
-RegularZombie.i: RegularZombie.cpp.i
-.PHONY : RegularZombie.i
-
-# target to preprocess a source file
-RegularZombie.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/RegularZombie.cpp.i
-.PHONY : RegularZombie.cpp.i
-
-RegularZombie.s: RegularZombie.cpp.s
-.PHONY : RegularZombie.s
-
-# target to generate assembly for a file
-RegularZombie.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\RegularZombie.dir\build.make src/GameObject/CMakeFiles/RegularZombie.dir/RegularZombie.cpp.s
-.PHONY : RegularZombie.cpp.s
-
-SeedButton.obj: SeedButton.cpp.obj
-.PHONY : SeedButton.obj
-
-# target to build an object file
-SeedButton.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/SeedButton.cpp.obj
-.PHONY : SeedButton.cpp.obj
-
-SeedButton.i: SeedButton.cpp.i
-.PHONY : SeedButton.i
-
-# target to preprocess a source file
-SeedButton.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/SeedButton.cpp.i
-.PHONY : SeedButton.cpp.i
-
-SeedButton.s: SeedButton.cpp.s
-.PHONY : SeedButton.s
-
-# target to generate assembly for a file
-SeedButton.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SeedButton.dir\build.make src/GameObject/CMakeFiles/SeedButton.dir/SeedButton.cpp.s
-.PHONY : SeedButton.cpp.s
-
 Shovel.obj: Shovel.cpp.obj
 .PHONY : Shovel.obj
 
@@ -838,126 +426,6 @@ Sun.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sun.dir\build.make src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.s
 .PHONY : Sun.cpp.s
 
-Sunflower.obj: Sunflower.cpp.obj
-.PHONY : Sunflower.obj
-
-# target to build an object file
-Sunflower.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/Sunflower.cpp.obj
-.PHONY : Sunflower.cpp.obj
-
-Sunflower.i: Sunflower.cpp.i
-.PHONY : Sunflower.i
-
-# target to preprocess a source file
-Sunflower.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/Sunflower.cpp.i
-.PHONY : Sunflower.cpp.i
-
-Sunflower.s: Sunflower.cpp.s
-.PHONY : Sunflower.s
-
-# target to generate assembly for a file
-Sunflower.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Sunflower.dir\build.make src/GameObject/CMakeFiles/Sunflower.dir/Sunflower.cpp.s
-.PHONY : Sunflower.cpp.s
-
-SunflowerSeed.obj: SunflowerSeed.cpp.obj
-.PHONY : SunflowerSeed.obj
-
-# target to build an object file
-SunflowerSeed.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/SunflowerSeed.cpp.obj
-.PHONY : SunflowerSeed.cpp.obj
-
-SunflowerSeed.i: SunflowerSeed.cpp.i
-.PHONY : SunflowerSeed.i
-
-# target to preprocess a source file
-SunflowerSeed.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/SunflowerSeed.cpp.i
-.PHONY : SunflowerSeed.cpp.i
-
-SunflowerSeed.s: SunflowerSeed.cpp.s
-.PHONY : SunflowerSeed.s
-
-# target to generate assembly for a file
-SunflowerSeed.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\SunflowerSeed.dir\build.make src/GameObject/CMakeFiles/SunflowerSeed.dir/SunflowerSeed.cpp.s
-.PHONY : SunflowerSeed.cpp.s
-
-Wallnut.obj: Wallnut.cpp.obj
-.PHONY : Wallnut.obj
-
-# target to build an object file
-Wallnut.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/Wallnut.cpp.obj
-.PHONY : Wallnut.cpp.obj
-
-Wallnut.i: Wallnut.cpp.i
-.PHONY : Wallnut.i
-
-# target to preprocess a source file
-Wallnut.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/Wallnut.cpp.i
-.PHONY : Wallnut.cpp.i
-
-Wallnut.s: Wallnut.cpp.s
-.PHONY : Wallnut.s
-
-# target to generate assembly for a file
-Wallnut.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Wallnut.dir\build.make src/GameObject/CMakeFiles/Wallnut.dir/Wallnut.cpp.s
-.PHONY : Wallnut.cpp.s
-
-WallnutSeed.obj: WallnutSeed.cpp.obj
-.PHONY : WallnutSeed.obj
-
-# target to build an object file
-WallnutSeed.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\WallnutSeed.dir\build.make src/GameObject/CMakeFiles/WallnutSeed.dir/WallnutSeed.cpp.obj
-.PHONY : WallnutSeed.cpp.obj
-
-WallnutSeed.i: WallnutSeed.cpp.i
-.PHONY : WallnutSeed.i
-
-# target to preprocess a source file
-WallnutSeed.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\WallnutSeed.dir\build.make src/GameObject/CMakeFiles/WallnutSeed.dir/WallnutSeed.cpp.i
-.PHONY : WallnutSeed.cpp.i
-
-WallnutSeed.s: WallnutSeed.cpp.s
-.PHONY : WallnutSeed.s
-
-# target to generate assembly for a file
-WallnutSeed.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\WallnutSeed.dir\build.make src/GameObject/CMakeFiles/WallnutSeed.dir/WallnutSeed.cpp.s
-.PHONY : WallnutSeed.cpp.s
-
-Zombie.obj: Zombie.cpp.obj
-.PHONY : Zombie.obj
-
-# target to build an object file
-Zombie.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Zombie.dir\build.make src/GameObject/CMakeFiles/Zombie.dir/Zombie.cpp.obj
-.PHONY : Zombie.cpp.obj
-
-Zombie.i: Zombie.cpp.i
-.PHONY : Zombie.i
-
-# target to preprocess a source file
-Zombie.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Zombie.dir\build.make src/GameObject/CMakeFiles/Zombie.dir/Zombie.cpp.i
-.PHONY : Zombie.cpp.i
-
-Zombie.s: Zombie.cpp.s
-.PHONY : Zombie.s
-
-# target to generate assembly for a file
-Zombie.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw8\attachments\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\Zombie.dir\build.make src/GameObject/CMakeFiles/Zombie.dir/Zombie.cpp.s
-.PHONY : Zombie.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -970,36 +438,13 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... Background
-	@echo ... CherryBomb
-	@echo ... CherryBombSeed
 	@echo ... CooldownMask
 	@echo ... Explosion
 	@echo ... GameObject
 	@echo ... HoldingSeed
 	@echo ... Pea
-	@echo ... Peashooter
-	@echo ... PeashooterSeed
-	@echo ... Plant
-	@echo ... PlantingSpot
-	@echo ... RegularZombie
-	@echo ... SeedButton
 	@echo ... Shovel
 	@echo ... Sun
-	@echo ... Sunflower
-	@echo ... SunflowerSeed
-	@echo ... Wallnut
-	@echo ... WallnutSeed
-	@echo ... Zombie
-	@echo ... Background.obj
-	@echo ... Background.i
-	@echo ... Background.s
-	@echo ... CherryBomb.obj
-	@echo ... CherryBomb.i
-	@echo ... CherryBomb.s
-	@echo ... CherryBombSeed.obj
-	@echo ... CherryBombSeed.i
-	@echo ... CherryBombSeed.s
 	@echo ... CooldownMask.obj
 	@echo ... CooldownMask.i
 	@echo ... CooldownMask.s
@@ -1015,45 +460,12 @@ help:
 	@echo ... Pea.obj
 	@echo ... Pea.i
 	@echo ... Pea.s
-	@echo ... Peashooter.obj
-	@echo ... Peashooter.i
-	@echo ... Peashooter.s
-	@echo ... PeashooterSeed.obj
-	@echo ... PeashooterSeed.i
-	@echo ... PeashooterSeed.s
-	@echo ... Plant.obj
-	@echo ... Plant.i
-	@echo ... Plant.s
-	@echo ... PlantingSpot.obj
-	@echo ... PlantingSpot.i
-	@echo ... PlantingSpot.s
-	@echo ... RegularZombie.obj
-	@echo ... RegularZombie.i
-	@echo ... RegularZombie.s
-	@echo ... SeedButton.obj
-	@echo ... SeedButton.i
-	@echo ... SeedButton.s
 	@echo ... Shovel.obj
 	@echo ... Shovel.i
 	@echo ... Shovel.s
 	@echo ... Sun.obj
 	@echo ... Sun.i
 	@echo ... Sun.s
-	@echo ... Sunflower.obj
-	@echo ... Sunflower.i
-	@echo ... Sunflower.s
-	@echo ... SunflowerSeed.obj
-	@echo ... SunflowerSeed.i
-	@echo ... SunflowerSeed.s
-	@echo ... Wallnut.obj
-	@echo ... Wallnut.i
-	@echo ... Wallnut.s
-	@echo ... WallnutSeed.obj
-	@echo ... WallnutSeed.i
-	@echo ... WallnutSeed.s
-	@echo ... Zombie.obj
-	@echo ... Zombie.i
-	@echo ... Zombie.s
 .PHONY : help
 
 
