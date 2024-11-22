@@ -100,15 +100,15 @@ SnakeNode *createSnake(const Game *pGame)
     head->pos.col = pGame->numCols / 2;
     head->next = NULL;
 
-    SnakeNode *cur = head;
+    SnakeNode *current = head;
     for (int i = 1; i < INIT_SNAKE_LEN; i++)
     {
-        SnakeNode *node = malloc(sizeof(SnakeNode));
-        node->pos.row = pGame->numRows / 2;
-        node->pos.col = pGame->numCols / 2 - i;
-        node->next = NULL;
-        cur->next = node;
-        cur = node;
+        SnakeNode *newNode = malloc(sizeof(SnakeNode));
+        newNode->pos.row = head->pos.row + i;
+        newNode->pos.col = head->pos.col;
+        newNode->next = NULL;
+        current->next = newNode;
+        current = newNode;
     }
 
     return head;
@@ -172,24 +172,29 @@ SnakeNode *createNewSnakeHead(const Game *pGame)
     // to do some collision detections.
     // Note: You can use malloc to allocate memory. Make sure to free
     // them at the right time.
-    SnakeNode *pNewHead = malloc(sizeof(SnakeNode));
-    pNewHead->pos = pGame->pSnakeHead->pos;
+    SnakeNode *newHead = malloc(sizeof(SnakeNode));
+    newHead->pos = pGame->pSnakeHead->pos;
+
     switch (pGame->currentDirection)
     {
     case Up:
-        pNewHead->pos.row--;
+        newHead->pos.row -= 1;
         break;
     case Down:
-        pNewHead->pos.row++;
+        newHead->pos.row += 1;
         break;
     case Left:
-        pNewHead->pos.col--;
+        newHead->pos.col -= 1;
         break;
     case Right:
-        pNewHead->pos.col++;
+        newHead->pos.col += 1;
+        break;
+    default:
         break;
     }
-    return pNewHead;
+
+    newHead->next = NULL; // Not connected yet
+    return newHead;
 }
 
 /**
@@ -199,8 +204,15 @@ SnakeNode *createNewSnakeHead(const Game *pGame)
 bool snakeHitWall(const Game *pGame, SnakeNode *pNewHead)
 {
     // TODO: Implement this function.
-    return pNewHead->pos.row < 1 || pNewHead->pos.row >= pGame->numRows - 1 ||
-           pNewHead->pos.col < 1 || pNewHead->pos.col >= pGame->numCols - 1;
+    if (pNewHead->pos.row <= 0 || pNewHead->pos.row >= pGame->numRows - 1 ||
+        pNewHead->pos.col <= 0 || pNewHead->pos.col >= pGame->numCols - 1)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 /**
@@ -213,7 +225,8 @@ bool snakeHitSelf(const Game *pGame, SnakeNode *pNewHead)
     const SnakeNode *cur = pGame->pSnakeHead;
     while (cur != NULL)
     {
-        if (cur->pos.row == pNewHead->pos.row && cur->pos.col == pNewHead->pos.col)
+        if (cur->pos.row == pNewHead->pos.row &&
+            cur->pos.col == pNewHead->pos.col)
         {
             return true;
         }
@@ -241,18 +254,31 @@ bool snakeDie(const Game *pGame, SnakeNode *pNewHead)
 bool snakeEatFood(Game *pGame, SnakeNode *pNewHead)
 {
     // TODO: Implement this function.
+    for (int i = 0; i < MAX_FOODS; i++)
     {
-        for (int i = 0; i < MAX_FOODS; i++)
+        if (pNewHead->pos.row == pGame->foods[i].pos.row &&
+            pNewHead->pos.col == pGame->foods[i].pos.col)
         {
-            if (pNewHead->pos.row == pGame->foods[i].pos.row && pNewHead->pos.col == pGame->foods[i].pos.col)
-            {
-                pGame->score++;
-                pGame->foods[i] = createFood(pGame);
-                return true;
-            }
+            // Display the new head
+            move_cursor(pNewHead->pos.row, 2 * pNewHead->pos.col);
+            wprintf(HEAD_STR);
+
+            // Append the new head to the snake
+            pNewHead->next = pGame->pSnakeHead;
+            pGame->pSnakeHead = pNewHead;
+
+            // Generate new food and display it
+            pGame->foods[i] = createFood(pGame);
+            move_cursor(pGame->foods[i].pos.row, 2 * pGame->foods[i].pos.col);
+            wprintf(FOOD_STR);
+
+            // Increase score
+            pGame->score += 1;
+
+            return true;
         }
-        return false;
     }
+    return false;
 }
 
 /**
@@ -265,7 +291,8 @@ bool isFoodOnSnake(const SnakeNode *pSnakeHead, const Food food)
     const SnakeNode *cur = pSnakeHead;
     while (cur != NULL)
     {
-        if (cur->pos.row == food.pos.row && cur->pos.col == food.pos.col)
+        if (cur->pos.row == food.pos.row &&
+            cur->pos.col == food.pos.col)
         {
             return true;
         }
@@ -283,7 +310,8 @@ bool isFoodOnFoods(const Food foods[], const Food food)
     // TODO: Implement this function.
     for (int i = 0; i < MAX_FOODS; i++)
     {
-        if (foods[i].pos.row == food.pos.row && foods[i].pos.col == food.pos.col)
+        if (foods[i].pos.row == food.pos.row &&
+            foods[i].pos.col == food.pos.col)
         {
             return true;
         }
@@ -300,19 +328,34 @@ void snakeMoveNormal(Game *pGame, SnakeNode *pNewHead)
     // TODO: Implement this function.
     // Hint: If the snake does not hit the wall or itself or eat the food, just append the new head and remove the tail
     // should work. Note that the check procedure have been done in the function runGame().
+
+    // Append the new head to the snake
     pNewHead->next = pGame->pSnakeHead;
     pGame->pSnakeHead = pNewHead;
 
-    if (!snakeEatFood(pGame, pNewHead))
+    // Display the new head
+    move_cursor(pNewHead->pos.row, 2 * pNewHead->pos.col);
+    wprintf(HEAD_STR);
+
+    // Find the tail and the node before tail
+    SnakeNode *current = pGame->pSnakeHead;
+    SnakeNode *prev = NULL;
+
+    while (current->next != NULL)
     {
-        SnakeNode *cur = pGame->pSnakeHead;
-        while (cur->next && cur->next->next)
-        {
-            cur = cur->next;
-        }
-        SnakeNode *tail = cur->next;
-        cur->next = NULL;
-        free(tail);
+        prev = current;
+        current = current->next;
+    }
+
+    // Hide the tail
+    move_cursor(current->pos.row, 2 * current->pos.col);
+    wprintf(AIR_STR);
+
+    // Remove the tail
+    free(current);
+    if (prev != NULL)
+    {
+        prev->next = NULL;
     }
 }
 
@@ -322,11 +365,12 @@ void snakeMoveNormal(Game *pGame, SnakeNode *pNewHead)
 void destroySnake(SnakeNode *pHead)
 {
     // TODO: Implement this function.
-    while (pHead != NULL)
+    SnakeNode *current = pHead;
+    while (current != NULL)
     {
-        SnakeNode *temp = pHead;
-        pHead = pHead->next;
-        free(temp);
+        SnakeNode *nextNode = current->next;
+        free(current);
+        current = nextNode;
     }
 }
 
