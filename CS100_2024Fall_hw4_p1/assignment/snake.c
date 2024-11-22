@@ -253,19 +253,22 @@ bool snakeDie(const Game *pGame, SnakeNode *pNewHead)
  */
 bool snakeEatFood(Game *pGame, SnakeNode *pNewHead)
 {
-    // TODO: Implement this function.
     for (int i = 0; i < MAX_FOODS; i++)
     {
         if (pNewHead->pos.row == pGame->foods[i].pos.row &&
             pNewHead->pos.col == pGame->foods[i].pos.col)
         {
+            // Append the new head to the snake
+            pNewHead->next = pGame->pSnakeHead;
+            pGame->pSnakeHead = pNewHead;
+
             // Display the new head
             move_cursor(pNewHead->pos.row, 2 * pNewHead->pos.col);
             wprintf(HEAD_STR);
 
-            // Append the new head to the snake
-            pNewHead->next = pGame->pSnakeHead;
-            pGame->pSnakeHead = pNewHead;
+            // Change the previous head to body
+            move_cursor(pNewHead->next->pos.row, 2 * pNewHead->next->pos.col);
+            wprintf(BODY_STR);
 
             // Generate new food and display it
             pGame->foods[i] = createFood(pGame);
@@ -274,6 +277,12 @@ bool snakeEatFood(Game *pGame, SnakeNode *pNewHead)
 
             // Increase score
             pGame->score += 1;
+
+            // Update the score display
+            move_cursor(pGame->numRows + 2, 0);
+            wprintf(L"                "); // Clear line
+            move_cursor(pGame->numRows + 2, 0);
+            wprintf(L"Score: %d", pGame->score);
 
             return true;
         }
@@ -336,6 +345,10 @@ void snakeMoveNormal(Game *pGame, SnakeNode *pNewHead)
     // Display the new head
     move_cursor(pNewHead->pos.row, 2 * pNewHead->pos.col);
     wprintf(HEAD_STR);
+
+    // Change the previous head to body
+    move_cursor(pGame->pSnakeHead->next->pos.row, 2 * pGame->pSnakeHead->next->pos.col);
+    wprintf(BODY_STR);
 
     // Find the tail and the node before tail
     SnakeNode *current = pGame->pSnakeHead;
