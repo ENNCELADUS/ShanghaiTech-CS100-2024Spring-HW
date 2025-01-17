@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libHoldingSeed.a CMakeFiles/HoldingSeed.dir/HoldingSeed.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libHoldingSeed.a

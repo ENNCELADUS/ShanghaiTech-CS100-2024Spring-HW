@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libCooldownMask.a CMakeFiles/CooldownMask.dir/CooldownMask.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libCooldownMask.a

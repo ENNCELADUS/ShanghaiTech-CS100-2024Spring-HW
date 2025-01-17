@@ -1,0 +1,650 @@
+[
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/PvZ.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\PvZ.dir\\src\\main.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\main.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/main.cpp",
+  "output": "CMakeFiles/PvZ.dir/src/main.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/SOIL",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/SOIL.dir/includes_C.rsp -g -o CMakeFiles\\SOIL.dir\\src\\image_dxt.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\SOIL\\src\\image_dxt.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/SOIL/src/image_dxt.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/image_dxt.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/SOIL",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/SOIL.dir/includes_C.rsp -g -o CMakeFiles\\SOIL.dir\\src\\image_helper.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\SOIL\\src\\image_helper.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/SOIL/src/image_helper.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/image_helper.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/SOIL",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/SOIL.dir/includes_C.rsp -g -o CMakeFiles\\SOIL.dir\\src\\soil.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\SOIL\\src\\soil.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/SOIL/src/soil.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/soil.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/SOIL",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/SOIL.dir/includes_C.rsp -g -o CMakeFiles\\SOIL.dir\\src\\stb_image_aug.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\SOIL\\src\\stb_image_aug.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/SOIL/src/stb_image_aug.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/stb_image_aug.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_callbacks.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_callbacks.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_callbacks.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_callbacks.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_cursor.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_cursor.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_cursor.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_cursor.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_display.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_display.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_display.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_display.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_ext.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_ext.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_ext.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_ext.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_font_data.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_font_data.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_font_data.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_font_data.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_gamemode.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_gamemode.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_gamemode.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_gamemode.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_geometry.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_geometry.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_geometry.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_geometry.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_gl2.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_gl2.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_gl2.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_gl2.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_init.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_init.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_init.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_init.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_input_devices.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_input_devices.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_input_devices.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_input_devices.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_joystick.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_joystick.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_joystick.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_joystick.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_main.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_main.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_main.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_main.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_misc.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_misc.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_misc.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_misc.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_overlay.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_overlay.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_overlay.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_overlay.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_spaceball.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_spaceball.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_spaceball.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_spaceball.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_state.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_state.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_state.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_state.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_stroke_mono_roman.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_stroke_mono_roman.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_stroke_mono_roman.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_stroke_mono_roman.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_stroke_roman.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_stroke_roman.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_stroke_roman.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_stroke_roman.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_structure.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_structure.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_structure.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_structure.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_teapot.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_teapot.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_teapot.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_teapot.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_videoresize.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_videoresize.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_videoresize.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_videoresize.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_window.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_window.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_window.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_window.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_font.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_font.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_font.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_font.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_menu.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_menu.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_menu.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_menu.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_cursor_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_cursor_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_cursor_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_cursor_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_display_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_display_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_display_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_display_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_ext_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_ext_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_ext_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_ext_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_gamemode_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_gamemode_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_gamemode_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_gamemode_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_init_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_init_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_init_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_init_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_input_devices_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_input_devices_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_input_devices_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_input_devices_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_joystick_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_joystick_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_joystick_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_joystick_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_main_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_main_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_main_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_main_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_menu_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_menu_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_menu_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_menu_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_spaceball_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_spaceball_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_spaceball_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_spaceball_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_state_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_state_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_state_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_state_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_structure_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_structure_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_structure_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_structure_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_window_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_window_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_window_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_window_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\util\\xparsegeometry_repl.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\util\\xparsegeometry_repl.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/util/xparsegeometry_repl.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/util/xparsegeometry_repl.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_callbacks.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_callbacks.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_callbacks.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_callbacks.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_cursor.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_cursor.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_cursor.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_cursor.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_display.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_display.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_display.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_display.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_ext.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_ext.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_ext.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_ext.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_font_data.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_font_data.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_font_data.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_font_data.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_gamemode.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_gamemode.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_gamemode.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_gamemode.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_geometry.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_geometry.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_geometry.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_geometry.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_gl2.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_gl2.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_gl2.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_gl2.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_init.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_init.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_init.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_init.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_input_devices.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_input_devices.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_input_devices.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_input_devices.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_joystick.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_joystick.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_joystick.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_joystick.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_main.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_main.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_main.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_main.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_misc.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_misc.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_misc.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_misc.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_overlay.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_overlay.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_overlay.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_overlay.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_spaceball.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_spaceball.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_spaceball.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_spaceball.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_state.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_state.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_state.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_state.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_stroke_mono_roman.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_stroke_mono_roman.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_stroke_mono_roman.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_stroke_mono_roman.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_stroke_roman.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_stroke_roman.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_stroke_roman.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_stroke_roman.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_structure.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_structure.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_structure.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_structure.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_teapot.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_teapot.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_teapot.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_teapot.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_videoresize.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_videoresize.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_videoresize.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_videoresize.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_window.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_window.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_window.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_window.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_font.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_font.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_font.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_font.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_menu.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\fg_menu.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/fg_menu.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_menu.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_cursor_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_cursor_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_cursor_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_cursor_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_display_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_display_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_display_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_display_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_ext_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_ext_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_ext_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_ext_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_gamemode_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_gamemode_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_gamemode_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_gamemode_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_init_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_init_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_init_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_init_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_input_devices_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_input_devices_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_input_devices_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_input_devices_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_joystick_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_joystick_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_joystick_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_joystick_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_main_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_main_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_main_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_main_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_menu_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_menu_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_menu_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_menu_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_spaceball_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_spaceball_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_spaceball_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_spaceball_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_state_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_state_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_state_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_state_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_structure_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_structure_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_structure_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_structure_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_window_mswin.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\mswin\\fg_window_mswin.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/mswin/fg_window_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_window_mswin.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\util\\xparsegeometry_repl.c.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\third_party\\freeglut\\src\\util\\xparsegeometry_repl.c",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/third_party/freeglut/src/util/xparsegeometry_repl.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/util/xparsegeometry_repl.c.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Environment",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/PlantingSpot.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\PlantingSpot.dir\\PlantingSpot.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Environment\\PlantingSpot.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Environment/PlantingSpot.cpp",
+  "output": "src/Environment/CMakeFiles/PlantingSpot.dir/PlantingSpot.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Environment",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Background.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Background.dir\\Background.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Environment\\Background.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Environment/Background.cpp",
+  "output": "src/Environment/CMakeFiles/Background.dir/Background.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Framework.dir\\ObjectBase.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Framework\\ObjectBase.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Framework/ObjectBase.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/ObjectBase.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Framework.dir\\WorldBase.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Framework\\WorldBase.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Framework/WorldBase.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/WorldBase.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Framework.dir\\TextBase.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Framework\\TextBase.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Framework/TextBase.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/TextBase.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Framework.dir\\GameManager.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Framework\\GameManager.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Framework/GameManager.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/GameManager.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Framework.dir\\SpriteManager.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Framework\\SpriteManager.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Framework/SpriteManager.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/SpriteManager.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameObject.dir\\GameObject.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\GameObject.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/GameObject.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/CooldownMask.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CooldownMask.dir\\CooldownMask.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\CooldownMask.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/CooldownMask.cpp",
+  "output": "src/GameObject/CMakeFiles/CooldownMask.dir/CooldownMask.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Sun.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Sun.dir\\Sun.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Sun.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Sun.cpp",
+  "output": "src/GameObject/CMakeFiles/Sun.dir/Sun.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Pea.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Pea.dir\\Pea.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Pea.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Pea.cpp",
+  "output": "src/GameObject/CMakeFiles/Pea.dir/Pea.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/HoldingSeed.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\HoldingSeed.dir\\HoldingSeed.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\HoldingSeed.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/HoldingSeed.cpp",
+  "output": "src/GameObject/CMakeFiles/HoldingSeed.dir/HoldingSeed.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Explosion.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Explosion.dir\\Explosion.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Explosion.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Explosion.cpp",
+  "output": "src/GameObject/CMakeFiles/Explosion.dir/Explosion.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Shovel.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Shovel.dir\\Shovel.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameObject\\Shovel.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameObject/Shovel.cpp",
+  "output": "src/GameObject/CMakeFiles/Shovel.dir/Shovel.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/GameWorld",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/GameWorld.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameWorld.dir\\GameWorld.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\GameWorld\\GameWorld.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/GameWorld/GameWorld.cpp",
+  "output": "src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Plant",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Plant.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Plant.dir\\Plant.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Plant\\Plant.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Plant/Plant.cpp",
+  "output": "src/Plant/CMakeFiles/Plant.dir/Plant.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Plant",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Sunflower.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Sunflower.dir\\Sunflower.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Plant\\Sunflower.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Plant/Sunflower.cpp",
+  "output": "src/Plant/CMakeFiles/Sunflower.dir/Sunflower.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Plant",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Peashooter.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Peashooter.dir\\Peashooter.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Plant\\Peashooter.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Plant/Peashooter.cpp",
+  "output": "src/Plant/CMakeFiles/Peashooter.dir/Peashooter.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Plant",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Wallnut.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Wallnut.dir\\Wallnut.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Plant\\Wallnut.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Plant/Wallnut.cpp",
+  "output": "src/Plant/CMakeFiles/Wallnut.dir/Wallnut.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Plant",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/CherryBomb.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CherryBomb.dir\\CherryBomb.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Plant\\CherryBomb.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Plant/CherryBomb.cpp",
+  "output": "src/Plant/CMakeFiles/CherryBomb.dir/CherryBomb.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/SeedButton",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/SeedButton.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeedButton.dir\\SeedButton.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\SeedButton\\SeedButton.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/SeedButton/SeedButton.cpp",
+  "output": "src/SeedButton/CMakeFiles/SeedButton.dir/SeedButton.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/SeedButton",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/WallnutSeed.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WallnutSeed.dir\\WallnutSeed.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\SeedButton\\WallnutSeed.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/SeedButton/WallnutSeed.cpp",
+  "output": "src/SeedButton/CMakeFiles/WallnutSeed.dir/WallnutSeed.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/SeedButton",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/PeashooterSeed.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\PeashooterSeed.dir\\PeashooterSeed.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\SeedButton\\PeashooterSeed.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/SeedButton/PeashooterSeed.cpp",
+  "output": "src/SeedButton/CMakeFiles/PeashooterSeed.dir/PeashooterSeed.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/SeedButton",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/SunflowerSeed.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SunflowerSeed.dir\\SunflowerSeed.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\SeedButton\\SunflowerSeed.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/SeedButton/SunflowerSeed.cpp",
+  "output": "src/SeedButton/CMakeFiles/SunflowerSeed.dir/SunflowerSeed.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/SeedButton",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/CherryBombSeed.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CherryBombSeed.dir\\CherryBombSeed.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\SeedButton\\CherryBombSeed.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/SeedButton/CherryBombSeed.cpp",
+  "output": "src/SeedButton/CMakeFiles/CherryBombSeed.dir/CherryBombSeed.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Zombie",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Zombie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Zombie.dir\\Zombie.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Zombie\\Zombie.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Zombie/Zombie.cpp",
+  "output": "src/Zombie/CMakeFiles/Zombie.dir/Zombie.cpp.obj"
+},
+{
+  "directory": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/build/src/Zombie",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/RegularZombie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\RegularZombie.dir\\RegularZombie.cpp.obj -c E:\\RICHARD\\CS100\\CS100-HW\\hw8\\attachments\\src\\Zombie\\RegularZombie.cpp",
+  "file": "E:/RICHARD/CS100/CS100-HW/hw8/attachments/src/Zombie/RegularZombie.cpp",
+  "output": "src/Zombie/CMakeFiles/RegularZombie.dir/RegularZombie.cpp.obj"
+}
+]
