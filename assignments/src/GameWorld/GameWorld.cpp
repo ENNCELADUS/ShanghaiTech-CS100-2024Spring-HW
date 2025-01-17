@@ -13,11 +13,21 @@ GameWorld::~GameWorld() {}
 void GameWorld::Init()
 {
     Instantiate(std::make_shared<Background>(shared_from_this()));
-    // YOUR CODE HERE
+
+    // Create the player at position (200, 120)
+    std::shared_ptr<Player> player = std::make_shared<Player>(shared_from_this());
+
+    // Add the player to the game world (instantiate the player object)
+    Instantiate(player);
 }
 
 LevelStatus GameWorld::Update()
 {
+    for (auto &gameObject : m_gameObjects)
+    {
+        gameObject->Update();
+    }
+
     // YOUR CODE HERE
 
     return LevelStatus::ONGOING;
@@ -25,6 +35,8 @@ LevelStatus GameWorld::Update()
 
 void GameWorld::CleanUp()
 {
+    m_gameObjects.clear();
+
     // YOUR CODE HERE
 }
 

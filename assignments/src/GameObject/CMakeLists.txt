@@ -8,6 +8,8 @@ add_library(
   Player.cpp
   Projectiles.cpp
   Enemies.cpp
+  Bullet.cpp
+  Axe.cpp
 )
 
 target_link_libraries(

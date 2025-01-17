@@ -8,11 +8,17 @@
 class GameWorld;
 using pGameWorld = std::shared_ptr<GameWorld>;
 
-class GameObject : public ObjectBase, public std::enable_shared_from_this<GameObject> {
+class GameObject : public ObjectBase, public std::enable_shared_from_this<GameObject>
+{
 public:
   using std::enable_shared_from_this<GameObject>::shared_from_this;
-  enum class Type {
-    UI, Player, Enemy, ProjectilePlayer, ProjectileEnemy
+  enum class Type
+  {
+    UI,
+    Player,
+    Enemy,
+    ProjectilePlayer,
+    ProjectileEnemy
   };
 
   GameObject(ImageID imageID, int x, int y, LayerID layer, int width, int height, std::shared_ptr<GameWorld> world, int hp, int attack, AnimID animID = AnimID::NO_ANIMATION);
@@ -36,17 +42,15 @@ public:
   virtual GameObject::Type GetType() const { return Type::UI; }
 
 protected:
-  // A handy definition of a large number, 
+  // A handy definition of a large number,
   // For simplicity I don't want to use INT_MAX or std::numeric_limits.
   static const int MAX_HP_LIMIT = 9999999;
+  std::shared_ptr<GameWorld> m_world;
 
 private:
-  std::shared_ptr<GameWorld> m_world;
   int m_hp;
   int m_maxHP;
   int m_attack;
-
 };
-
 
 #endif // !GAMEOBJECT_HPP__
