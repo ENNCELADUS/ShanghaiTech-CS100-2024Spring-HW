@@ -1,3 +1,0 @@
-D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\Runaway.dir/objects.a
-D:\mingw64\bin\ar.exe qc CMakeFiles\Runaway.dir/objects.a @CMakeFiles\Runaway.dir\objects1.rsp
-D:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Runaway.dir/objects.a -Wl,--no-whole-archive -o bin\Runaway.exe -Wl,--out-implib,lib\libRunaway.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Runaway.dir\linkLibs.rsp
