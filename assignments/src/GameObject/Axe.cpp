@@ -17,12 +17,19 @@ void Axe::Update()
         return; // If the axe is dead, stop further updates
     }
 
-    // Move the axe to the left by 'moveSpeed' pixels
-    Move();
-
     // If the axe goes off the screen on the left, set it to dead
     if (GetX() <= 0)
     {
         SetHP(0); // Axe dies when it goes off-screen
     }
+
+    // Move the axe to the left by 'moveSpeed' pixels
+    Move();
+}
+
+// Override Move method to move the axe to the left by 10 pixels per frame
+void Axe::Move()
+{
+    // Move the axe to the left (decreasing x-coordinate by moveSpeed)
+    MoveTo(GetX() - moveSpeed, GetY());
 }

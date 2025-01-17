@@ -13,6 +13,9 @@ public:
     // Override Update method for Axe-specific behavior
     void Update() override;
 
+    // Override Move to move the axe to the left
+    void Move() override;
+
 private:
     static constexpr int axeSpeed = 10;  // Axe moves 10 pixels per frame to the left
     static constexpr int axeWidth = 25;  // Axe width

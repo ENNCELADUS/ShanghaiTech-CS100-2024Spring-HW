@@ -14,7 +14,7 @@ public:
     virtual void Update() override;
 
     // Common movement behavior for all projectiles
-    void Move();
+    virtual void Move();
 
 protected:
     int moveSpeed; // Movement speed of the projectile

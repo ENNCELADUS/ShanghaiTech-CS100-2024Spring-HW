@@ -16,12 +16,12 @@ void Bullet::Update()
         return; // If the bullet is dead, stop further updates
     }
 
-    // Move the bullet to the right
-    Move();
-
     // If the bullet goes off-screen, set it to dead
     if (GetX() >= WINDOW_WIDTH)
     {
         SetHP(0); // Bullet dies when it goes off-screen
     }
+
+    // Move the bullet to the right
+    Move();
 }
