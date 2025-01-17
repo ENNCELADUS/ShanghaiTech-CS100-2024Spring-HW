@@ -166,9 +166,9 @@ src/GameWorld/clean: src/GameWorld/CMakeFiles/GameWorld.dir/clean
 # All Build rule for target.
 CMakeFiles/Runaway.dir/all: SOIL/CMakeFiles/SOIL.dir/all
 CMakeFiles/Runaway.dir/all: freeglut/CMakeFiles/freeglut.dir/all
-CMakeFiles/Runaway.dir/all: src/GameWorld/CMakeFiles/GameWorld.dir/all
 CMakeFiles/Runaway.dir/all: src/Framework/CMakeFiles/Framework.dir/all
 CMakeFiles/Runaway.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
+CMakeFiles/Runaway.dir/all: src/GameWorld/CMakeFiles/GameWorld.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Runaway.dir\build.make CMakeFiles/Runaway.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Runaway.dir\build.make CMakeFiles/Runaway.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\RICHARD\CS100\CS100-HW\build\CMakeFiles --progress-num=14,15 "Built target Runaway"
