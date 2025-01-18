@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libGameObject.a CMakeFiles/GameObject.dir/GameObject.cpp.obj CMakeFiles/GameObject.dir/Background.cpp.obj CMakeFiles/GameObject.dir/Player.cpp.obj CMakeFiles/GameObject.dir/Projectiles.cpp.obj CMakeFiles/GameObject.dir/Enemies.cpp.obj CMakeFiles/GameObject.dir/Bullet.cpp.obj CMakeFiles/GameObject.dir/Axe.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libGameObject.a
