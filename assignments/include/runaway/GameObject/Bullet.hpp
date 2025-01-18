@@ -12,6 +12,12 @@ public:
     // Override Update method for Bullet-specific behavior
     void Update() override;
 
+    // Override OnCollision method
+    void OnCollision(std::shared_ptr<GameObject> other) override;
+
+    // Getter for Type (to identify object type)
+    GameObject::Type GetType() const override { return GameObject::Type::ProjectilePlayer; }
+
 private:
     static constexpr int bulletSpeed = 10; // Bullet moves 10 pixels per frame
 };

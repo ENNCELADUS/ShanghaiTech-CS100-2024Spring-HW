@@ -25,3 +25,13 @@ void Bullet::Update()
     // Move the bullet to the right
     Move();
 }
+
+void Bullet::OnCollision(std::shared_ptr<GameObject> other)
+{
+    // If the object colliding with Bullet is an Enemy, deal damage and destroy the Bullet
+    if (other->GetType() == GameObject::Type::Enemy)
+    {
+        other->TakeDamage(1); // Enemy takes 1 point of damage
+        SetHP(0);             // Destroy the Bullet by setting its HP to 0
+    }
+}

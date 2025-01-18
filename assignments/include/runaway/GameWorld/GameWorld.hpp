@@ -33,14 +33,14 @@ public:
     void addScore() { score++; }
     int GetScore() { return score; }
 
-    // Check for collisions between bullets and goblins
-    void CheckBulletCollisions();
+    bool CheckCollision(std::shared_ptr<GameObject> obj1, std::shared_ptr<GameObject> obj2);
 
 private:
     std::list<std::shared_ptr<GameObject>> m_gameObjects;
     int clock = 0;
     int score = 0;
     TextBase *scoreText = nullptr;
+    TextBase *resultText = nullptr;
 };
 
 #endif // !GAMEWORLD_HPP__

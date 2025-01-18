@@ -22,6 +22,8 @@ public:
     // Handle jumping
     void Jump();
 
+    GameObject::Type GetType() const override { return GameObject::Type::Player; }
+
 private:
     // Jump and firing mechanics
     int jumpFramesRemaining = 0;

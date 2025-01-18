@@ -19,6 +19,8 @@ public:
     // Handle axe throwing after animation
     void ThrowAxe();
 
+    GameObject::Type GetType() const override { return GameObject::Type::Enemy; }
+
 private:
     unsigned int ticks = 0;             // Track ticks for axe throwing
     static constexpr int moveSpeed = 3; // Goblin moves 3 pixels per frame to the left

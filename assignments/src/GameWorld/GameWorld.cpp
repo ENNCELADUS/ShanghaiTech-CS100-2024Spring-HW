@@ -49,17 +49,139 @@ LevelStatus GameWorld::Update()
     {
         gameObject->Update();
     }
+
+    // Iterate through all game objects
+    for (auto &obj : m_gameObjects)
+    {
+        // Check for collision between projectiles (Bullets or Axes) and other objects
+        if (obj->GetType() == GameObject::Type::ProjectilePlayer || obj->GetType() == GameObject::Type::ProjectileEnemy)
+        {
+            for (auto &other : m_gameObjects)
+            {
+                if (obj == other)
+                    continue; // Skip self-collision
+
+                // Handle collision between projectiles and enemies
+                if ((obj->GetType() == GameObject::Type::ProjectilePlayer && other->GetType() == GameObject::Type::Enemy) ||
+                    (obj->GetType() == GameObject::Type::ProjectileEnemy && other->GetType() == GameObject::Type::Player))
+                {
+
+                    if (CheckCollision(obj, other))
+                    {
+                        other->TakeDamage(1);    // Apply damage to the other object (Enemy/Player)
+                        obj->SetHP(0);           // Mark projectile as dead
+                        obj->OnCollision(other); // Call OnCollision for the projectile
+                        other->OnCollision(obj); // Call OnCollision for the target
+                    }
+                }
+            }
+        }
+
+        // Handle Axe collisions (Axe is also a projectile)
+        if (obj->GetType() == GameObject::Type::ProjectileEnemy)
+        {
+            for (auto &other : m_gameObjects)
+            {
+                if (obj == other)
+                    continue; // Skip self-collision
+
+                if (obj->GetType() == GameObject::Type::ProjectileEnemy && other->GetType() == GameObject::Type::Player)
+                {
+                    if (CheckCollision(obj, other))
+                    {
+                        other->TakeDamage(1);    // Apply damage to player
+                        obj->SetHP(0);           // Mark the axe as dead
+                        obj->OnCollision(other); // Call OnCollision for the axe
+                        other->OnCollision(obj); // Call OnCollision for the player
+                    }
+                }
+            }
+        }
+
+        // Handle Goblin vs Player collisions
+        if (obj->GetType() == GameObject::Type::Enemy)
+        {
+            for (auto &other : m_gameObjects)
+            {
+                if (obj == other)
+                    continue; // Skip self-collision
+
+                if (obj->GetType() == GameObject::Type::Enemy && other->GetType() == GameObject::Type::Player)
+                {
+                    if (CheckCollision(obj, other))
+                    {
+                        // Apply the behavior when Goblin collides with the Player
+                        obj->TakeDamage(1000);   // Goblin dies instantly
+                        other->TakeDamage(1);    // Apply damage to the player
+                        obj->SetHP(0);           // Mark the goblin as dead
+                        obj->OnCollision(other); // Call OnCollision for the goblin
+                        other->OnCollision(obj); // Call OnCollision for the player
+                    }
+                }
+            }
+        }
+    }
+
+    // Update the score by check whether a Goblin is dead
+    for (auto &obj : m_gameObjects)
+    {
+        if (obj->GetType() == GameObject::Type::Enemy && !obj->IsAlive())
+        {
+            score += 20;
+        }
+    }
+
+    // Check if the player is dead
+    for (auto &obj : m_gameObjects)
+    {
+        if (obj->GetType() == GameObject::Type::Player && obj->GetHP() <= 0)
+        {
+            resultText = new TextBase(347, 50, std::to_string(score), 1.0, 1.0, 1.0, false);
+            return LevelStatus::LOSING;
+        }
+    }
+
+    // Remove dead objects from the game world
+    m_gameObjects.remove_if([](const auto &obj)
+                            { return !obj->IsAlive(); });
+
+    // Update score display if scoreText exists
+    if (scoreText)
+    {
+        scoreText->SetText("Score: " + std::to_string(score));
+    }
+
     return LevelStatus::ONGOING;
 }
 
 void GameWorld::CleanUp()
 {
     m_gameObjects.clear();
-
-    // YOUR CODE HERE
+    if (scoreText != nullptr)
+    {
+        delete scoreText;
+        scoreText = nullptr; // Set to nullptr after deletion to avoid dangling pointer
+    }
+    if (resultText != nullptr)
+    {
+        delete resultText;
+        resultText = nullptr; // Set to nullptr after deletion to avoid dangling pointer
+    }
 }
 
 void GameWorld::Instantiate(std::shared_ptr<GameObject> newGameObject)
 {
     m_gameObjects.push_back(newGameObject);
+}
+
+// Collision Detection Helper Function
+bool GameWorld::CheckCollision(std::shared_ptr<GameObject> obj1, std::shared_ptr<GameObject> obj2)
+{
+    int dx = abs(obj1->GetX() - obj2->GetX());
+    int dy = abs(obj1->GetY() - obj2->GetY());
+    int combinedWidth = (obj1->GetWidth() + obj2->GetWidth()) / 2;
+    int combinedHeight = (obj1->GetHeight() + obj2->GetHeight()) / 2;
+
+    // Check if the two objects overlap in both the x and y axes
+    return (dx < combinedWidth) && (dy < combinedHeight);
 }

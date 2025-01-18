@@ -16,6 +16,12 @@ public:
     // Override Move to move the axe to the left
     void Move() override;
 
+    // Override OnCollision method
+    void OnCollision(std::shared_ptr<GameObject> other) override;
+
+    // Getter for Type (to identify object type)
+    GameObject::Type GetType() const override { return GameObject::Type::ProjectileEnemy; }
+
 private:
     static constexpr int axeSpeed = 10;  // Axe moves 10 pixels per frame to the left
     static constexpr int axeWidth = 25;  // Axe width
