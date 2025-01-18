@@ -4,7 +4,7 @@
 
 // Constructor
 Player::Player(std::shared_ptr<GameWorld> world)
-    : GameObject(ImageID::PLAYER, 200, 120, LayerID::PLAYER, 20, 48, world, 100, 10, AnimID::IDLE),
+    : GameObject(ImageID::PLAYER, 200, 120, LayerID::PLAYER, 20, 48, world, 10, 10, AnimID::IDLE),
       jumpFramesRemaining(0),
       fireCooldown(0) {}
 
@@ -92,6 +92,6 @@ void Player::OnCollision(std::shared_ptr<GameObject> other)
     }
     else if (other->GetType() == GameObject::Type::Enemy)
     {
-        TakeDamage(100); // Player takes 100 damage from enemy
+        TakeDamage(1); // Player takes 100 damage from enemy
     }
 }
