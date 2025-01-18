@@ -92,6 +92,6 @@ void Player::OnCollision(std::shared_ptr<GameObject> other)
     }
     else if (other->GetType() == GameObject::Type::Enemy)
     {
-        TakeDamage(100); // Player takes 1 damage from enemy
+        TakeDamage(100); // Player takes 100 damage from enemy
     }
 }
