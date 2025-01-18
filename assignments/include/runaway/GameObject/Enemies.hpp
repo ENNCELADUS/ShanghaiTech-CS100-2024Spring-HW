@@ -21,6 +21,8 @@ public:
 
     GameObject::Type GetType() const override { return GameObject::Type::Enemy; }
 
+    void OnCollision(std::shared_ptr<GameObject> other) override;
+
 private:
     unsigned int ticks = 0;             // Track ticks for axe throwing
     static constexpr int moveSpeed = 3; // Goblin moves 3 pixels per frame to the left

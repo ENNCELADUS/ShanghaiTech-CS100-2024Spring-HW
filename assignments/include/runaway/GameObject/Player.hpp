@@ -22,6 +22,8 @@ public:
     // Handle jumping
     void Jump();
 
+    void OnCollision(std::shared_ptr<GameObject> other) override;
+
     GameObject::Type GetType() const override { return GameObject::Type::Player; }
 
 private:

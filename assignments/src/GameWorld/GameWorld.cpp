@@ -54,24 +54,20 @@ LevelStatus GameWorld::Update()
     for (auto &obj : m_gameObjects)
     {
         // Check for collision between projectiles (Bullets or Axes) and other objects
-        if (obj->GetType() == GameObject::Type::ProjectilePlayer || obj->GetType() == GameObject::Type::ProjectileEnemy)
+        if (obj->GetType() == GameObject::Type::ProjectilePlayer)
         {
             for (auto &other : m_gameObjects)
             {
                 if (obj == other)
                     continue; // Skip self-collision
 
-                // Handle collision between projectiles and enemies
-                if ((obj->GetType() == GameObject::Type::ProjectilePlayer && other->GetType() == GameObject::Type::Enemy) ||
-                    (obj->GetType() == GameObject::Type::ProjectileEnemy && other->GetType() == GameObject::Type::Player))
+                if (obj->GetType() == GameObject::Type::ProjectilePlayer && other->GetType() == GameObject::Type::Enemy)
                 {
 
                     if (CheckCollision(obj, other))
                     {
-                        other->TakeDamage(1);    // Apply damage to the other object (Enemy/Player)
-                        obj->SetHP(0);           // Mark projectile as dead
-                        obj->OnCollision(other); // Call OnCollision for the projectile
-                        other->OnCollision(obj); // Call OnCollision for the target
+                        obj->OnCollision(other); // Call OnCollision for the bullet
+                        other->OnCollision(obj); // Call OnCollision for the Goblin
                     }
                 }
             }
@@ -89,8 +85,6 @@ LevelStatus GameWorld::Update()
                 {
                     if (CheckCollision(obj, other))
                     {
-                        other->TakeDamage(1);    // Apply damage to player
-                        obj->SetHP(0);           // Mark the axe as dead
                         obj->OnCollision(other); // Call OnCollision for the axe
                         other->OnCollision(obj); // Call OnCollision for the player
                     }
@@ -110,10 +104,6 @@ LevelStatus GameWorld::Update()
                 {
                     if (CheckCollision(obj, other))
                     {
-                        // Apply the behavior when Goblin collides with the Player
-                        obj->TakeDamage(1000);   // Goblin dies instantly
-                        other->TakeDamage(1);    // Apply damage to the player
-                        obj->SetHP(0);           // Mark the goblin as dead
                         obj->OnCollision(other); // Call OnCollision for the goblin
                         other->OnCollision(obj); // Call OnCollision for the player
                     }
@@ -136,7 +126,7 @@ LevelStatus GameWorld::Update()
     {
         if (obj->GetType() == GameObject::Type::Player && obj->GetHP() <= 0)
         {
-            resultText = new TextBase(347, 50, std::to_string(score), 1.0, 1.0, 1.0, false);
+            resultText = new TextBase(348, 50, std::to_string(score), 1.0, 1.0, 1.0, false);
             return LevelStatus::LOSING;
         }
     }

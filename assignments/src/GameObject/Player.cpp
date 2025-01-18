@@ -82,3 +82,16 @@ void Player::ResetToIdle()
 {
     PlayAnimation(AnimID::IDLE); // Switch to idle animation
 }
+
+// Handle collision
+void Player::OnCollision(std::shared_ptr<GameObject> other)
+{
+    if (other->GetType() == GameObject::Type::ProjectileEnemy)
+    {
+        TakeDamage(1); // Player takes 1 damage from enemy projectiles
+    }
+    else if (other->GetType() == GameObject::Type::Enemy)
+    {
+        TakeDamage(100); // Player takes 1 damage from enemy
+    }
+}

@@ -39,7 +39,6 @@ void Axe::OnCollision(std::shared_ptr<GameObject> other)
     // If the object colliding with Axe is a Player, deal damage and destroy the Axe
     if (other->GetType() == GameObject::Type::Player)
     {
-        other->TakeDamage(1); // Player takes 1 point of damage
-        SetHP(0);             // Destroy the Axe by setting its HP to 0
+        SetHP(0); // Destroy the Axe by setting its HP to 0
     }
 }

@@ -47,3 +47,19 @@ void Goblin::ThrowAxe()
     // Create an Axe object at the goblin's position + offset (as per your design)
     m_world->Instantiate(std::make_shared<Axe>(GetX() - 30, GetY(), m_world)); // Axe thrown 30 pixels to the left of the goblin
 }
+
+// Handle collision with other game objects
+void Goblin::OnCollision(std::shared_ptr<GameObject> other)
+{
+    // Handle collision behavior based on the type of the other object
+    if (other->GetType() == GameObject::Type::ProjectilePlayer)
+    {
+        // If the goblin is hit by a player projectile, reduce its HP based on the bullet's attack
+        TakeDamage(1); // Assuming the bullet deals 1 damage to the goblin
+    }
+    else if (other->GetType() == GameObject::Type::Player)
+    {
+        // If the goblin collides with the player, the goblin dies and the player takes 1 point of damage
+        SetHP(0); // Mark the goblin as dead
+    }
+}
