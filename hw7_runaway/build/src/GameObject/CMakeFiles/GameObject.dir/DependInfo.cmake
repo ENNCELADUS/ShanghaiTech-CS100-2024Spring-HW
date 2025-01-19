@@ -14,7 +14,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/RICHARD/CS100/CS100-HW/hw7_runaway/src/GameObject/Enemies.cpp" "src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj.d"
   "E:/RICHARD/CS100/CS100-HW/hw7_runaway/src/GameObject/GameObject.cpp" "src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj.d"
   "E:/RICHARD/CS100/CS100-HW/hw7_runaway/src/GameObject/Player.cpp" "src/GameObject/CMakeFiles/GameObject.dir/Player.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/Player.cpp.obj.d"
-  "E:/RICHARD/CS100/CS100-HW/hw7_runaway/src/GameObject/Projectiles.cpp" "src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

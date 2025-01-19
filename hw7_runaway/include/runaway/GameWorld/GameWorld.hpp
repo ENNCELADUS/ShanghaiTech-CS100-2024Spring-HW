@@ -3,7 +3,6 @@
 
 #include <list>
 #include <memory>
-
 #include "runaway/Framework/WorldBase.hpp"
 #include "runaway/Framework/TextBase.hpp"
 #include "runaway/GameObject/GameObject.hpp"
@@ -13,34 +12,33 @@ class GameWorld : public WorldBase, public std::enable_shared_from_this<GameWorl
 {
 public:
     GameWorld();
-    virtual ~GameWorld();
+    ~GameWorld() override;
 
     void Init() override;
-
     LevelStatus Update() override;
-
     void CleanUp() override;
 
-    // 这些 override 并没有实际意义。而是给同学们的提示，可以使用这些函数获取输入。
-    // Redundant overrides just for hinting: Use these functions for input.
-    bool GetKeyDown(KeyCode key) const override { return WorldBase::GetKeyDown(key); }
-    bool GetKey(KeyCode key) const override { return WorldBase::GetKey(key); }
-    std::pair<int, int> GetMousePos() const override { return WorldBase::GetMousePos(); }
-
     void Instantiate(std::shared_ptr<GameObject> newGameObject);
+    void AddScore(int points);
+    int GetScore() const { return m_score; }
 
-    void ScrollLeft(int pixels);
-    void addScore() { score++; }
-    int GetScore() { return score; }
-
-    bool CheckCollision(std::shared_ptr<GameObject> obj1, std::shared_ptr<GameObject> obj2);
+    bool CheckCollision(const std::shared_ptr<GameObject> &obj1, const std::shared_ptr<GameObject> &obj2) const;
 
 private:
+    void HandleCollisions();
+    void UpdateScore();
+    void RemoveDeadObjects();
+    bool IsPlayerDead() const;
+    void CreateGoblin();
+
     std::list<std::shared_ptr<GameObject>> m_gameObjects;
-    int clock = 0;
-    int score = 0;
-    TextBase *scoreText = nullptr;
-    TextBase *resultText = nullptr;
+    int m_clock;
+    int m_score;
+    std::unique_ptr<TextBase> m_scoreText;
+    std::unique_ptr<TextBase> m_resultText;
+
+    static constexpr int GOBLIN_SPAWN_INTERVAL = 240;
+    static constexpr int GOBLIN_KILL_SCORE = 20;
 };
 
-#endif // !GAMEWORLD_HPP__
+#endif // GAMEWORLD_HPP__

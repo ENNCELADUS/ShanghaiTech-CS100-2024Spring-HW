@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libGameObject.a"
+			"path" : "lib/libGameWorld.a"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"src/GameObject/CMakeLists.txt",
+			"src/GameWorld/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -35,7 +35,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
@@ -98,13 +98,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6
+				0
 			]
 		}
 	],
@@ -121,15 +115,19 @@
 		{
 			"backtrace" : 2,
 			"id" : "Framework::@bbcc00d4dd4c98727359"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "GameObject::@cf4d02a5657504c132a7"
 		}
 	],
-	"id" : "GameObject::@cf4d02a5657504c132a7",
-	"name" : "GameObject",
-	"nameOnDisk" : "libGameObject.a",
+	"id" : "GameWorld::@2c651ff0fb8a858345be",
+	"name" : "GameWorld",
+	"nameOnDisk" : "libGameWorld.a",
 	"paths" : 
 	{
-		"build" : "src/GameObject",
-		"source" : "src/GameObject"
+		"build" : "src/GameWorld",
+		"source" : "src/GameWorld"
 	},
 	"sourceGroups" : 
 	[
@@ -137,13 +135,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6
+				0
 			]
 		}
 	],
@@ -152,43 +144,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/GameObject.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/Background.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/Player.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/Projectiles.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/Enemies.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/Bullet.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/GameObject/Axe.cpp",
+			"path" : "src/GameWorld/GameWorld.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

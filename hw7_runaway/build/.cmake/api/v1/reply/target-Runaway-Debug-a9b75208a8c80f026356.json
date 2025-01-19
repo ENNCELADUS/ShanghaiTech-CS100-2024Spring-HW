@@ -143,7 +143,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "GameObject::@cf4d02a5657504c132a7"
+			"id" : "GameWorld::@2c651ff0fb8a858345be"
 		},
 		{
 			"backtrace" : 2,
@@ -151,7 +151,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "GameWorld::@2c651ff0fb8a858345be"
+			"id" : "GameObject::@cf4d02a5657504c132a7"
 		}
 	],
 	"id" : "Runaway::@6890427a1f51a3e7e1df",

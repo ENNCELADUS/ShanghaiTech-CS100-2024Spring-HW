@@ -13,8 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/GameObject.dir/GameObject.cpp.obj.d"
   "CMakeFiles/GameObject.dir/Player.cpp.obj"
   "CMakeFiles/GameObject.dir/Player.cpp.obj.d"
-  "CMakeFiles/GameObject.dir/Projectiles.cpp.obj"
-  "CMakeFiles/GameObject.dir/Projectiles.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

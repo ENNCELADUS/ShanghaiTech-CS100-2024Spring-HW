@@ -204,5 +204,4 @@ src/GameObject/CMakeFiles/GameObject.dir/Player.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/GameObject.hpp \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/Framework/ObjectBase.hpp \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Player.hpp \
- E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Bullet.hpp \
- E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Projectiles.hpp
+ E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Bullet.hpp

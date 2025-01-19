@@ -6,7 +6,6 @@ add_library(
   GameObject.cpp
   Background.cpp
   Player.cpp
-  Projectiles.cpp
   Enemies.cpp
   Bullet.cpp
   Axe.cpp

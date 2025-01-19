@@ -113,26 +113,11 @@ src/GameObject/CMakeFiles/GameObject.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/Player.cpp.s"
 	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\RICHARD\CS100\CS100-HW\hw7_runaway\src\GameObject\Player.cpp -o CMakeFiles\GameObject.dir\Player.cpp.s
 
-src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/flags.make
-src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
-src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj: E:/RICHARD/CS100/CS100-HW/hw7_runaway/src/GameObject/Projectiles.cpp
-src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj"
-	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj -MF CMakeFiles\GameObject.dir\Projectiles.cpp.obj.d -o CMakeFiles\GameObject.dir\Projectiles.cpp.obj -c E:\RICHARD\CS100\CS100-HW\hw7_runaway\src\GameObject\Projectiles.cpp
-
-src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameObject.dir/Projectiles.cpp.i"
-	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\RICHARD\CS100\CS100-HW\hw7_runaway\src\GameObject\Projectiles.cpp > CMakeFiles\GameObject.dir\Projectiles.cpp.i
-
-src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/Projectiles.cpp.s"
-	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\RICHARD\CS100\CS100-HW\hw7_runaway\src\GameObject\Projectiles.cpp -o CMakeFiles\GameObject.dir\Projectiles.cpp.s
-
 src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/flags.make
 src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
 src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj: E:/RICHARD/CS100/CS100-HW/hw7_runaway/src/GameObject/Enemies.cpp
 src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj"
 	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj -MF CMakeFiles\GameObject.dir\Enemies.cpp.obj.d -o CMakeFiles\GameObject.dir\Enemies.cpp.obj -c E:\RICHARD\CS100\CS100-HW\hw7_runaway\src\GameObject\Enemies.cpp
 
 src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.i: cmake_force
@@ -147,7 +132,7 @@ src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.obj: src/GameObject/CMakeFil
 src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
 src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.obj: E:/RICHARD/CS100/CS100-HW/hw7_runaway/src/GameObject/Bullet.cpp
 src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.obj"
 	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.obj -MF CMakeFiles\GameObject.dir\Bullet.cpp.obj.d -o CMakeFiles\GameObject.dir\Bullet.cpp.obj -c E:\RICHARD\CS100\CS100-HW\hw7_runaway\src\GameObject\Bullet.cpp
 
 src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.i: cmake_force
@@ -162,7 +147,7 @@ src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.obj: src/GameObject/CMakeFiles/
 src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
 src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.obj: E:/RICHARD/CS100/CS100-HW/hw7_runaway/src/GameObject/Axe.cpp
 src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.obj"
 	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.obj -MF CMakeFiles\GameObject.dir\Axe.cpp.obj.d -o CMakeFiles\GameObject.dir\Axe.cpp.obj -c E:\RICHARD\CS100\CS100-HW\hw7_runaway\src\GameObject\Axe.cpp
 
 src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.i: cmake_force
@@ -178,7 +163,6 @@ GameObject_OBJECTS = \
 "CMakeFiles/GameObject.dir/GameObject.cpp.obj" \
 "CMakeFiles/GameObject.dir/Background.cpp.obj" \
 "CMakeFiles/GameObject.dir/Player.cpp.obj" \
-"CMakeFiles/GameObject.dir/Projectiles.cpp.obj" \
 "CMakeFiles/GameObject.dir/Enemies.cpp.obj" \
 "CMakeFiles/GameObject.dir/Bullet.cpp.obj" \
 "CMakeFiles/GameObject.dir/Axe.cpp.obj"
@@ -189,13 +173,12 @@ GameObject_EXTERNAL_OBJECTS =
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Background.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Player.cpp.obj
-lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Bullet.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Axe.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/build.make
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ..\..\lib\libGameObject.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ..\..\lib\libGameObject.a"
 	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && $(CMAKE_COMMAND) -P CMakeFiles\GameObject.dir\cmake_clean_target.cmake
 	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build\src\GameObject && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GameObject.dir\link.txt --verbose=$(VERBOSE)
 

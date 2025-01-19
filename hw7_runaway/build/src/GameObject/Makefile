@@ -318,30 +318,6 @@ Player.cpp.s:
 	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
-Projectiles.obj: Projectiles.cpp.obj
-.PHONY : Projectiles.obj
-
-# target to build an object file
-Projectiles.cpp.obj:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.obj
-.PHONY : Projectiles.cpp.obj
-
-Projectiles.i: Projectiles.cpp.i
-.PHONY : Projectiles.i
-
-# target to preprocess a source file
-Projectiles.cpp.i:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.i
-.PHONY : Projectiles.cpp.i
-
-Projectiles.s: Projectiles.cpp.s
-.PHONY : Projectiles.s
-
-# target to generate assembly for a file
-Projectiles.cpp.s:
-	cd /d E:\RICHARD\CS100\CS100-HW\hw7_runaway\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.s
-.PHONY : Projectiles.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -373,9 +349,6 @@ help:
 	@echo ... Player.obj
 	@echo ... Player.i
 	@echo ... Player.s
-	@echo ... Projectiles.obj
-	@echo ... Projectiles.i
-	@echo ... Projectiles.s
 .PHONY : help
 
 

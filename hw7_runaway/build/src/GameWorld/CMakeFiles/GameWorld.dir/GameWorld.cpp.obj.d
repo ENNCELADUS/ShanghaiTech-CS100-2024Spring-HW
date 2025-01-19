@@ -205,5 +205,4 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj: \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/Framework/ObjectBase.hpp \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Background.hpp \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Player.hpp \
- E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Enemies.hpp \
- E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Projectiles.hpp
+ E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Enemies.hpp

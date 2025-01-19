@@ -204,5 +204,4 @@ src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.obj: \
  D:/mingw64/include/c++/13.2.0/bits/list.tcc \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/Framework/WorldBase.hpp \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/Framework/TextBase.hpp \
- E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Projectiles.hpp \
  E:/RICHARD/CS100/CS100-HW/hw7_runaway/include/runaway/GameObject/Axe.hpp
